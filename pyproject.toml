@@ -1,11 +1,14 @@
 [project]
 name = "extensao"
 version = "0.1.0"
-description = "Add your description here"
+description = "Coleta e estrutura questões da primeira fase do Exame de Ordem da OAB"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
+    "onnxruntime>=1.30.0",
     "playwright>=1.62.0",
+    "pymupdf>=1.28.2",
+    "rapidocr>=3.10.0",
 ]
 
 [project.scripts]
