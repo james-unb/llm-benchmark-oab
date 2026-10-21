@@ -25,7 +25,7 @@ Liste os principais arquivos criados ou alterados.
 - [ ] Expliquei as mudanças realizadas
 
 ## 6. Revisão da equipe do GIT
-Revisor responsável: @usuario
+**Revisor responsável:** A definir pela equipe do Git.
 
 - [ ] Código revisado
 - [ ] Resultados verificados
