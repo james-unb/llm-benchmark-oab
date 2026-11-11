@@ -43,7 +43,7 @@ def _tipo_documento(secao: str, titulo: str) -> str | None:
     titulo_n = _normalizar(titulo)
     # Mantém uma única aplicação por número de exame para não misturar
     # caderno/gabarito da reaplicação local ao exame nacional.
-    if any(m in titulo_n for m in ("reaplicacao", "examinandos de salvador", "examinandos de boa vista")):
+    if any(m in titulo_n for m in ("reaplicacao", "examinandos de salvador", "examinandos de boa vista", "examinandos de duque de caxias", "duque de caxias/rj")):
         return None
     contexto = f"{secao_n} {titulo_n}"
     if any(m in contexto for m in SECOND_PHASE_MARKERS):

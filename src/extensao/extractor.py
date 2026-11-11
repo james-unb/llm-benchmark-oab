@@ -316,6 +316,16 @@ def extrair_provas(pasta_provas: Path) -> list[dict[str, object]]:
         comunicado_manteve_gabarito: Path | None = None
         for arquivo in arquivos:
             nome_normalizado = _normalizar(arquivo.name)
+            # A reaplicação de Duque de Caxias teve prova e gabarito próprios;
+            # não deve substituir as respostas da aplicação nacional.
+            if any(marcador in nome_normalizado for marcador in (
+                "reaplicacao",
+                "examinandos de salvador",
+                "examinandos de boa vista",
+                "examinandos de duque de caxias",
+                "duque de caxias/rj",
+            )):
+                continue
             if "comunicado" in nome_normalizado:
                 texto_comunicado = " ".join(_normalizar(_texto_pdf(arquivo)).split())
                 if "mantido integralmente o gabarito publicado" in texto_comunicado:
@@ -352,6 +362,7 @@ def extrair_provas(pasta_provas: Path) -> list[dict[str, object]]:
             final = dict(prelim)
             caminhos_chave["definitivo"] = comunicado_manteve_gabarito.as_posix()
         anuladas_por_comunicado: set[int] = set()
+        fontes_anulacao_por_questao: dict[int, Path] = {}
         for comunicado in arquivos:
             nome_comunicado = _normalizar(comunicado.name)
             if "comunicado" not in nome_comunicado:
@@ -373,11 +384,11 @@ def extrair_provas(pasta_provas: Path) -> list[dict[str, object]]:
                     trecho,
                     re.I,
                 ):
-                    anuladas_por_comunicado.update(
-                        int(numero)
-                        for numero in re.findall(r"\d{1,3}", match.group("numeros"))
-                        if 1 <= int(numero) <= limite_questao
-                    )
+                    for numero in re.findall(r"\d{1,3}", match.group("numeros")):
+                        numero_questao = int(numero)
+                        if 1 <= numero_questao <= limite_questao:
+                            anuladas_por_comunicado.add(numero_questao)
+                            fontes_anulacao_por_questao[numero_questao] = comunicado
 
         total = max(
             len(questoes),
@@ -406,6 +417,9 @@ def extrair_provas(pasta_provas: Path) -> list[dict[str, object]]:
             fonte_relativa = _fonte_relativa(prova)
             fonte_preliminar = _fonte_relativa(Path(caminhos_chave["preliminar"])) if caminhos_chave["preliminar"] else None
             fonte_definitivo = _fonte_relativa(Path(caminhos_chave["definitivo"])) if caminhos_chave["definitivo"] else None
+            fonte_anulacao = fontes_anulacao_por_questao.get(n)
+            if fonte_anulacao:
+                fonte_definitivo = _fonte_relativa(fonte_anulacao)
             registros.append({
                 "numero_exame": numero_exame,
                 "data_exame": data_exame,
