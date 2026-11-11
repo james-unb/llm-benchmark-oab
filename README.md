@@ -59,3 +59,16 @@ SELECT numero_exame, data_exame, numero_questao, materia, enunciado,
        resposta_preliminar, resposta_definitiva
 FROM questoes_llm;
 ```
+
+## Avaliar um modelo (time de LLM)
+
+O script `avaliar_oab.py` aplica as questões a um modelo e grava um CSV com a resposta, o acerto e o tempo de cada questão. Ele declara as próprias dependências no cabeçalho, então roda com `uv` sem instalar o projeto. Para modelos locais é preciso ter o [Ollama](https://ollama.com) aberto e o modelo baixado (`ollama pull <modelo>`); para a nuvem, a variável `OPENROUTER_API_KEY`.
+
+```powershell
+uv run avaliar_oab.py --modelo gemma4:e2b-it-q4_K_M --limite 20   # teste rápido
+uv run avaliar_oab.py --modelo gemma4:e2b-it-q4_K_M               # prova inteira
+uv run avaliar_oab.py --modelo gemma4:e2b-it-q4_K_M --prova 47    # só o exame XLVII
+uv run avaliar_oab.py --modelo google/gemma-4-26b-a4b-it --onde openrouter
+```
+
+O script usa as questões com `questao_extraida=true` e alternativas A–D, com o gabarito definitivo quando existe e o preliminar quando a banca o manteve (3.487 questões, sem 2010.2 e 2010.3, que tinham alternativa E). Temperatura 0 e ordem embaralhada com semente 42, então `--limite N` dá a mesma amostra para todo mundo. Se parar no meio, rode o mesmo comando: ele continua de onde parou. Os CSVs de resultado vão para `resultados/`.
