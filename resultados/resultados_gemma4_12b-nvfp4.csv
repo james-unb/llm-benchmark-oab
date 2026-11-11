@@ -1,0 +1,3553 @@
+numero_exame,numero_questao,materia,gabarito,resposta_modelo,acertou,segundos,texto_bruto
+8,41,,B,B,1,13.82,B
+37,49,Direito Empresarial,A,A,1,4.12,A
+40,15,Direito Constitucional,B,B,1,7.23,B
+13,33,,C,C,1,4.54,C
+6,4,,D,B,0,3.15,B
+30,55,Processo Civil,C,C,1,7.62,C
+10,1,,B,B,1,6.1,B
+13,80,,B,,0,31.69,"A alternativa correta não foi fornecida no enunciado da questão (as opções A, B, C e D referem-se a adjetivos e não a bases legais), mas seguindo a legislação vigente (Lei 12.403/2011 e jurisprudência do TST), a competência para ações de trabalhadores avulsos é da **Justiça do Trabalho**.
+
+Como as alternativas fornecidas na sua pergunta não contêm a resposta jurídica correta, não é possível selecionar uma letra que corresponda à solução legal. No entanto, se esta for uma questão de múltipla esco"
+14,44,,A,D,0,9.89,D
+26,63,Processo Penal,D,C,0,8.0,C
+6,18,,C,A,0,4.94,A
+10,20,,D,D,1,7.61,D
+26,35,Direito Ambiental,C,A,0,5.02,A
+17,4,Ética Profissional,A,D,0,6.93,D
+21,66,Processo Penal,A,A,1,8.06,A
+6,5,,B,A,0,7.2,A
+16,74,Direito do Trabalho,C,B,0,6.78,B
+11,65,,D,A,0,6.66,A
+18,49,Direito Empresarial,B,B,1,6.82,B
+23,67,Processo Penal,D,B,0,10.32,B
+47,70,Direito Previdenciário,B,D,0,9.14,D
+40,18,Direitos Humanos,B,A,0,2.55,A
+8,42,,D,A,0,9.04,A
+7,32,,D,C,0,4.22,C
+26,27,Direito Tributário,D,C,0,3.41,C
+17,11,Direito Constitucional,C,C,1,2.94,C
+20,33,Direito Administrativo,B,D,0,3.7,D
+39,45,Direito do Consumidor,B,C,0,3.04,C
+10,26,,D,D,1,1.99,D
+6,6,,B,A,0,1.92,A
+9,26,,B,B,1,2.02,B
+39,54,Processo Civil,D,D,1,4.23,D
+15,57,,D,D,1,5.54,D
+6,76,,A,B,0,1.52,B
+8,2,,C,C,1,8.22,C
+13,36,,C,C,1,4.27,C
+10,21,,A,B,0,4.36,B
+5,19,,D,D,1,2.25,D
+28,57,Direito Penal,A,C,0,3.86,C
+37,42,Direito Civil,B,C,0,4.1,C
+14,2,,B,B,1,3.06,B
+7,39,,D,B,0,12.02,B
+8,22,,A,A,1,11.62,A
+44,43,Estatuto da Criança e do Adolescente,A,B,0,5.74,B
+45,70,Direito Previdenciário,D,B,0,4.32,B
+45,75,Direito do Trabalho,D,D,1,5.25,D)
+27,11,Direito Constitucional,C,C,1,6.25,C
+46,29,Direito Tributário,D,A,0,5.73,A
+42,35,Direito Ambiental,C,B,0,6.42,B
+25,16,Direito Constitucional,C,B,0,5.7,B
+26,60,Direito Penal,A,A,1,8.71,A
+14,23,,A,A,1,6.85,A
+40,58,Direito Penal,B,C,0,13.76,C
+40,50,Direito Empresarial,C,C,1,17.31,C
+39,46,Direito do Consumidor,C,B,0,20.76,B
+27,17,Direitos Humanos,B,C,0,11.92,C
+7,52,,B,A,0,10.49,A
+8,37,,A,A,1,11.4,A
+18,69,Direito Previdenciário,C,D,0,9.82,D
+31,9,Filosofia do Direito,A,A,1,8.8,A
+27,49,Direito Empresarial,A,A,1,10.58,A
+43,47,Direito Empresarial,A,A,1,6.22,A
+20,45,Direito do Consumidor,D,D,1,6.98,D
+42,57,Direito Penal,C,A,0,5.76,A
+34,52,Processo Civil,C,C,1,8.84,C
+12,59,,C,A,0,6.21,A
+23,79,Processo do Trabalho,A,C,0,5.73,C
+28,49,Direito Empresarial,B,B,1,4.71,B
+25,48,Direito Empresarial,B,B,1,5.46,B
+34,67,Processo Penal,C,A,0,9.88,A
+16,51,Processo Civil,C,C,1,11.08,C
+10,32,,B,B,1,6.45,B
+4,70,,B,D,0,8.4,D
+7,67,,C,C,1,9.36,C
+39,52,Processo Civil,D,D,1,9.37,D
+11,66,,C,C,1,7.23,C
+37,37,Direito Civil,B,B,1,5.0,B
+22,77,Processo do Trabalho,C,C,1,7.03,C
+11,69,,B,B,1,8.94,B
+46,59,Direito Penal,A,A,1,7.88,A
+26,50,Direito Empresarial,C,C,1,6.38,C
+34,31,Direito Administrativo,A,C,0,7.51,C
+37,2,Ética Profissional,D,A,0,7.78,A
+14,47,,C,C,1,7.63,C
+33,47,Direito Empresarial,B,B,1,11.01,B
+36,48,Direito Empresarial,B,B,1,7.72,B
+7,75,,B,B,1,19.62,B
+43,63,Processo Penal,D,D,1,6.89,D
+27,12,Direito Constitucional,A,D,0,8.22,D
+9,12,,B,B,1,7.73,B
+7,76,,D,C,0,10.72,C
+16,76,Processo do Trabalho,C,B,0,5.06,B
+19,18,Direitos Humanos,B,B,1,7.15,B
+34,58,Direito Penal,B,B,1,12.03,B
+35,56,Processo Civil,A,A,1,6.56,A
+6,60,,C,B,0,6.16,B
+30,35,Direito Ambiental,A,A,1,10.36,A
+10,29,,D,D,1,6.69,D
+16,68,Processo Penal,C,C,1,5.36,C
+24,7,Ética Profissional,A,D,0,6.37,D
+10,73,,A,B,0,3.44,B
+29,31,Direito Administrativo,C,A,0,7.47,A
+29,63,Processo Penal,D,B,0,8.05,B
+17,10,Filosofia do Direito,D,D,1,5.71,D
+20,24,Direito Financeiro,B,D,0,7.14,D
+40,73,Direito do Trabalho,C,C,1,5.79,C
+33,42,Direito Civil,C,C,1,6.85,C
+9,2,,C,C,1,6.47,C
+41,38,Direito Civil,B,B,1,6.45,B
+6,11,,C,B,0,4.76,B
+4,71,,A,A,1,6.72,A
+36,25,Direito Tributário,B,B,1,7.75,B
+40,74,Direito do Trabalho,D,D,1,5.87,D
+36,62,Direito Penal,A,A,1,12.07,A
+22,55,Processo Civil,C,C,1,9.62,C
+39,59,Direito Penal,A,B,0,6.72,B
+7,40,,D,C,0,10.85,C
+26,32,Direito Administrativo,D,D,1,7.76,D
+12,47,,B,B,1,15.58,B
+29,13,Direito Constitucional,A,A,1,11.51,A
+8,39,,D,D,1,14.02,D
+9,14,,A,A,1,8.06,A
+47,33,Direito Administrativo,C,C,1,10.45,C
+35,21,Direito Internacional,C,C,1,6.87,C
+28,11,Direito Constitucional,D,D,1,13.18,D
+39,11,Direito Constitucional,C,C,1,12.16,C
+8,80,,C,D,0,5.8,D)
+28,53,Processo Civil,B,B,1,7.76,B
+34,47,Direito Empresarial,D,D,1,12.8,D
+21,75,Direito do Trabalho,B,B,1,6.44,B
+43,2,Ética Profissional,C,C,1,11.29,C
+16,54,Processo Civil,D,C,0,6.45,C
+38,25,Direito Tributário,C,C,1,7.07,C
+46,18,Direitos Humanos,D,A,0,10.94,A
+41,21,Direito Internacional,A,A,1,6.15,A
+41,29,Direito Tributário,B,B,1,5.71,B
+20,7,Ética Profissional,A,C,0,9.36,C
+8,77,,C,C,1,5.83,C)
+35,29,Direito Tributário,A,A,1,5.95,A
+39,16,Direito Constitucional,A,B,0,6.9,B
+19,48,Direito Empresarial,C,C,1,7.83,C
+36,12,Direito Constitucional,B,B,1,9.12,B
+46,44,Estatuto da Criança e do Adolescente,C,C,1,8.3,C
+32,51,Processo Civil,B,D,0,6.89,D
+9,21,,B,B,1,7.27,B
+16,1,Ética Profissional,D,D,1,4.62,D
+6,73,,D,C,0,8.91,C
+10,31,,A,A,1,5.68,A
+21,9,Filosofia do Direito,D,D,1,7.02,D
+40,33,Direito Administrativo,D,D,1,5.95,D
+5,44,,A,A,1,9.41,A
+41,78,Processo do Trabalho,B,A,0,5.9,A
+22,19,Direito Eleitoral,B,B,1,10.76,B
+13,18,,B,B,1,5.77,B
+27,47,Direito Empresarial,B,B,1,5.84,B
+20,50,Direito Empresarial,A,A,1,6.44,A
+38,30,Direito Administrativo,D,D,1,9.68,D
+26,67,Processo Penal,C,C,1,8.37,C
+23,14,Direito Constitucional,B,C,0,8.49,C
+44,14,Direito Constitucional,C,D,0,6.23,D
+43,29,Direito Tributário,A,A,1,7.39,A
+36,60,Direito Penal,D,D,1,6.01,D)
+45,51,Processo Civil,B,B,1,7.78,B
+16,49,Direito Empresarial,C,C,1,12.8,C
+5,45,,A,B,0,4.48,B
+11,46,,D,D,1,7.55,D
+36,27,Direito Tributário,D,D,1,6.13,D
+28,6,Ética Profissional,A,A,1,9.79,A
+47,14,Direito Constitucional,A,C,0,6.95,C
+12,79,,D,D,1,5.54,D
+18,75,Direito do Trabalho,B,D,0,6.13,D
+23,66,Processo Penal,B,C,0,5.33,C
+14,58,,A,A,1,7.71,A
+32,69,Direito Previdenciário,A,A,1,8.07,A
+47,4,Ética Profissional,D,C,0,7.66,C
+31,10,Filosofia do Direito,A,A,1,7.87,A
+40,29,Direito Tributário,B,C,0,4.03,C
+21,52,Processo Civil,C,C,1,5.55,C
+30,26,Direito Tributário,C,C,1,6.55,C
+26,8,Ética Profissional,C,C,1,8.87,C
+23,23,Direito Financeiro,C,B,0,5.54,B
+46,32,Direito Administrativo,B,B,1,7.84,B
+39,51,Processo Civil,C,D,0,6.55,D
+31,39,Direito Civil,C,C,1,7.13,C
+28,30,Direito Administrativo,D,D,1,11.04,D
+14,42,,A,A,1,4.82,A
+6,8,,B,A,0,4.75,A
+31,50,Direito Empresarial,A,C,0,7.53,C
+10,8,,B,B,1,5.09,B
+34,38,Direito Civil,B,B,1,8.54,B
+6,42,,A,A,1,9.18,A
+33,23,Direito Financeiro,C,A,0,4.91,A
+29,11,Direito Constitucional,D,D,1,11.94,D
+46,62,Direito Penal,C,C,1,8.07,C
+20,80,Processo do Trabalho,B,D,0,4.95,D)
+19,75,Direito do Trabalho,A,A,1,6.12,A
+19,17,Direitos Humanos,D,D,1,5.66,D
+24,80,Processo do Trabalho,A,D,0,5.14,D.
+6,45,,B,C,0,7.08,C
+40,25,Direito Tributário,A,B,0,7.45,B
+41,2,Ética Profissional,A,B,0,8.39,B
+6,22,,C,C,1,2.79,C
+33,13,Direito Constitucional,B,B,1,7.83,B
+24,55,Processo Civil,C,C,1,6.86,C
+29,27,Direito Tributário,A,A,1,9.49,A
+19,67,Processo Penal,B,C,0,7.75,C
+18,62,Direito Penal,D,C,0,6.53,C
+28,4,Ética Profissional,A,D,0,9.01,D
+24,62,Direito Penal,B,B,1,11.53,B
+17,46,Direito do Consumidor,B,B,1,10.36,B
+35,43,Estatuto da Criança e do Adolescente,A,A,1,6.52,A
+38,69,Direito Previdenciário,A,C,0,4.36,C
+12,6,,D,D,1,6.23,D)
+29,44,Estatuto da Criança e do Adolescente,A,A,1,5.66,A
+20,40,Direito Civil,D,A,0,9.25,A
+7,61,,A,D,0,6.61,D
+5,65,,D,D,1,4.56,D)
+20,41,Direito Civil,C,C,1,6.61,C
+46,80,Processo do Trabalho,B,D,0,4.83,D.
+44,37,Direito Civil,D,B,0,6.36,B
+43,75,Direito do Trabalho,D,D,1,9.01,D
+11,2,,B,B,1,6.6,B
+31,7,Ética Profissional,D,B,0,6.78,B
+39,39,Direito Civil,D,A,0,7.42,A
+45,37,Direito Civil,C,C,1,5.73,C
+7,73,,B,C,0,10.25,C
+44,74,Direito do Trabalho,D,C,0,6.42,C
+4,75,,D,D,1,5.46,D
+29,74,Direito do Trabalho,D,D,1,8.82,D
+26,16,Direito Constitucional,A,D,0,10.45,D
+41,37,Direito Civil,D,C,0,6.46,C
+34,10,Filosofia do Direito,C,C,1,4.83,C
+21,72,Direito do Trabalho,B,A,0,7.47,A
+15,47,,B,B,1,6.89,B
+36,80,Processo do Trabalho,A,,0,46.53,"A alternativa correta não está presente nas opções fornecidas (A, B, C ou D), pois as opções listadas não correspondemem a termos jurídicos válidos para o recurso em questão.
+
+No entanto, seguindo a lógica de uma questão de múltipla escolha onde as alternativas seriam as corretas, a resposta jurídica correta para o caso descrito seria:
+
+**Incidente de Uniformização de Jurisprudência (ou Recurso de Revista em Embargos, dependendo do rito) perante o TST.**
+
+Como as alternativas fornecidas (muito b"
+33,7,Ética Profissional,A,B,0,8.36,B
+47,48,Direito Empresarial,A,B,0,9.79,B
+10,37,,B,D,0,11.64,D
+38,75,Direito do Trabalho,B,B,1,9.0,B
+30,34,Direito Administrativo,B,B,1,4.77,B
+6,55,,B,D,0,7.49,D
+21,56,Processo Civil,B,A,0,7.04,A
+17,43,Estatuto da Criança e do Adolescente,B,B,1,6.7,B
+47,8,Ética Profissional,A,B,0,8.0,B
+28,23,Direito Financeiro,A,A,1,7.82,A
+9,44,,A,D,0,7.84,D
+13,48,,B,B,1,7.14,B
+35,46,Direito do Consumidor,C,C,1,7.48,C
+21,43,Estatuto da Criança e do Adolescente,D,D,1,7.69,D
+16,26,Direito Tributário,A,D,0,4.88,D
+32,57,Direito Penal,D,D,1,7.05,D
+26,30,Direito Administrativo,B,B,1,8.12,B
+24,38,Direito Civil,C,C,1,6.69,C
+34,19,Direito Eleitoral,D,D,1,6.81,D
+26,9,Filosofia do Direito,B,B,1,7.7,B
+31,73,Direito do Trabalho,B,C,0,7.02,C
+17,39,Direito Civil,D,D,1,7.81,D
+25,64,Processo Penal,B,B,1,9.39,B
+33,2,Ética Profissional,D,D,1,8.49,D
+20,9,Filosofia do Direito,A,C,0,7.31,C
+26,5,Ética Profissional,A,A,1,8.33,A
+7,29,,D,D,1,9.27,D
+15,50,,B,B,1,4.86,B
+26,77,Processo do Trabalho,C,C,1,8.26,C
+20,36,Direito Ambiental,A,A,1,6.01,A
+24,6,Ética Profissional,C,B,0,6.84,B
+23,32,Direito Administrativo,A,A,1,7.69,A
+5,17,,B,C,0,9.37,C
+34,30,Direito Administrativo,C,C,1,5.53,C
+33,35,Direito Ambiental,C,C,1,10.36,C
+38,79,Processo do Trabalho,A,B,0,4.26,B
+4,21,,A,D,0,3.08,D)
+10,56,,C,C,1,8.24,C
+41,77,Processo do Trabalho,D,D,1,6.69,D
+33,10,Filosofia do Direito,C,C,1,5.41,C
+10,19,,B,B,1,7.9,B
+36,52,Processo Civil,D,C,0,6.58,C
+13,20,,D,D,1,5.52,D
+16,57,Direito Penal,B,A,0,9.69,A
+29,77,Processo do Trabalho,B,B,1,8.12,B
+43,39,Direito Civil,B,B,1,5.94,B
+41,59,Direito Penal,D,D,1,8.47,D
+28,21,Direito Internacional,C,C,1,5.19,C
+40,63,Processo Penal,C,D,0,5.91,D
+4,33,,B,B,1,6.65,B
+4,57,,C,C,1,6.82,C
+46,42,Direito Civil,B,B,1,8.1,B
+26,25,Direito Tributário,B,B,1,6.03,B
+14,14,,A,C,0,7.98,C
+28,33,Direito Administrativo,C,C,1,6.04,C
+29,73,Direito do Trabalho,C,C,1,7.19,C
+6,17,,C,D,0,2.39,D
+10,36,,A,A,1,5.8,A
+13,73,,C,C,1,5.87,C
+24,70,Direito Previdenciário,A,C,0,7.15,C
+37,22,Direito Internacional,A,A,1,7.98,A
+5,30,,A,A,1,4.39,A
+14,61,,A,A,1,5.5,A
+26,61,Direito Penal,C,C,1,6.57,C
+9,59,,C,C,1,6.43,C
+32,45,Direito do Consumidor,C,C,1,8.93,C
+28,76,Processo do Trabalho,A,C,0,5.42,C
+46,58,Direito Penal,D,D,1,6.57,D
+29,23,Direito Financeiro,C,C,1,6.26,C
+42,22,Direito Internacional,D,D,1,6.56,D
+12,42,,C,B,0,6.37,B
+28,72,Direito do Trabalho,C,C,1,6.41,C
+36,77,Processo do Trabalho,A,B,0,5.84,B
+28,27,Direito Tributário,C,C,1,8.17,C
+28,59,Direito Penal,D,C,0,6.11,C
+40,35,Direito Ambiental,A,A,1,9.13,A
+23,73,Direito do Trabalho,C,C,1,5.57,C
+9,8,,B,C,0,4.1,C
+21,11,Direito Constitucional,C,D,0,4.73,D)
+38,50,Direito Empresarial,A,A,1,6.38,A
+37,10,Filosofia do Direito,C,C,1,6.28,C
+12,1,,D,D,1,9.1,D
+17,72,Direito do Trabalho,B,B,1,6.98,B
+42,25,Direito Tributário,C,C,1,9.66,C
+35,80,Processo do Trabalho,C,D,0,8.92,D
+7,78,,C,A,0,14.41,A
+46,14,Direito Constitucional,D,D,1,9.8,D
+14,15,,B,C,0,8.34,C
+30,11,Direito Constitucional,D,D,1,15.93,D
+14,68,,A,A,1,11.57,A
+46,66,Processo Penal,B,B,1,6.34,B
+30,24,Direito Financeiro,B,A,0,7.76,A
+25,38,Direito Civil,D,D,1,10.11,D
+8,21,,D,D,1,20.69,D
+4,15,,D,B,0,7.1,B
+12,11,,B,B,1,8.73,B
+29,46,Direito do Consumidor,B,B,1,4.68,B
+40,55,Processo Civil,D,A,0,10.78,A
+11,76,,C,C,1,5.83,C
+4,25,,C,C,1,9.39,C
+14,80,,B,D,0,4.47,D)
+5,36,,B,B,1,10.51,B
+7,13,,B,C,0,17.24,C
+20,71,Direito do Trabalho,C,C,1,5.54,C
+26,69,Direito Previdenciário,C,A,0,7.59,A
+5,56,,A,A,1,6.56,A
+41,39,Direito Civil,D,D,1,5.48,D
+15,15,,D,A,0,4.32,A
+29,9,Filosofia do Direito,C,C,1,6.53,C
+14,75,,C,C,1,6.56,C
+38,44,Estatuto da Criança e do Adolescente,C,C,1,5.53,C
+13,8,,B,B,1,4.77,B
+47,11,Direito Constitucional,A,C,0,9.24,C
+12,56,,C,C,1,7.07,C
+11,62,,D,A,0,6.81,A
+23,40,Direito Civil,C,C,1,7.56,C
+4,14,,C,C,1,4.51,C
+29,28,Direito Tributário,B,A,0,6.53,A
+6,21,,D,A,0,5.79,A
+13,13,,D,D,1,5.22,D)
+14,38,,C,C,1,7.28,C
+17,7,Ética Profissional,B,B,1,3.49,B
+21,42,Direito Civil,A,A,1,7.71,A
+19,14,Direito Constitucional,D,B,0,7.21,B
+4,9,,C,C,1,3.0,C
+4,74,,C,C,1,4.21,C
+27,80,Processo do Trabalho,C,,0,42.71,"A alternativa correta não foi fornecida no enunciado da questão (as opções A, B, C e D referem-se a ""muito bom"", ""bom"", ""regular"" e ""ruim"", que não condizem com o enunciado jurídico).
+
+No entanto, seguindo a técnica jurídica para a situação descrita (indeferimento de tutela de urgência em processo de conhecimento), a resposta correta seria o manejo de um **Agravo de Instrumento** (no âmbito do processo do trabalho, para decisões interlocutórias que não extinguem o processo).
+
+Como as alternativa"
+23,13,Direito Constitucional,B,B,1,7.23,B
+13,27,,D,D,1,4.88,D)
+28,61,Direito Penal,A,A,1,10.13,A
+11,45,,A,B,0,4.43,B
+38,22,Direito Internacional,A,B,0,4.45,B
+9,71,,C,C,1,8.27,C
+31,14,Direito Constitucional,D,D,1,7.29,D
+20,30,Direito Administrativo,A,A,1,6.52,A
+36,69,Direito Previdenciário,D,D,1,7.57,D
+43,12,Direito Constitucional,B,B,1,8.3,B
+38,19,Direito Eleitoral,D,D,1,6.52,D
+22,52,Processo Civil,C,C,1,9.61,C
+43,68,Processo Penal,B,B,1,4.33,B
+34,53,Processo Civil,B,B,1,6.89,B
+37,24,Direito Financeiro,C,C,1,6.42,C
+46,45,Direito do Consumidor,B,C,0,5.88,C
+46,72,Direito do Trabalho,D,D,1,5.31,D
+19,8,Ética Profissional,D,D,1,8.73,D
+7,53,,B,B,1,5.49,B
+8,72,,C,C,1,4.65,C
+23,30,Direito Administrativo,D,D,1,8.14,D
+46,57,Direito Penal,B,D,0,6.77,D)
+26,42,Direito Civil,D,D,1,6.04,D
+46,75,Direito do Trabalho,C,C,1,7.07,C
+38,71,Direito do Trabalho,D,B,0,6.08,B
+4,53,,A,A,1,6.04,A
+26,76,Processo do Trabalho,A,C,0,7.01,C
+10,45,,C,C,1,4.49,C
+10,68,,C,C,1,4.17,C
+24,8,Ética Profissional,D,B,0,8.02,B
+33,24,Direito Financeiro,D,C,0,6.76,C
+44,10,Filosofia do Direito,A,D,0,6.58,D
+15,1,,C,B,0,4.45,B
+33,55,Processo Civil,C,C,1,6.59,C
+8,30,,A,A,1,5.74,A
+7,31,,D,A,0,12.88,A
+8,10,,D,D,1,10.65,D
+6,14,,C,A,0,5.62,A
+46,43,Estatuto da Criança e do Adolescente,D,D,1,8.24,D
+29,30,Direito Administrativo,A,C,0,6.87,C
+30,79,Processo do Trabalho,B,B,1,6.84,B
+46,55,Processo Civil,A,A,1,5.71,A
+26,65,Processo Penal,D,A,0,10.12,A
+31,52,Processo Civil,D,D,1,7.04,D
+34,3,Ética Profissional,A,D,0,3.66,D
+21,13,Direito Constitucional,B,B,1,7.59,B
+41,71,Direito do Trabalho,A,A,1,6.09,A
+29,40,Direito Civil,C,C,1,12.24,C
+44,11,Direito Constitucional,B,C,0,7.11,C
+33,37,Direito Civil,A,C,0,10.79,C
+4,66,,A,D,0,7.06,D
+14,46,,A,A,1,8.11,A
+45,40,Direito Civil,A,D,0,8.08,D
+28,19,Direito Eleitoral,D,D,1,9.17,D
+26,17,Direitos Humanos,C,C,1,8.56,C
+35,37,Direito Civil,D,D,1,9.43,D
+35,65,Processo Penal,B,B,1,8.27,B
+10,44,,D,D,1,7.1,D
+28,16,Direito Constitucional,D,D,1,8.72,D
+18,24,Direito Financeiro,C,A,0,4.42,A
+43,72,Direito do Trabalho,B,C,0,7.39,C
+41,73,Direito do Trabalho,D,D,1,7.33,D
+33,79,Processo do Trabalho,A,A,1,4.39,A
+41,5,Ética Profissional,A,A,1,6.92,A
+18,10,Filosofia do Direito,C,B,0,10.55,B
+30,3,Ética Profissional,B,C,0,5.99,C
+34,25,Direito Tributário,A,A,1,5.88,A
+32,25,Direito Tributário,B,A,0,5.39,A
+29,19,Direito Eleitoral,D,D,1,9.03,D
+8,47,,B,B,1,15.41,B
+5,76,,D,D,1,2.92,D
+32,41,Direito Civil,A,A,1,6.23,A
+14,5,,A,A,1,6.4,A
+18,2,Ética Profissional,D,D,1,8.95,D
+41,15,Direito Constitucional,B,D,0,8.05,D
+9,29,,C,C,1,4.24,C
+35,52,Processo Civil,B,B,1,9.08,B
+13,65,,A,A,1,4.18,A
+36,39,Direito Civil,B,B,1,5.92,B
+23,33,Direito Administrativo,D,D,1,5.39,D
+28,43,Estatuto da Criança e do Adolescente,B,B,1,7.82,B
+12,15,,A,A,1,6.63,A
+37,77,Processo do Trabalho,B,B,1,7.21,B
+28,64,Processo Penal,B,D,0,10.13,D
+38,74,Direito do Trabalho,B,B,1,7.53,B
+20,67,Processo Penal,A,A,1,7.83,A
+44,52,Processo Civil,A,D,0,9.28,D
+10,28,,B,B,1,3.41,B
+36,37,Direito Civil,B,B,1,9.05,B
+41,7,Ética Profissional,C,C,1,10.72,C
+25,68,Processo Penal,C,D,0,9.21,D
+32,44,Estatuto da Criança e do Adolescente,C,A,0,9.07,A
+20,48,Direito Empresarial,D,A,0,6.33,A
+25,76,Processo do Trabalho,A,C,0,7.0,C
+37,15,Direito Constitucional,C,C,1,10.33,C
+9,33,,C,C,1,7.17,C
+4,16,,D,D,1,7.17,D
+16,43,Estatuto da Criança e do Adolescente,D,A,0,13.42,A
+43,48,Direito Empresarial,B,C,0,8.34,C
+8,14,,B,C,0,4.31,C
+28,26,Direito Tributário,B,B,1,8.24,B
+43,59,Direito Penal,C,C,1,6.89,C
+14,27,,A,A,1,6.93,A
+12,40,,A,C,0,6.77,C
+27,70,Direito Previdenciário,D,D,1,6.85,D
+33,43,Estatuto da Criança e do Adolescente,B,A,0,5.37,A
+43,66,Processo Penal,D,D,1,8.6,D
+11,44,,A,A,1,8.6,A
+27,72,Direito do Trabalho,D,D,1,6.38,D
+45,2,Ética Profissional,A,A,1,10.22,A
+20,38,Direito Civil,B,B,1,7.98,B
+47,80,Processo do Trabalho,B,,0,57.74,"A alternativa correta não foi fornecida no enunciado da questão (as opções A, B, C e D não contêm o texto jurídico correspondente), mas seguindo a lógica do Direito do Trabalho e a jurisprudência do TST, a medida cabível seria o **Cumprimento de Sentença** (ou execução de título executivo judicial).
+
+Como você solicitou apenas a letra e as opções fornecidas são apenas adjetivos (""muito bom"", ""bom"", etc.), não é possível identificar a alternativa correta sem o texto jurídico. No entanto, se esta "
+12,44,,B,D,0,10.94,D
+17,59,Direito Penal,D,D,1,6.79,D
+14,45,,C,C,1,9.41,C
+42,16,Direito Constitucional,D,D,1,8.36,D
+28,3,Ética Profissional,B,B,1,8.01,B
+10,74,,C,C,1,4.69,C
+4,63,,B,A,0,4.77,A
+44,59,Direito Penal,D,B,0,10.41,B
+5,59,,C,C,1,4.95,C
+22,63,Processo Penal,C,C,1,6.04,C
+41,57,Direito Penal,D,D,1,8.95,D
+37,75,Direito do Trabalho,B,B,1,6.65,B
+39,75,Direito do Trabalho,B,B,1,6.37,B
+19,55,Processo Civil,D,D,1,7.83,D
+14,17,,D,D,1,7.12,D
+7,57,,C,C,1,19.5,C
+5,23,,C,A,0,3.64,A
+27,59,Direito Penal,B,B,1,11.23,B
+31,54,Processo Civil,C,C,1,12.22,C
+31,68,Processo Penal,D,D,1,9.07,D
+25,58,Direito Penal,C,C,1,7.74,C
+40,78,Processo do Trabalho,C,C,1,6.16,C
+9,4,,B,B,1,7.08,B
+42,31,Direito Administrativo,C,C,1,7.45,C
+27,19,Direito Eleitoral,B,B,1,8.03,B
+24,32,Direito Administrativo,A,C,0,8.56,C
+5,16,,B,B,1,6.17,B
+29,62,Direito Penal,D,D,1,7.44,D
+30,10,Filosofia do Direito,A,A,1,7.25,A
+5,63,,A,C,0,7.31,C
+25,77,Processo do Trabalho,C,C,1,8.67,C
+9,57,,B,A,0,7.43,A
+43,46,Direito do Consumidor,D,D,1,8.27,D
+10,22,,C,C,1,6.93,C
+16,52,Processo Civil,B,D,0,7.02,D
+13,31,,C,C,1,7.24,C
+47,79,Processo do Trabalho,A,D,0,10.92,D
+9,74,,C,C,1,4.93,C
+47,24,Direito Financeiro,A,C,0,6.33,C
+47,5,Ética Profissional,C,A,0,9.22,A
+46,38,Direito Civil,D,D,1,6.16,D
+46,47,Direito Empresarial,A,C,0,8.46,C
+28,66,Processo Penal,D,D,1,9.96,D
+17,32,Direito Administrativo,A,B,0,6.82,B
+19,80,Processo do Trabalho,D,A,0,6.89,A)
+26,40,Direito Civil,A,A,1,8.29,A
+18,15,Direito Constitucional,C,A,0,6.88,A
+28,56,Processo Civil,B,D,0,9.54,D
+16,53,Processo Civil,D,C,0,9.57,C
+11,16,,C,C,1,4.79,C
+42,61,Direito Penal,A,A,1,6.3,A
+22,53,Processo Civil,C,C,1,7.14,C
+45,18,Direitos Humanos,A,A,1,7.47,A
+12,72,,B,B,1,6.51,B
+23,19,Direito Eleitoral,B,B,1,7.12,B
+41,26,Direito Tributário,C,B,0,6.76,B
+36,72,Direito do Trabalho,C,C,1,8.08,C
+17,22,Direito Internacional,A,D,0,8.41,D
+43,80,Processo do Trabalho,A,A,1,5.09,A)
+38,61,Direito Penal,B,C,0,9.98,C
+30,21,Direito Internacional,C,C,1,4.24,C
+41,62,Direito Penal,C,B,0,6.29,B
+43,17,Direitos Humanos,C,C,1,5.61,C
+12,37,,D,B,0,10.73,B
+31,41,Direito Civil,C,C,1,8.06,C
+47,56,Processo Civil,C,D,0,8.27,D
+17,16,Direito Constitucional,B,B,1,6.04,B
+11,19,,D,D,1,7.61,D
+7,25,,D,D,1,18.6,D
+12,24,,D,D,1,4.69,D
+29,3,Ética Profissional,B,B,1,6.78,B
+24,52,Processo Civil,D,C,0,7.47,C
+20,56,Processo Civil,B,C,0,10.14,C
+45,66,Processo Penal,C,C,1,6.45,C
+34,55,Processo Civil,A,A,1,9.11,A
+47,65,Processo Penal,B,D,0,10.64,D)
+10,18,,B,B,1,9.44,B
+8,66,,C,B,0,20.2,B
+47,58,Direito Penal,B,D,0,7.79,D
+27,6,Ética Profissional,D,D,1,8.49,D
+25,56,Processo Civil,D,C,0,8.73,C
+46,1,Ética Profissional,C,C,1,9.6,C
+16,22,Direito Internacional,A,A,1,15.93,A
+42,48,Direito Empresarial,A,B,0,4.62,B
+24,37,Direito Civil,D,D,1,6.5,D
+4,47,,C,C,1,4.65,C
+23,68,Processo Penal,C,A,0,8.37,A
+5,4,,B,B,1,6.22,B
+20,6,Ética Profissional,B,B,1,5.06,B
+22,12,Direito Constitucional,D,D,1,7.26,D
+32,63,Processo Penal,A,C,0,11.76,C
+10,70,,D,C,0,5.4,C
+12,77,,B,B,1,8.4,B
+11,61,,C,C,1,9.38,C
+6,65,,D,A,0,7.46,A
+21,34,Direito Administrativo,C,C,1,7.37,C
+42,17,Direitos Humanos,A,A,1,7.53,A
+10,77,,D,C,0,8.16,C
+19,15,Direito Constitucional,A,B,0,7.08,B
+41,79,Processo do Trabalho,A,A,1,6.15,A
+43,54,Processo Civil,A,A,1,7.38,A
+25,43,Estatuto da Criança e do Adolescente,C,C,1,10.68,C
+6,52,,A,A,1,3.6,A
+44,42,Direito Civil,C,B,0,9.36,B
+7,12,,B,B,1,8.05,B
+31,25,Direito Tributário,B,B,1,6.75,B
+38,63,Processo Penal,C,C,1,9.33,C
+40,43,Estatuto da Criança e do Adolescente,D,D,1,10.91,D
+31,69,Direito Previdenciário,A,A,1,9.52,A
+19,33,Direito Administrativo,D,D,1,6.15,D
+16,25,Direito Tributário,D,B,0,6.31,B
+24,22,Direito Internacional,B,B,1,8.52,B
+21,65,Processo Penal,B,B,1,9.58,B
+21,60,Direito Penal,A,A,1,9.4,A
+43,20,Direito Eleitoral,D,D,1,6.59,D
+27,55,Processo Civil,A,A,1,9.72,A
+6,53,,B,D,0,9.79,D
+29,72,Direito do Trabalho,D,D,1,10.45,D
+37,21,Direito Internacional,C,C,1,8.0,C
+27,18,Direitos Humanos,D,D,1,18.01,D
+29,12,Direito Constitucional,C,C,1,10.5,C
+38,20,Direito Eleitoral,B,A,0,8.69,A
+5,32,,D,D,1,5.44,D
+46,19,Direito Eleitoral,A,B,0,11.37,B
+22,31,Direito Administrativo,C,C,1,7.05,C
+36,36,Direito Ambiental,C,C,1,13.41,C
+17,42,Direito Civil,A,A,1,15.45,A
+7,68,,A,C,0,27.77,C
+43,9,Filosofia do Direito,B,B,1,11.16,B
+42,78,Processo do Trabalho,A,C,0,14.27,C
+4,73,,A,C,0,8.21,C
+23,37,Direito Civil,A,A,1,8.87,A
+24,59,Direito Penal,A,A,1,10.12,A
+20,3,Ética Profissional,B,B,1,14.7,B
+8,61,,A,B,0,37.3,B
+14,1,,B,D,0,12.62,D
+19,69,Direito Previdenciário,D,D,1,9.05,D
+46,4,Ética Profissional,A,A,1,10.75,A
+46,27,Direito Tributário,B,B,1,12.88,B
+16,3,Ética Profissional,D,B,0,11.77,B
+45,80,Processo do Trabalho,A,C,0,5.22,C
+39,34,Direito Administrativo,A,A,1,8.35,A
+9,58,,B,A,0,13.19,A
+45,44,Estatuto da Criança e do Adolescente,C,C,1,15.1,C
+23,70,Direito Previdenciário,C,B,0,8.04,B
+30,13,Direito Constitucional,D,D,1,15.58,D
+46,64,Processo Penal,B,B,1,9.14,B
+14,48,,C,C,1,6.21,C
+27,68,Processo Penal,B,B,1,15.82,B
+37,39,Direito Civil,A,A,1,7.95,A
+36,2,Ética Profissional,A,B,0,7.13,B
+45,73,Direito do Trabalho,D,C,0,13.02,C
+41,3,Ética Profissional,B,B,1,10.47,B
+17,8,Ética Profissional,D,D,1,7.72,D
+33,76,Processo do Trabalho,D,C,0,11.96,C
+6,27,,C,A,0,9.88,A
+12,50,,C,A,0,8.79,A
+32,55,Processo Civil,B,B,1,8.84,B
+18,27,Direito Tributário,D,D,1,7.99,D
+28,35,Direito Ambiental,B,A,0,11.18,A
+6,40,,D,A,0,8.5,A
+12,35,,B,B,1,11.74,B
+33,25,Direito Tributário,B,D,0,9.34,D
+38,46,Direito do Consumidor,A,A,1,10.87,A
+47,7,Ética Profissional,C,B,0,13.96,B
+14,21,,D,D,1,6.49,D
+44,22,Direito Internacional,D,A,0,9.11,A
+42,6,Ética Profissional,B,B,1,15.84,B
+4,27,,D,D,1,5.25,D
+36,9,Filosofia do Direito,A,A,1,9.42,A
+27,60,Direito Penal,C,C,1,10.79,C
+8,6,,C,C,1,15.56,C
+20,4,Ética Profissional,D,B,0,20.7,B
+10,41,,B,A,0,7.56,A
+25,47,Direito Empresarial,B,B,1,9.01,B
+17,63,Processo Penal,C,C,1,12.03,C
+19,62,Direito Penal,B,A,0,16.19,A
+24,51,Processo Civil,B,A,0,12.29,A
+10,53,,A,A,1,8.65,A
+12,36,,D,D,1,8.91,D
+16,71,Direito do Trabalho,D,D,1,19.45,D
+11,15,,D,C,0,13.15,C
+9,31,,D,D,1,7.17,D)
+25,70,Direito Previdenciário,C,A,0,13.59,A
+31,65,Processo Penal,B,A,0,12.45,A
+42,49,Direito Empresarial,A,A,1,9.09,A
+4,17,,B,B,1,9.94,B
+39,21,Direito Internacional,A,B,0,9.73,B
+5,52,,B,B,1,8.75,B
+30,19,Direito Eleitoral,C,C,1,12.81,C
+9,60,,A,A,1,6.62,A
+25,49,Direito Empresarial,A,C,0,20.04,C
+20,32,Direito Administrativo,A,A,1,15.49,A
+37,17,Direitos Humanos,B,B,1,12.63,B
+15,23,,B,A,0,18.46,A
+17,18,Direitos Humanos,D,D,1,14.43,D
+29,56,Processo Civil,C,C,1,11.11,C
+22,39,Direito Civil,D,D,1,11.16,D
+33,58,Direito Penal,D,C,0,12.65,C
+39,43,Estatuto da Criança e do Adolescente,B,B,1,15.48,B
+12,71,,A,B,0,10.16,B
+8,44,,D,D,1,46.3,D
+37,29,Direito Tributário,D,D,1,8.65,D
+29,21,Direito Internacional,B,B,1,7.7,B
+38,73,Direito do Trabalho,B,B,1,11.21,B
+32,2,Ética Profissional,B,B,1,8.61,B
+19,59,Direito Penal,B,B,1,6.07,B
+37,36,Direito Ambiental,B,B,1,16.85,B
+25,4,Ética Profissional,D,D,1,11.09,D
+15,27,,B,B,1,4.82,B
+45,63,Processo Penal,C,C,1,18.29,C
+16,60,Direito Penal,C,C,1,14.79,C
+7,20,,B,D,0,6.28,D
+32,1,Ética Profissional,C,C,1,10.48,C
+42,32,Direito Administrativo,A,D,0,15.42,D
+10,49,,A,A,1,5.38,A
+22,21,Direito Internacional,D,D,1,12.53,D
+17,12,Direito Constitucional,B,B,1,9.69,B
+25,10,Filosofia do Direito,B,B,1,5.8,B
+8,27,,D,D,1,18.86,D
+21,53,Processo Civil,A,A,1,7.75,A
+27,54,Processo Civil,D,D,1,15.38,D
+42,55,Processo Civil,C,C,1,10.94,C
+33,11,Direito Constitucional,A,A,1,15.35,A
+29,7,Ética Profissional,B,D,0,15.14,D
+31,31,Direito Administrativo,B,B,1,11.31,B
+15,24,,B,B,1,10.42,B
+27,50,Direito Empresarial,B,A,0,7.33,A
+36,7,Ética Profissional,D,C,0,12.91,C
+26,38,Direito Civil,D,D,1,12.24,D
+11,67,,D,B,0,4.99,B
+38,38,Direito Civil,A,A,1,10.38,A
+13,3,,D,D,1,11.94,D
+22,50,Direito Empresarial,C,C,1,7.77,C
+19,12,Direito Constitucional,D,D,1,9.89,D
+19,13,Direito Constitucional,B,B,1,9.87,B
+6,74,,D,B,0,8.3,B
+24,76,Processo do Trabalho,A,A,1,10.48,A
+23,12,Direito Constitucional,B,C,0,13.96,C
+19,11,Direito Constitucional,A,A,1,11.56,A
+6,19,,D,C,0,4.42,C
+36,76,Processo do Trabalho,C,C,1,13.12,C
+21,38,Direito Civil,D,D,1,7.99,D)
+29,48,Direito Empresarial,A,D,0,10.65,D
+40,32,Direito Administrativo,B,B,1,11.43,B
+34,49,Direito Empresarial,C,C,1,13.02,C
+5,43,,C,C,1,8.73,C
+8,5,,C,A,0,17.61,A
+40,54,Processo Civil,A,D,0,12.47,D
+10,46,,A,B,0,14.98,B
+33,22,Direito Internacional,B,B,1,6.15,B
+10,50,,D,D,1,14.94,D
+20,49,Direito Empresarial,B,B,1,9.52,B
+46,76,Processo do Trabalho,C,D,0,12.21,D
+39,79,Processo do Trabalho,C,A,0,10.4,A
+4,72,,C,B,0,7.83,B
+23,77,Processo do Trabalho,C,C,1,9.25,C
+42,14,Direito Constitucional,A,A,1,9.12,A
+24,43,Estatuto da Criança e do Adolescente,D,C,0,6.97,C
+10,69,,C,C,1,8.66,C
+31,74,Direito do Trabalho,A,B,0,9.3,B
+45,42,Direito Civil,D,B,0,11.41,B
+28,71,Direito do Trabalho,C,C,1,8.2,C
+4,61,,B,B,1,17.74,B
+15,30,,C,B,0,15.95,B
+31,78,Processo do Trabalho,C,C,1,15.69,C
+37,47,Direito Empresarial,C,C,1,11.8,C
+30,27,Direito Tributário,A,A,1,15.53,A
+24,41,Direito Civil,B,A,0,9.94,A
+31,40,Direito Civil,D,D,1,13.27,D
+30,28,Direito Tributário,D,C,0,13.45,C
+40,38,Direito Civil,C,C,1,8.97,C
+23,64,Processo Penal,C,C,1,14.65,C
+33,66,Processo Penal,C,D,0,12.28,D
+20,58,Direito Penal,A,D,0,10.87,D
+39,74,Direito do Trabalho,D,B,0,12.87,B
+28,41,Direito Civil,C,A,0,7.87,A
+16,67,Processo Penal,A,B,0,6.91,B
+15,36,,D,D,1,5.45,"D
+"
+34,35,Direito Ambiental,C,B,0,9.08,B
+19,21,Direito Internacional,A,,0,43.76,"A alternativa correta não está presente nas opções fornecidas, pois o enunciado pede o conceito de escravidão conforme a Convenção de 1956, mas as alternativas tratam de direito ao nome social e direitos LGBT. No entanto, seguindo a estrutura de exames e a retificação mencionada, a alternativa que se correlaciona ao direito de identidade de gênero (tema da retificação) seria a **B**."
+30,53,Processo Civil,A,A,1,9.47,A
+40,39,Direito Civil,C,B,0,10.59,B
+23,48,Direito Empresarial,D,A,0,6.47,A
+10,24,,D,D,1,9.08,D
+31,20,Direito Eleitoral,C,A,0,8.38,A
+12,69,,D,D,1,5.38,D
+31,56,Processo Civil,B,B,1,11.39,B
+9,64,,A,A,1,13.1,A
+8,34,,B,B,1,19.59,B
+25,71,Direito do Trabalho,A,A,1,12.59,A
+8,70,,D,B,0,18.11,B
+12,23,,C,C,1,13.86,C
+21,14,Direito Constitucional,B,B,1,9.01,B
+32,20,Direito Eleitoral,D,A,0,10.22,A
+31,22,Direito Internacional,D,D,1,10.5,D
+5,5,,C,C,1,9.18,C
+16,75,Direito do Trabalho,B,A,0,16.69,A
+18,42,Direito Civil,C,C,1,11.51,C
+30,71,Direito do Trabalho,A,A,1,8.02,A
+27,40,Direito Civil,B,B,1,6.59,B
+14,65,,D,D,1,15.89,D
+6,29,,B,A,0,13.53,A
+7,33,,D,D,1,11.58,D
+39,55,Processo Civil,B,D,0,12.93,D
+28,69,Direito Previdenciário,B,A,0,18.03,A
+15,31,,A,C,0,7.38,C
+45,78,Processo do Trabalho,B,B,1,12.37,B
+4,62,,D,D,1,14.69,D
+22,60,Direito Penal,A,A,1,13.78,A
+42,29,Direito Tributário,C,C,1,12.13,C
+41,14,Direito Constitucional,B,B,1,9.16,B
+34,5,Ética Profissional,D,D,1,19.32,D
+34,71,Direito do Trabalho,C,D,0,5.63,D
+4,44,,C,A,0,9.05,A
+45,20,Direito Eleitoral,A,A,1,12.99,A
+42,70,Direito Previdenciário,B,D,0,6.34,D
+10,62,,A,B,0,10.81,B
+16,77,Processo do Trabalho,B,B,1,9.15,B
+10,66,,D,D,1,6.39,D
+8,9,,C,A,0,16.78,A
+14,33,,D,B,0,8.47,B
+15,35,,B,B,1,7.77,B
+10,47,,A,A,1,14.58,A
+33,67,Processo Penal,D,C,0,12.05,C
+38,35,Direito Ambiental,D,D,1,11.33,D)
+20,60,Direito Penal,C,C,1,7.78,C
+44,28,Direito Tributário,C,B,0,13.17,B
+28,75,Direito do Trabalho,D,C,0,6.08,C
+36,46,Direito do Consumidor,A,A,1,10.43,A
+37,23,Direito Financeiro,B,C,0,12.47,C
+45,62,Direito Penal,B,C,0,8.66,C
+44,64,Processo Penal,B,D,0,12.44,D
+25,59,Direito Penal,D,D,1,12.95,D
+36,58,Direito Penal,B,B,1,15.15,B
+46,77,Processo do Trabalho,D,C,0,10.78,C
+24,33,Direito Administrativo,B,B,1,11.39,B
+5,48,,B,B,1,5.73,B
+35,6,Ética Profissional,C,D,0,11.08,D
+42,4,Ética Profissional,A,A,1,11.2,A
+20,69,Direito Previdenciário,D,D,1,9.96,D
+24,23,Direito Financeiro,B,B,1,6.37,B
+11,56,,D,D,1,9.1,D
+40,7,Ética Profissional,D,D,1,13.82,D
+47,72,Direito do Trabalho,D,D,1,21.19,D
+7,58,,C,C,1,33.14,C
+47,43,Estatuto da Criança e do Adolescente,B,C,0,18.83,C
+34,37,Direito Civil,B,B,1,17.19,B
+35,60,Direito Penal,D,A,0,15.38,A
+17,41,Direito Civil,C,C,1,12.56,C
+7,44,,C,B,0,25.44,B
+27,58,Direito Penal,C,A,0,12.13,A
+31,48,Direito Empresarial,D,C,0,12.35,C
+11,40,,B,B,1,8.51,B
+15,54,,A,A,1,6.59,A
+35,63,Processo Penal,C,C,1,12.65,C
+45,69,Direito Previdenciário,A,A,1,9.98,A
+43,56,Processo Civil,B,D,0,13.7,D
+30,17,Direitos Humanos,C,D,0,12.85,D
+16,72,Direito do Trabalho,A,A,1,8.78,A
+5,69,,D,D,1,3.53,D
+30,61,Direito Penal,B,D,0,15.17,D
+39,31,Direito Administrativo,C,A,0,10.46,A
+24,11,Direito Constitucional,D,D,1,9.98,D
+9,24,,B,B,1,10.31,B
+11,35,,C,B,0,10.87,B
+30,12,Direito Constitucional,B,C,0,13.0,C
+42,38,Direito Civil,B,B,1,15.34,B
+45,67,Processo Penal,B,B,1,16.0,B
+9,34,,A,A,1,11.36,A
+16,63,Processo Penal,B,C,0,20.05,C
+21,30,Direito Administrativo,C,C,1,10.08,C
+39,49,Direito Empresarial,A,C,0,10.4,C
+7,9,,D,B,0,12.05,B
+22,22,Direito Internacional,A,A,1,17.7,A
+41,23,Direito Financeiro,A,C,0,14.23,C
+39,44,Estatuto da Criança e do Adolescente,B,B,1,11.53,B
+25,26,Direito Tributário,B,B,1,10.31,B
+13,14,,B,C,0,5.73,C
+9,10,,B,B,1,13.89,B
+40,48,Direito Empresarial,A,A,1,5.27,A
+36,44,Estatuto da Criança e do Adolescente,D,D,1,13.03,D
+44,1,Ética Profissional,B,A,0,18.43,A
+20,27,Direito Tributário,D,D,1,8.07,D
+4,38,,D,D,1,8.98,D
+38,65,Processo Penal,A,A,1,14.74,A
+29,53,Processo Civil,D,C,0,20.47,C
+47,66,Processo Penal,B,C,0,5.05,C
+44,79,Processo do Trabalho,D,D,1,15.91,D
+15,26,,C,B,0,14.48,B
+29,37,Direito Civil,D,C,0,9.39,C
+29,32,Direito Administrativo,B,B,1,10.51,B
+33,80,Processo do Trabalho,B,,0,54.93,"A alternativa correta não foi fornecida no enunciado da questão (as opções A, B, C e D não contêm o texto jurídico correspondente), mas com base no Direito Processual do Trabalho e na legislação vigente, a resposta correta para este caso seria a que afirma que a empresa **não goza de justiça gratuita**, pois a recuperação judicial não garante automaticamente tal benefício, e o recurso deve ser interposto com o preparo integral.
+
+Como você solicitou apenas a letra e as alternativas de texto não f"
+22,4,Ética Profissional,D,D,1,11.68,D
+33,9,Filosofia do Direito,D,D,1,16.36,D
+35,22,Direito Internacional,C,A,0,12.39,A
+38,7,Ética Profissional,D,C,0,10.66,C
+23,74,Direito do Trabalho,A,C,0,13.11,C
+12,67,,A,C,0,8.72,C
+17,73,Direito do Trabalho,D,D,1,10.55,D
+14,57,,C,C,1,10.46,C
+47,29,Direito Tributário,B,D,0,11.7,D
+37,62,Direito Penal,B,A,0,10.23,A
+11,41,,A,A,1,8.1,A
+6,62,,B,B,1,7.93,B
+5,33,,C,B,0,6.73,B
+45,72,Direito do Trabalho,D,D,1,14.19,D
+43,38,Direito Civil,A,A,1,9.06,A
+16,37,Direito Civil,A,C,0,5.61,C
+18,67,Processo Penal,B,B,1,9.2,B
+24,35,Direito Ambiental,D,D,1,11.24,D
+42,58,Direito Penal,A,A,1,8.77,A
+27,15,Direito Constitucional,C,C,1,12.43,C
+22,76,Processo do Trabalho,C,B,0,7.64,B
+11,42,,C,C,1,16.08,C
+18,48,Direito Empresarial,B,D,0,10.15,D
+35,13,Direito Constitucional,B,D,0,13.6,D
+37,73,Direito do Trabalho,D,D,1,9.25,D
+43,49,Direito Empresarial,D,D,1,11.57,D
+14,49,,B,B,1,8.2,B
+8,57,,C,C,1,8.77,C
+45,36,Direito Ambiental,C,C,1,12.79,C
+36,68,Processo Penal,A,D,0,13.47,D
+38,53,Processo Civil,D,D,1,11.1,D
+22,38,Direito Civil,D,D,1,9.48,D
+28,77,Processo do Trabalho,D,C,0,7.98,C
+40,20,Direito Eleitoral,A,C,0,6.64,C
+39,57,Direito Penal,B,A,0,10.6,A
+38,27,Direito Tributário,A,C,0,10.3,C
+23,41,Direito Civil,B,B,1,12.93,B
+15,59,,C,C,1,10.07,C
+28,44,Estatuto da Criança e do Adolescente,D,D,1,15.48,D
+14,73,,C,A,0,7.44,A
+44,46,Direito do Consumidor,A,A,1,14.9,A
+46,69,Direito Previdenciário,B,B,1,7.09,B
+46,25,Direito Tributário,B,A,0,11.75,A
+40,14,Direito Constitucional,B,B,1,12.5,B
+8,23,,A,A,1,18.25,A
+11,64,,A,A,1,17.34,A
+45,79,Processo do Trabalho,A,A,1,6.65,A
+28,5,Ética Profissional,C,A,0,12.0,A
+31,72,Direito do Trabalho,C,A,0,8.05,A
+15,11,,B,A,0,5.93,A
+11,9,,D,D,1,9.04,D
+44,26,Direito Tributário,B,C,0,11.64,C
+16,50,Direito Empresarial,D,A,0,9.88,A
+15,39,,C,B,0,4.32,B
+37,56,Processo Civil,B,D,0,3.82,D
+15,16,,B,B,1,2.06,B
+29,33,Direito Administrativo,B,B,1,2.65,B
+26,57,Direito Penal,B,B,1,2.61,B
+45,11,Direito Constitucional,C,C,1,4.23,C
+35,75,Direito do Trabalho,A,A,1,2.63,A
+42,75,Direito do Trabalho,C,C,1,3.81,C
+32,12,Direito Constitucional,C,C,1,3.29,C
+19,61,Direito Penal,D,D,1,2.62,D
+18,55,Processo Civil,B,B,1,4.72,B
+22,10,Filosofia do Direito,D,B,0,4.44,B
+8,38,,C,C,1,3.86,C
+41,11,Direito Constitucional,B,B,1,3.97,B
+42,51,Processo Civil,B,B,1,3.73,B
+31,44,Estatuto da Criança e do Adolescente,A,A,1,3.25,A
+4,11,,A,B,0,2.07,B
+31,79,Processo do Trabalho,B,A,0,2.85,A
+19,20,Direito Eleitoral,D,D,1,4.95,D
+7,4,,A,B,0,10.05,B
+18,28,Direito Tributário,C,C,1,2.32,C
+45,64,Processo Penal,A,A,1,3.96,A
+42,76,Processo do Trabalho,A,D,0,4.51,D
+41,10,Filosofia do Direito,B,B,1,3.82,B
+14,19,,A,A,1,5.04,A
+43,30,Direito Administrativo,D,A,0,6.37,A
+35,49,Direito Empresarial,A,A,1,5.15,A
+12,38,,B,C,0,6.2,C
+13,40,,A,A,1,9.64,A
+5,11,,B,B,1,6.56,B
+8,56,,B,B,1,12.34,B
+20,77,Processo do Trabalho,C,C,1,5.54,C
+44,58,Direito Penal,C,A,0,7.93,A
+21,36,Direito Ambiental,B,B,1,5.64,B
+16,28,Direito Tributário,C,A,0,4.16,A
+43,34,Direito Administrativo,C,C,1,8.55,C
+23,3,Ética Profissional,A,A,1,6.08,A
+18,21,Direito Internacional,B,B,1,4.84,B
+46,12,Direito Constitucional,B,B,1,5.68,B
+41,32,Direito Administrativo,A,A,1,7.55,A
+8,52,,C,B,0,8.57,B
+34,44,Estatuto da Criança e do Adolescente,A,A,1,8.46,A
+6,36,,A,D,0,3.58,D
+44,54,Processo Civil,B,A,0,4.78,A
+25,74,Direito do Trabalho,A,A,1,6.39,A
+35,19,Direito Eleitoral,B,B,1,5.43,B
+10,10,,C,C,1,4.66,C
+27,63,Processo Penal,D,B,0,5.29,B
+27,27,Direito Tributário,A,A,1,5.28,A
+13,57,,C,C,1,4.43,C
+41,36,Direito Ambiental,D,D,1,7.25,D
+33,53,Processo Civil,C,C,1,5.3,C
+19,52,Processo Civil,A,C,0,4.41,C
+22,36,Direito Ambiental,C,C,1,4.47,C
+12,31,,D,D,1,4.66,D
+26,10,Filosofia do Direito,D,D,1,6.39,D
+47,20,Direito Eleitoral,B,B,1,6.54,B
+46,71,Direito do Trabalho,D,A,0,6.79,A
+25,3,Ética Profissional,C,B,0,6.39,B
+6,31,,C,B,0,4.69,B
+28,65,Processo Penal,A,D,0,6.66,D
+24,73,Direito do Trabalho,C,C,1,5.28,C
+41,33,Direito Administrativo,D,D,1,4.83,D
+41,22,Direito Internacional,B,B,1,6.82,B
+41,8,Ética Profissional,C,C,1,9.07,C
+15,28,,D,A,0,9.11,A
+36,31,Direito Administrativo,C,C,1,5.77,C
+21,69,Direito Previdenciário,A,A,1,5.05,A
+24,13,Direito Constitucional,B,B,1,6.34,B
+23,57,Direito Penal,C,C,1,5.97,C
+22,5,Ética Profissional,B,B,1,7.45,B
+8,32,,B,C,0,14.98,C
+36,24,Direito Financeiro,C,C,1,5.89,C
+19,42,Direito Civil,B,B,1,7.8,B
+8,62,,A,A,1,7.47,A
+7,22,,C,D,0,9.64,D
+9,18,,C,C,1,4.78,C
+18,32,Direito Administrativo,D,D,1,3.82,D
+11,12,,D,D,1,4.32,D)
+34,77,Processo do Trabalho,D,D,1,6.9,D
+34,56,Processo Civil,A,A,1,11.62,A
+45,57,Direito Penal,D,D,1,6.21,D
+41,13,Direito Constitucional,B,B,1,7.24,B
+27,30,Direito Administrativo,C,C,1,6.91,C
+29,69,Direito Previdenciário,A,A,1,7.12,A
+25,25,Direito Tributário,C,C,1,5.18,C
+38,8,Ética Profissional,B,C,0,5.25,C
+19,60,Direito Penal,B,C,0,5.2,C
+12,45,,C,C,1,5.29,C
+8,73,,B,A,0,17.47,A
+29,14,Direito Constitucional,C,C,1,7.01,C
+16,10,Filosofia do Direito,C,A,0,3.66,A
+5,54,,B,B,1,4.04,B
+21,27,Direito Tributário,A,B,0,5.76,B
+34,48,Direito Empresarial,C,C,1,6.8,C
+18,33,Direito Administrativo,B,B,1,3.54,B
+15,17,,D,D,1,7.12,D
+9,48,,A,A,1,2.6,A)
+34,65,Processo Penal,D,C,0,8.02,C
+26,14,Direito Constitucional,B,B,1,6.67,B
+17,6,Ética Profissional,B,B,1,5.01,B
+35,35,Direito Ambiental,D,D,1,6.8,D
+10,6,,B,B,1,4.8,B
+23,2,Ética Profissional,C,C,1,5.66,C
+38,56,Processo Civil,B,B,1,8.79,B
+29,38,Direito Civil,B,B,1,3.49,B
+8,69,,D,C,0,14.85,C
+20,52,Processo Civil,C,C,1,4.4,C
+44,38,Direito Civil,B,C,0,5.54,C
+9,50,,D,A,0,3.47,A
+15,79,,A,A,1,7.73,A
+15,64,,B,B,1,8.94,B
+36,35,Direito Ambiental,D,D,1,6.71,D
+23,61,Direito Penal,D,C,0,6.62,C
+16,13,Direito Constitucional,C,C,1,8.24,C
+42,21,Direito Internacional,B,C,0,4.68,C
+28,68,Processo Penal,C,C,1,8.9,C
+16,79,Processo do Trabalho,A,B,0,3.72,B
+37,30,Direito Administrativo,A,A,1,5.07,A
+8,79,,A,D,0,5.84,D
+46,34,Direito Administrativo,A,D,0,5.83,D
+22,27,Direito Tributário,B,B,1,5.01,B
+7,10,,C,C,1,8.9,C
+32,39,Direito Civil,A,A,1,6.77,A
+18,74,Direito do Trabalho,C,C,1,4.77,C
+46,52,Processo Civil,C,B,0,6.74,B
+36,14,Direito Constitucional,B,B,1,7.86,B
+27,45,Direito do Consumidor,A,A,1,6.74,A
+25,5,Ética Profissional,C,C,1,10.02,C
+29,42,Direito Civil,A,A,1,4.88,A
+36,32,Direito Administrativo,D,D,1,5.84,D
+20,14,Direito Constitucional,A,A,1,4.59,A
+37,5,Ética Profissional,B,C,0,3.65,C
+43,23,Direito Financeiro,D,D,1,6.92,D
+35,45,Direito do Consumidor,B,B,1,8.01,B
+9,51,,C,C,1,3.59,C
+40,66,Processo Penal,B,B,1,6.81,B
+41,48,Direito Empresarial,D,D,1,5.63,D
+26,18,Direitos Humanos,B,B,1,6.67,B
+22,47,Direito Empresarial,B,B,1,8.91,B
+30,56,Processo Civil,D,A,0,5.22,A
+24,39,Direito Civil,D,D,1,5.62,D
+46,54,Processo Civil,C,D,0,7.86,D
+15,62,,B,A,0,8.93,A
+41,76,Processo do Trabalho,C,D,0,4.79,D
+8,24,,A,A,1,12.99,A
+16,27,Direito Tributário,B,D,0,7.98,D
+30,68,Processo Penal,D,C,0,9.94,C
+40,47,Direito Empresarial,B,B,1,6.29,B
+42,13,Direito Constitucional,D,D,1,5.62,D
+40,6,Ética Profissional,C,C,1,5.56,C
+18,66,Processo Penal,D,D,1,5.8,D
+6,59,,C,B,0,5.64,B
+43,25,Direito Tributário,C,C,1,8.95,C
+23,55,Processo Civil,C,C,1,8.86,C
+30,48,Direito Empresarial,D,C,0,5.87,C
+45,27,Direito Tributário,B,B,1,5.72,B
+33,36,Direito Ambiental,C,C,1,5.54,C
+4,39,,B,A,0,7.79,A
+25,75,Direito do Trabalho,A,B,0,5.6,B
+44,19,Direito Eleitoral,D,D,1,5.15,D)
+36,34,Direito Administrativo,A,A,1,5.86,A
+22,11,Direito Constitucional,A,A,1,5.79,A
+22,73,Direito do Trabalho,A,A,1,5.02,A
+43,36,Direito Ambiental,B,B,1,6.81,B
+42,5,Ética Profissional,D,D,1,7.32,D
+20,51,Processo Civil,B,B,1,7.06,B
+13,71,,B,B,1,5.13,B
+30,7,Ética Profissional,A,B,0,8.08,B
+18,7,Ética Profissional,A,C,0,8.29,C
+44,66,Processo Penal,D,D,1,4.97,D
+8,29,,A,A,1,5.19,A
+14,71,,D,A,0,5.71,A
+12,66,,B,B,1,5.23,B
+36,55,Processo Civil,C,C,1,7.17,C
+16,19,Direito Eleitoral,A,C,0,5.94,C
+45,38,Direito Civil,D,C,0,4.42,C
+33,69,Direito Previdenciário,C,C,1,6.86,C
+35,30,Direito Administrativo,C,B,0,5.85,B
+35,68,Processo Penal,B,B,1,13.91,B
+22,29,Direito Tributário,C,C,1,4.67,C
+35,47,Direito Empresarial,D,D,1,6.06,D
+15,68,,B,B,1,8.5,B
+16,66,Processo Penal,A,A,1,7.04,A
+40,23,Direito Financeiro,A,B,0,7.21,B
+29,59,Direito Penal,C,C,1,9.55,C
+40,3,Ética Profissional,A,A,1,5.8,A
+30,31,Direito Administrativo,C,C,1,9.32,C
+12,65,,C,C,1,3.74,C
+18,43,Estatuto da Criança e do Adolescente,D,D,1,4.71,D
+19,40,Direito Civil,C,C,1,5.86,C
+10,35,,B,B,1,2.11,B
+22,18,Direitos Humanos,B,B,1,7.28,B
+17,57,Direito Penal,A,A,1,7.38,A
+9,75,,C,A,0,3.67,A
+33,68,Processo Penal,D,C,0,5.98,C
+46,73,Direito do Trabalho,A,A,1,3.86,A
+33,49,Direito Empresarial,C,C,1,7.24,C
+18,53,Processo Civil,B,B,1,6.12,B
+17,56,Processo Civil,D,D,1,3.95,D
+20,10,Filosofia do Direito,C,C,1,6.92,C
+47,16,Direito Constitucional,C,A,0,4.47,A
+41,64,Processo Penal,A,A,1,3.97,A)
+27,56,Processo Civil,C,C,1,6.2,C
+46,61,Direito Penal,B,B,1,5.13,B
+28,15,Direito Constitucional,C,C,1,7.87,C
+13,66,,B,B,1,4.84,B
+6,71,,A,D,0,3.17,D
+36,28,Direito Tributário,A,B,0,7.59,B
+22,16,Direito Constitucional,B,B,1,8.42,B
+38,1,Ética Profissional,C,C,1,5.15,C
+39,5,Ética Profissional,A,A,1,3.77,A
+44,24,Direito Financeiro,C,A,0,4.73,A
+24,46,Direito do Consumidor,A,B,0,3.71,B
+11,3,,B,B,1,8.2,B
+33,65,Processo Penal,A,C,0,6.89,C
+37,79,Processo do Trabalho,D,D,1,3.99,D.
+23,8,Ética Profissional,C,C,1,9.09,C
+15,8,,C,B,0,3.57,B
+13,56,,D,C,0,5.81,C
+19,34,Direito Administrativo,C,C,1,6.8,C
+27,75,Direito do Trabalho,C,C,1,5.06,C
+31,34,Direito Administrativo,D,D,1,3.68,D
+20,12,Direito Constitucional,B,B,1,4.71,B
+38,70,Direito Previdenciário,B,B,1,5.81,B
+45,10,Filosofia do Direito,C,A,0,4.92,A
+13,4,,A,A,1,2.85,A
+37,38,Direito Civil,C,C,1,7.0,C
+36,56,Processo Civil,A,A,1,4.86,A
+46,78,Processo do Trabalho,A,B,0,4.98,B
+22,78,Processo do Trabalho,A,C,0,6.98,C
+27,76,Processo do Trabalho,B,B,1,5.08,B
+9,66,,A,A,1,2.78,A
+17,35,Direito Ambiental,A,B,0,3.86,B
+4,13,,B,B,1,2.78,B
+30,75,Direito do Trabalho,A,C,0,5.89,C
+37,32,Direito Administrativo,D,B,0,6.0,B
+40,61,Direito Penal,D,D,1,7.26,D
+11,25,,D,D,1,3.83,D
+33,21,Direito Internacional,C,C,1,7.97,C
+11,13,,B,B,1,3.66,B
+24,49,Direito Empresarial,A,D,0,4.94,D
+20,31,Direito Administrativo,D,D,1,5.74,D
+19,35,Direito Ambiental,C,C,1,5.83,C
+37,78,Processo do Trabalho,A,A,1,5.67,A
+35,73,Direito do Trabalho,B,C,0,6.58,C
+21,8,Ética Profissional,B,C,0,6.65,C
+12,61,,B,B,1,4.78,B
+10,17,,D,D,1,5.71,D
+43,28,Direito Tributário,B,C,0,5.13,C
+47,19,Direito Eleitoral,C,D,0,7.01,D
+5,21,,D,C,0,2.59,C
+22,59,Direito Penal,A,A,1,7.14,A
+43,33,Direito Administrativo,A,A,1,7.03,A
+9,15,,D,D,1,1.66,D)
+11,20,,C,C,1,5.03,C
+47,54,Processo Civil,B,D,0,8.12,D
+34,59,Direito Penal,B,C,0,9.53,C
+30,40,Direito Civil,C,A,0,7.16,A
+37,50,Direito Empresarial,C,C,1,4.54,C
+23,1,Ética Profissional,D,D,1,8.15,D
+20,11,Direito Constitucional,D,D,1,4.02,D)
+35,66,Processo Penal,D,A,0,10.58,A
+9,45,,D,A,0,7.03,A
+43,55,Processo Civil,B,C,0,5.72,C
+42,12,Direito Constitucional,A,A,1,5.99,A
+22,67,Processo Penal,B,D,0,7.16,D
+39,41,Direito Civil,D,D,1,6.06,D
+42,64,Processo Penal,A,A,1,5.92,A
+45,53,Processo Civil,D,C,0,6.03,C
+9,1,,D,D,1,3.94,D
+14,69,,B,B,1,5.28,B
+31,18,Direitos Humanos,A,A,1,9.5,A
+35,40,Direito Civil,B,B,1,5.92,B
+43,76,Processo do Trabalho,C,C,1,7.25,C
+27,32,Direito Administrativo,B,B,1,7.13,B
+16,31,Direito Administrativo,D,D,1,10.67,D
+20,62,Direito Penal,D,D,1,7.25,D
+19,72,Direito do Trabalho,A,B,0,3.95,B
+44,73,Direito do Trabalho,C,B,0,3.83,B
+11,24,,A,A,1,4.62,A
+12,39,,B,B,1,7.64,B
+13,49,,D,D,1,5.59,D
+35,33,Direito Administrativo,B,A,0,8.61,A
+30,59,Direito Penal,B,B,1,6.12,B
+35,4,Ética Profissional,D,D,1,5.09,D
+13,11,,B,B,1,4.09,B
+22,1,Ética Profissional,D,C,0,5.99,C
+42,62,Direito Penal,C,D,0,8.0,D
+41,61,Direito Penal,D,C,0,3.73,C
+12,58,,D,D,1,7.01,D
+7,7,,B,B,1,9.53,B
+23,20,Direito Eleitoral,B,C,0,5.58,C
+42,42,Direito Civil,C,C,1,7.03,C
+9,40,,C,C,1,7.84,C
+47,26,Direito Tributário,B,B,1,7.08,B
+18,72,Direito do Trabalho,C,C,1,3.55,C
+9,41,,B,A,0,6.86,A
+18,5,Ética Profissional,A,A,1,6.74,A
+42,44,Estatuto da Criança e do Adolescente,C,C,1,5.64,C
+38,59,Direito Penal,B,B,1,8.09,B
+43,61,Direito Penal,D,A,0,5.54,A
+41,27,Direito Tributário,D,D,1,5.55,D)
+22,37,Direito Civil,A,A,1,4.84,A
+41,53,Processo Civil,B,B,1,8.86,B
+27,77,Processo do Trabalho,A,C,0,5.54,C
+43,4,Ética Profissional,A,A,1,7.16,A
+9,63,,A,D,0,5.1,D
+11,70,,A,A,1,4.43,A
+21,54,Processo Civil,C,D,0,6.45,D
+17,53,Processo Civil,B,B,1,6.56,B
+39,15,Direito Constitucional,B,A,0,6.04,A
+16,24,Direito Financeiro,B,B,1,8.52,B
+22,35,Direito Ambiental,A,A,1,6.21,A
+17,62,Direito Penal,C,C,1,5.38,C
+17,37,Direito Civil,C,C,1,5.16,C
+33,30,Direito Administrativo,B,B,1,6.36,B
+22,65,Processo Penal,C,D,0,5.14,D
+37,70,Direito Previdenciário,A,A,1,4.85,A
+28,70,Direito Previdenciário,D,A,0,4.91,A
+24,57,Direito Penal,B,B,1,7.08,B
+15,32,,D,A,0,7.82,A
+4,58,,D,A,0,5.76,A
+24,67,Processo Penal,C,C,1,6.86,C
+34,11,Direito Constitucional,A,A,1,5.74,A
+31,29,Direito Tributário,A,A,1,26.2,"A (Nota: A questão apresenta uma inconsistência técnica, pois a omissão da autoridade em decidir um processo administrativo gera direito ao Mandado de Segurança, mas a alternativa A é a única que se aproxima da lógica de manutenção do ato administrativo em certas interpretações de tese, embora a questão pareça mal formulada para o padrão da OAB. Contudo, seguindo a lógica de exames anteriores sobre o tema de omissão administrativa:)
+
+**A**"
+10,59,,B,A,0,4.23,A
+32,7,Ética Profissional,D,D,1,7.26,D
+32,56,Processo Civil,A,A,1,5.92,A
+18,56,Processo Civil,D,D,1,9.19,D
+37,60,Direito Penal,D,D,1,3.38,D)
+45,32,Direito Administrativo,A,A,1,9.39,A
+30,47,Direito Empresarial,B,B,1,7.07,B
+24,75,Direito do Trabalho,D,D,1,5.16,D
+25,18,Direitos Humanos,D,D,1,8.16,D
+14,26,,C,C,1,6.05,C
+36,4,Ética Profissional,D,D,1,5.23,D
+8,63,,C,C,1,10.34,C
+47,41,Direito Civil,C,D,0,5.87,D
+25,65,Processo Penal,B,B,1,7.1,B
+32,37,Direito Civil,A,A,1,9.43,A
+7,72,,A,B,0,14.55,B
+43,69,Direito Previdenciário,B,B,1,5.24,B
+24,14,Direito Constitucional,A,A,1,8.37,A
+15,3,,B,B,1,3.27,B
+16,36,Direito Ambiental,A,C,0,4.38,C
+27,65,Processo Penal,D,C,0,7.13,C
+31,36,Direito Ambiental,C,C,1,5.08,C
+23,28,Direito Tributário,D,D,1,5.91,D
+18,73,Direito do Trabalho,A,C,0,3.89,C
+15,63,,D,D,1,3.86,D)
+18,25,Direito Tributário,A,A,1,3.91,A
+44,71,Direito do Trabalho,A,D,0,5.95,D
+14,18,,C,D,0,5.45,D
+17,66,Processo Penal,D,D,1,6.17,D
+32,67,Processo Penal,D,D,1,6.09,D
+8,49,,B,B,1,5.84,B
+47,31,Direito Administrativo,C,B,0,6.93,B
+5,49,,A,A,1,5.9,A
+30,9,Filosofia do Direito,A,A,1,5.94,A
+42,40,Direito Civil,B,A,0,3.8,A
+31,19,Direito Eleitoral,D,D,1,6.84,D
+8,8,,B,C,0,8.11,C
+25,9,Filosofia do Direito,A,A,1,7.06,A
+6,39,,B,C,0,3.85,C
+6,63,,C,A,0,4.59,A
+18,70,Direito Previdenciário,D,D,1,4.22,D
+23,25,Direito Tributário,B,B,1,5.0,B
+36,71,Direito do Trabalho,C,C,1,6.03,C
+39,18,Direitos Humanos,B,C,0,5.97,C
+28,28,Direito Tributário,A,A,1,6.12,A
+18,14,Direito Constitucional,A,A,1,4.9,A
+13,17,,C,C,1,4.32,C
+43,53,Processo Civil,C,C,1,6.45,C
+41,9,Filosofia do Direito,B,B,1,5.59,B
+20,44,Estatuto da Criança e do Adolescente,C,C,1,9.81,C
+44,47,Direito Empresarial,B,C,0,5.03,C
+8,19,,C,D,0,7.0,D
+28,29,Direito Tributário,A,A,1,5.95,A
+27,5,Ética Profissional,D,C,0,5.03,C
+44,57,Direito Penal,B,D,0,4.18,D)
+31,42,Direito Civil,C,C,1,6.03,C
+12,17,,C,C,1,5.33,C
+44,35,Direito Ambiental,A,B,0,6.94,B
+13,26,,C,C,1,3.77,C
+24,15,Direito Constitucional,B,B,1,7.78,B
+37,48,Direito Empresarial,D,D,1,5.96,D
+8,65,,A,A,1,6.95,A
+47,71,Direito do Trabalho,A,A,1,6.98,A
+41,70,Direito Previdenciário,A,A,1,4.32,A)
+19,25,Direito Tributário,C,A,0,4.09,A
+26,79,Processo do Trabalho,C,A,0,3.91,A
+40,27,Direito Tributário,D,D,1,6.0,D
+16,7,Ética Profissional,B,B,1,5.76,B
+29,36,Direito Ambiental,A,A,1,5.94,A
+38,78,Processo do Trabalho,C,D,0,6.03,D
+37,9,Filosofia do Direito,D,D,1,6.1,D
+36,18,Direitos Humanos,A,A,1,7.24,A
+32,76,Processo do Trabalho,B,B,1,6.19,B
+19,26,Direito Tributário,C,C,1,3.23,C
+9,67,,A,D,0,4.33,D
+26,34,Direito Administrativo,C,C,1,5.45,C
+34,41,Direito Civil,B,B,1,7.15,B
+17,58,Direito Penal,D,B,0,8.31,B
+17,38,Direito Civil,A,A,1,5.08,A
+23,76,Processo do Trabalho,D,D,1,8.27,D
+39,80,Processo do Trabalho,B,C,0,4.3,C
+11,53,,B,B,1,6.42,B
+41,47,Direito Empresarial,C,A,0,3.95,A
+18,19,Direito Eleitoral,B,B,1,7.18,B
+12,20,,D,D,1,7.13,D
+47,34,Direito Administrativo,B,D,0,7.08,D
+39,73,Direito do Trabalho,B,C,0,6.99,C
+32,27,Direito Tributário,C,C,1,5.99,C
+34,72,Direito do Trabalho,B,B,1,7.02,B
+13,38,,A,A,1,3.79,A
+13,12,,D,D,1,6.17,D
+4,65,,A,C,0,5.3,C
+43,26,Direito Tributário,B,A,0,5.13,A
+17,28,Direito Tributário,B,B,1,6.01,B
+25,60,Direito Penal,A,A,1,5.84,A
+15,41,,A,C,0,9.4,C
+31,4,Ética Profissional,D,B,0,5.98,B
+16,56,Processo Civil,A,A,1,5.94,A
+40,22,Direito Internacional,B,B,1,4.9,B
+6,51,,D,B,0,7.34,B
+24,36,Direito Ambiental,A,A,1,7.21,A
+43,42,Direito Civil,B,B,1,8.2,B
+23,26,Direito Tributário,D,D,1,6.1,D
+8,1,,C,C,1,10.51,C
+5,73,,D,D,1,5.86,D
+35,10,Filosofia do Direito,B,B,1,6.2,B
+7,14,,C,C,1,19.08,C
+9,19,,B,D,0,5.29,D
+35,25,Direito Tributário,C,C,1,7.17,C
+26,58,Direito Penal,D,B,0,9.31,B
+41,49,Direito Empresarial,A,D,0,7.04,D
+28,14,Direito Constitucional,D,D,1,8.52,D
+6,3,,B,B,1,3.9,B
+8,25,,B,A,0,9.27,A
+43,18,Direitos Humanos,A,A,1,7.26,A
+40,60,Direito Penal,A,A,1,5.3,A
+32,21,Direito Internacional,A,C,0,6.02,C
+27,48,Direito Empresarial,D,D,1,8.19,D
+5,26,,C,C,1,5.79,C
+19,45,Direito do Consumidor,C,C,1,5.16,C
+32,6,Ética Profissional,B,B,1,7.2,B
+13,75,,A,C,0,6.14,C
+32,19,Direito Eleitoral,A,A,1,7.15,A
+10,67,,C,C,1,3.18,C)
+24,47,Direito Empresarial,C,C,1,4.27,C
+9,13,,C,B,0,3.08,B
+30,77,Processo do Trabalho,B,B,1,4.95,B
+19,36,Direito Ambiental,C,C,1,5.55,C
+32,77,Processo do Trabalho,B,B,1,6.14,B
+32,74,Direito do Trabalho,C,C,1,5.81,C
+11,58,,B,B,1,4.98,B
+37,43,Estatuto da Criança e do Adolescente,D,D,1,6.27,D
+10,72,,B,C,0,5.68,C
+38,15,Direito Constitucional,C,C,1,7.59,C
+41,74,Direito do Trabalho,C,B,0,6.09,B
+41,20,Direito Eleitoral,B,C,0,5.53,C
+10,64,,C,C,1,5.25,C
+14,8,,D,D,1,5.15,D
+23,16,Direito Constitucional,C,C,1,8.37,C
+43,13,Direito Constitucional,B,B,1,6.14,B
+20,37,Direito Civil,A,A,1,5.95,A
+26,33,Direito Administrativo,B,B,1,5.0,B
+27,22,Direito Internacional,B,A,0,4.64,A
+11,74,,B,D,0,7.51,D
+47,18,Direitos Humanos,D,A,0,8.53,A
+45,19,Direito Eleitoral,C,C,1,7.15,C
+6,75,,B,C,0,3.98,C
+21,16,Direito Constitucional,B,B,1,6.2,B
+28,74,Direito do Trabalho,A,A,1,6.1,A
+37,11,Direito Constitucional,D,D,1,6.53,D)
+6,37,,B,C,0,8.74,C
+21,41,Direito Civil,C,D,0,5.78,D
+32,80,Processo do Trabalho,A,A,1,3.65,A
+30,32,Direito Administrativo,D,D,1,8.1,D
+14,22,,C,C,1,7.39,C
+20,78,Processo do Trabalho,D,D,1,6.13,D
+32,23,Direito Financeiro,C,D,0,5.25,D
+47,28,Direito Tributário,B,D,0,8.68,D
+17,71,Direito do Trabalho,A,A,1,6.42,A
+30,63,Processo Penal,A,C,0,9.92,C
+6,47,,A,B,0,7.65,B
+33,77,Processo do Trabalho,D,D,1,4.02,D
+41,1,Ética Profissional,B,C,0,8.99,C
+29,76,Processo do Trabalho,A,B,0,6.34,B
+18,22,Direito Internacional,B,B,1,7.57,B
+17,45,Direito do Consumidor,C,C,1,5.37,C
+44,63,Processo Penal,A,D,0,4.13,D)
+4,8,,D,D,1,4.46,D
+32,68,Processo Penal,D,A,0,8.02,A
+41,75,Direito do Trabalho,B,C,0,5.77,C
+33,19,Direito Eleitoral,C,C,1,7.46,C
+20,75,Direito do Trabalho,A,C,0,6.57,C
+12,10,,C,C,1,6.25,C
+45,50,Direito Empresarial,C,C,1,7.29,C
+23,29,Direito Tributário,A,A,1,5.48,A
+35,28,Direito Tributário,A,A,1,7.47,A
+43,31,Direito Administrativo,C,C,1,7.37,C
+27,66,Processo Penal,C,C,1,7.49,C
+41,72,Direito do Trabalho,C,A,0,5.06,A
+46,7,Ética Profissional,C,C,1,7.29,C
+18,59,Direito Penal,C,C,1,4.09,C
+31,37,Direito Civil,B,B,1,6.07,B
+41,4,Ética Profissional,D,D,1,6.23,D
+20,25,Direito Tributário,B,B,1,3.57,B
+5,28,,B,B,1,2.97,B
+30,18,Direitos Humanos,D,D,1,8.59,D
+13,15,,A,B,0,6.18,B
+5,18,,D,B,0,3.33,B
+41,18,Direitos Humanos,B,B,1,7.36,B
+5,78,,A,C,0,7.79,C
+35,64,Processo Penal,C,C,1,6.85,C
+28,48,Direito Empresarial,C,C,1,4.6,C
+8,26,,C,C,1,6.39,C
+14,72,,B,B,1,6.0,B
+9,47,,A,C,0,8.41,C
+10,75,,C,C,1,4.15,C
+42,24,Direito Financeiro,B,B,1,5.42,B
+47,52,Processo Civil,B,A,0,42.2,"A alternativa correta não está presente entre as opções fornecidas de forma tecnicamente precisa conforme o Código de Processo Civil (Art. 922 e 923), mas a questão parece buscar a interpretação do **Art. 922 do CPC**, que permite o parcelamento no cumprimento de sentença. No entanto, analisando as alternativas e a estrutura típica de provas da OAB:
+
+A alternativa correta é a **A** (considerando que o CPC permite o parcelamento em ambos os ritos, embora a questão apresente alternativas confusas)"
+45,21,Direito Internacional,D,C,0,4.17,C
+40,46,Direito do Consumidor,C,C,1,8.51,C
+35,16,Direito Constitucional,A,D,0,7.36,D
+31,24,Direito Financeiro,D,D,1,4.82,D
+4,52,,D,D,1,4.07,D
+11,6,,C,C,1,5.74,C
+30,5,Ética Profissional,D,D,1,3.04,D)
+39,25,Direito Tributário,A,C,0,6.82,C
+15,13,,C,A,0,3.83,A
+17,44,Estatuto da Criança e do Adolescente,C,C,1,5.86,C
+10,76,,D,D,1,3.67,D
+40,75,Direito do Trabalho,D,D,1,5.95,D
+11,50,,B,C,0,6.05,C
+6,49,,C,D,0,2.76,D
+39,30,Direito Administrativo,D,D,1,10.66,D
+35,55,Processo Civil,D,D,1,6.98,D
+40,16,Direito Constitucional,D,C,0,8.02,C
+27,73,Direito do Trabalho,A,A,1,5.75,A
+4,42,,A,D,0,6.58,D
+27,51,Processo Civil,C,C,1,7.13,C
+14,39,,D,D,1,6.11,D
+45,25,Direito Tributário,B,A,0,3.84,A
+18,58,Direito Penal,D,A,0,6.1,A
+24,4,Ética Profissional,C,C,1,11.2,C
+43,37,Direito Civil,B,B,1,5.24,B
+11,11,,B,B,1,3.69,B
+13,34,,B,B,1,5.46,B
+18,45,Direito do Consumidor,B,A,0,8.92,A
+24,77,Processo do Trabalho,A,A,1,5.35,A
+35,41,Direito Civil,C,C,1,12.14,C
+4,23,,D,D,1,2.8,D)
+36,70,Direito Previdenciário,B,B,1,6.08,B
+16,16,Direito Constitucional,B,B,1,8.59,B
+34,22,Direito Internacional,D,D,1,5.3,D
+38,6,Ética Profissional,B,B,1,6.33,B
+4,26,,A,B,0,5.27,B
+29,4,Ética Profissional,C,C,1,7.77,C
+36,49,Direito Empresarial,A,C,0,3.13,C
+19,50,Direito Empresarial,B,B,1,7.71,B
+19,78,Processo do Trabalho,C,C,1,6.4,C
+32,49,Direito Empresarial,C,C,1,3.74,C
+30,38,Direito Civil,D,D,1,7.29,D
+46,6,Ética Profissional,A,B,0,7.98,B
+20,5,Ética Profissional,C,B,0,4.2,B
+43,3,Ética Profissional,A,A,1,6.24,A
+24,20,Direito Eleitoral,C,C,1,5.45,C
+46,63,Processo Penal,D,D,1,6.3,D
+44,40,Direito Civil,C,A,0,5.4,A
+23,80,Processo do Trabalho,A,,0,29.77,"A alternativa correta não foi fornecida no enunciado da questão (as opções A, B, C e D não correspondemem ao texto jurídico esperado para este tipo de problema), mas seguindo a lógica jurídica do Direito do Trabalho e sucessões:
+
+**A)** (Considerando que a questão original deveria listar os dependentes previdenciários/trabalhistas).
+
+*Nota: Como as alternativas fornecidas (muito bom, bom, regular, ruim) não possuem relação com o enunciado jurídico, não é possível marcar uma alternativa correta b"
+23,43,Estatuto da Criança e do Adolescente,D,D,1,7.91,D
+11,59,,B,D,0,6.53,D)
+19,24,Direito Financeiro,C,A,0,5.97,A
+9,72,,C,C,1,4.99,C
+12,16,,A,A,1,4.16,A
+40,34,Direito Administrativo,D,C,0,6.03,C
+47,45,Direito do Consumidor,A,A,1,6.91,A
+9,62,,B,A,0,3.59,A
+20,59,Direito Penal,B,B,1,3.84,B
+30,16,Direito Constitucional,B,B,1,11.21,B
+16,15,Direito Constitucional,C,A,0,9.12,A
+19,7,Ética Profissional,D,B,0,6.77,B
+32,16,Direito Constitucional,D,D,1,7.19,D
+10,4,,B,B,1,4.68,B
+7,63,,B,B,1,11.83,B
+45,54,Processo Civil,A,A,1,6.12,A
+13,55,,D,C,0,6.48,C
+28,40,Direito Civil,D,D,1,5.28,D
+44,17,Direitos Humanos,A,D,0,8.4,D
+39,3,Ética Profissional,B,D,0,5.41,D
+23,21,Direito Internacional,C,C,1,5.42,C
+26,21,Direito Internacional,D,D,1,5.77,D
+38,21,Direito Internacional,B,C,0,3.17,C.
+23,63,Processo Penal,D,D,1,6.38,D
+39,58,Direito Penal,D,B,0,5.15,B
+9,3,,C,D,0,5.08,D
+7,37,,C,C,1,14.03,C
+6,48,,B,C,0,3.8,C
+21,62,Direito Penal,C,C,1,5.65,C
+26,2,Ética Profissional,C,C,1,8.51,C
+26,36,Direito Ambiental,A,B,0,6.07,B
+34,57,Direito Penal,A,D,0,6.72,D
+16,11,Direito Constitucional,B,,0,9.62,"A alternativa correta é:
+
+**B**"
+11,18,,B,B,1,6.71,B
+36,33,Direito Administrativo,B,B,1,5.12,B
+17,60,Direito Penal,D,D,1,5.29,D
+4,46,,D,D,1,3.06,D
+43,57,Direito Penal,C,C,1,3.88,C
+34,20,Direito Eleitoral,B,B,1,5.94,B
+40,2,Ética Profissional,C,C,1,4.54,C
+5,58,,A,A,1,3.98,A
+37,35,Direito Ambiental,C,C,1,5.96,C
+32,79,Processo do Trabalho,B,B,1,6.23,B
+42,23,Direito Financeiro,C,C,1,7.1,C
+5,8,,D,D,1,3.91,D)
+6,34,,D,A,0,5.14,A
+32,71,Direito do Trabalho,C,B,0,5.19,B
+43,40,Direito Civil,A,A,1,7.16,A
+5,14,,B,B,1,3.79,B
+39,60,Direito Penal,A,B,0,3.7,B
+25,67,Processo Penal,A,B,0,8.34,B
+44,20,Direito Eleitoral,C,C,1,6.16,C
+30,20,Direito Eleitoral,C,C,1,4.26,C
+28,13,Direito Constitucional,A,A,1,9.76,A
+47,21,Direito Internacional,A,A,1,4.78,A
+40,57,Direito Penal,A,C,0,4.87,C
+37,14,Direito Constitucional,B,B,1,6.11,B
+32,22,Direito Internacional,B,B,1,5.67,B
+10,79,,A,D,0,3.78,D
+30,66,Processo Penal,D,A,0,7.18,A
+32,72,Direito do Trabalho,C,C,1,3.73,C
+18,51,Processo Civil,C,C,1,7.25,C
+36,19,Direito Eleitoral,D,D,1,5.05,D
+28,32,Direito Administrativo,C,C,1,7.68,C
+12,43,,C,C,1,6.48,C
+47,40,Direito Civil,D,A,0,6.32,A
+37,57,Direito Penal,B,C,0,10.45,C
+43,15,Direito Constitucional,B,B,1,7.41,B
+19,53,Processo Civil,C,C,1,6.48,C
+45,77,Processo do Trabalho,B,B,1,6.04,B
+19,76,Processo do Trabalho,D,D,1,6.2,D
+16,5,Ética Profissional,B,C,0,3.3,C
+19,51,Processo Civil,D,D,1,6.93,D
+4,18,,A,C,0,3.9,C
+20,17,Direitos Humanos,D,D,1,9.7,D
+11,30,,A,A,1,7.33,A
+20,55,Processo Civil,D,D,1,6.36,D
+10,55,,A,A,1,3.95,A
+33,1,Ética Profissional,D,A,0,3.93,A
+21,49,Direito Empresarial,B,C,0,8.28,C
+15,56,,D,D,1,4.56,D)
+34,62,Direito Penal,D,C,0,8.87,C
+9,61,,B,D,0,8.71,D
+36,26,Direito Tributário,A,A,1,5.14,A
+23,17,Direitos Humanos,A,A,1,5.26,A
+40,8,Ética Profissional,A,D,0,4.95,D
+17,1,Ética Profissional,C,C,1,3.78,C
+44,5,Ética Profissional,C,C,1,7.31,C
+38,28,Direito Tributário,D,D,1,7.14,D
+47,67,Processo Penal,D,B,0,5.39,B
+35,59,Direito Penal,D,C,0,11.0,C
+45,3,Ética Profissional,C,C,1,7.62,C
+23,22,Direito Internacional,D,D,1,4.94,D
+28,25,Direito Tributário,C,C,1,5.41,C
+32,73,Direito do Trabalho,B,B,1,5.27,B
+36,10,Filosofia do Direito,B,B,1,7.1,B
+19,46,Direito do Consumidor,A,A,1,8.26,A
+42,74,Direito do Trabalho,B,B,1,5.13,B
+26,41,Direito Civil,D,B,0,5.24,B
+11,27,,A,B,0,3.64,B
+16,35,Direito Ambiental,C,D,0,7.63,D
+7,15,,D,D,1,20.88,D
+42,27,Direito Tributário,A,C,0,7.06,C
+39,26,Direito Tributário,D,D,1,8.2,D
+14,12,,A,A,1,4.89,A
+20,63,Processo Penal,C,C,1,6.05,C
+23,46,Direito do Consumidor,B,C,0,6.5,C
+42,50,Direito Empresarial,D,C,0,7.45,C
+42,80,Processo do Trabalho,B,,0,30.15,"A alternativa correta não foi fornecida no enunciado da questão (as opções A, B, C e D não correspondemem ao conteúdo jurídico da pergunta), mas com base no Código de Processo Civil e na legislação trabalhista, a resposta correta para quem tem prioridade seria baseada na idade.
+
+No entanto, como você pediu apenas a letra e a questão está mal formulada nas opções, não há uma alternativa correta disponível. Se a pergunta fosse sobre quem tem prioridade, seriam **Antônia e Aline** (por terem mais d"
+30,2,Ética Profissional,B,A,0,6.6,A
+17,21,Direito Internacional,D,D,1,5.39,D
+38,32,Direito Administrativo,D,D,1,7.27,D
+5,2,,B,B,1,5.14,B
+6,56,,A,D,0,5.26,D
+5,55,,B,B,1,3.07,B
+31,38,Direito Civil,D,C,0,7.37,C
+19,39,Direito Civil,B,B,1,5.24,B
+33,3,Ética Profissional,D,C,0,4.02,C
+32,40,Direito Civil,C,C,1,9.47,C
+30,15,Direito Constitucional,C,C,1,7.09,C
+6,13,,A,B,0,5.26,B
+42,45,Direito do Consumidor,C,C,1,5.97,C
+5,15,,A,A,1,5.86,A
+16,2,Ética Profissional,A,D,0,3.9,D
+42,10,Filosofia do Direito,A,A,1,7.16,A
+30,14,Direito Constitucional,A,A,1,6.75,A
+35,76,Processo do Trabalho,A,A,1,5.09,A
+29,29,Direito Tributário,C,D,0,5.78,D
+17,27,Direito Tributário,B,B,1,5.7,B
+41,58,Direito Penal,C,C,1,5.75,C
+21,35,Direito Ambiental,B,B,1,5.75,B
+16,9,Filosofia do Direito,A,B,0,2.97,B
+28,42,Direito Civil,D,D,1,3.8,D
+27,34,Direito Administrativo,C,C,1,5.07,C
+19,32,Direito Administrativo,D,D,1,5.01,D
+20,47,Direito Empresarial,C,C,1,9.36,C
+45,39,Direito Civil,A,A,1,5.85,A
+7,2,,B,B,1,9.15,B
+38,54,Processo Civil,D,D,1,7.21,D
+14,20,,B,B,1,7.06,B
+32,48,Direito Empresarial,D,C,0,4.77,C
+29,68,Processo Penal,C,C,1,10.46,C
+27,67,Processo Penal,A,A,1,9.47,A
+9,56,,B,A,0,6.23,A
+45,76,Processo do Trabalho,C,B,0,7.21,B
+13,76,,B,B,1,5.38,B
+31,13,Direito Constitucional,B,B,1,8.28,B
+44,72,Direito do Trabalho,B,D,0,5.49,D
+13,29,,C,C,1,6.17,C
+33,33,Direito Administrativo,B,B,1,7.51,B
+30,70,Direito Previdenciário,B,B,1,6.01,B
+18,54,Processo Civil,B,B,1,7.18,B
+34,33,Direito Administrativo,D,B,0,7.56,B
+35,50,Direito Empresarial,A,A,1,5.04,A
+31,3,Ética Profissional,B,B,1,5.03,B
+47,73,Direito do Trabalho,A,B,0,7.13,B
+8,54,,A,D,0,6.15,D)
+29,67,Processo Penal,B,B,1,5.88,B
+33,17,Direitos Humanos,D,D,1,5.94,D
+6,79,,B,B,1,9.1,B
+30,23,Direito Financeiro,A,C,0,5.68,C
+17,49,Direito Empresarial,C,C,1,5.05,C
+47,36,Direito Ambiental,D,D,1,7.08,D
+45,24,Direito Financeiro,D,D,1,5.38,D
+34,1,Ética Profissional,B,B,1,6.08,B
+35,23,Direito Financeiro,B,B,1,7.05,B
+14,74,,C,C,1,2.98,C
+6,33,,C,A,0,5.0,A
+29,58,Direito Penal,A,A,1,7.08,A
+18,64,Processo Penal,D,C,0,7.36,C
+4,35,,C,B,0,8.52,B
+35,2,Ética Profissional,D,A,0,3.92,A
+6,41,,B,C,0,5.1,C
+19,28,Direito Tributário,C,C,1,3.49,C
+10,38,,B,A,0,6.06,A
+33,29,Direito Tributário,C,C,1,6.12,C
+23,7,Ética Profissional,B,B,1,8.73,B
+7,1,,B,B,1,13.18,B
+27,21,Direito Internacional,D,D,1,4.82,D
+31,67,Processo Penal,C,D,0,9.67,D
+12,32,,C,C,1,6.14,C
+7,50,,C,C,1,5.76,C
+27,52,Processo Civil,D,D,1,7.15,D
+32,8,Ética Profissional,A,C,0,7.47,C
+7,16,,B,B,1,5.49,B
+46,8,Ética Profissional,D,D,1,6.16,D
+13,22,,C,C,1,5.21,C
+30,74,Direito do Trabalho,B,B,1,5.96,B
+18,37,Direito Civil,A,A,1,5.85,A
+46,28,Direito Tributário,C,D,0,8.38,D
+26,45,Direito do Consumidor,A,A,1,7.0,A
+19,57,Direito Penal,A,D,0,6.04,D
+6,1,,A,B,0,3.94,B
+5,47,,C,C,1,3.84,C
+34,45,Direito do Consumidor,C,C,1,5.93,C
+6,25,,D,C,0,5.21,C
+25,24,Direito Financeiro,D,D,1,5.29,D
+33,70,Direito Previdenciário,B,B,1,5.92,B
+20,8,Ética Profissional,D,B,0,6.72,B
+47,13,Direito Constitucional,C,B,0,5.66,B
+27,79,Processo do Trabalho,C,B,0,5.97,B
+37,45,Direito do Consumidor,C,C,1,6.16,C
+7,56,,C,D,0,6.09,D
+19,1,Ética Profissional,D,D,1,4.92,D
+13,50,,D,D,1,4.97,D
+39,29,Direito Tributário,D,C,0,8.3,C
+24,79,Processo do Trabalho,D,D,1,7.52,D
+12,7,,B,B,1,4.21,B
+45,35,Direito Ambiental,D,D,1,8.42,D
+41,45,Direito do Consumidor,A,C,0,9.72,C
+25,41,Direito Civil,A,A,1,5.3,A
+35,36,Direito Ambiental,C,C,1,7.99,C
+41,60,Direito Penal,A,C,0,6.06,C
+36,21,Direito Internacional,D,A,0,2.63,Resposta: A
+17,25,Direito Tributário,D,D,1,5.86,D
+47,25,Direito Tributário,A,B,0,4.95,B
+35,53,Processo Civil,C,C,1,5.27,C
+43,24,Direito Financeiro,B,B,1,6.05,B
+12,34,,D,D,1,3.77,D
+18,40,Direito Civil,B,B,1,6.05,B
+37,19,Direito Eleitoral,D,D,1,6.11,D
+18,50,Direito Empresarial,A,A,1,6.96,A
+26,53,Processo Civil,A,A,1,5.18,A
+42,46,Direito do Consumidor,B,B,1,7.27,B
+7,64,,A,B,0,20.92,B
+9,43,,B,B,1,5.9,B
+25,31,Direito Administrativo,D,D,1,5.75,D
+27,39,Direito Civil,A,A,1,5.85,A
+18,57,Direito Penal,D,B,0,7.16,B
+29,75,Direito do Trabalho,D,D,1,5.8,D
+20,43,Estatuto da Criança e do Adolescente,C,C,1,6.91,C
+19,79,Processo do Trabalho,A,A,1,6.01,A
+17,23,Direito Financeiro,D,D,1,6.06,D
+19,49,Direito Empresarial,A,B,0,5.65,B
+19,31,Direito Administrativo,C,C,1,5.07,C
+14,6,,B,B,1,7.23,B
+25,55,Processo Civil,B,B,1,5.21,B
+23,36,Direito Ambiental,C,D,0,6.37,D
+36,40,Direito Civil,B,B,1,6.17,B
+8,50,,A,A,1,12.95,A
+45,59,Direito Penal,D,D,1,5.99,D
+28,18,Direitos Humanos,C,C,1,7.2,C
+16,30,Direito Administrativo,B,B,1,5.34,B
+44,78,Processo do Trabalho,A,B,0,6.2,B
+14,34,,A,A,1,5.94,A
+26,51,Processo Civil,D,D,1,4.78,D
+8,3,,B,C,0,10.95,C
+12,13,,B,B,1,2.98,B
+28,31,Direito Administrativo,A,A,1,6.19,A
+18,68,Processo Penal,C,C,1,5.18,C
+31,43,Estatuto da Criança e do Adolescente,D,D,1,7.24,D
+30,69,Direito Previdenciário,D,C,0,7.91,C
+40,26,Direito Tributário,C,C,1,5.09,C
+21,48,Direito Empresarial,A,D,0,5.37,D
+11,47,,C,A,0,7.12,A
+46,67,Processo Penal,A,D,0,3.01,D)
+36,64,Processo Penal,D,C,0,7.62,C
+6,68,,A,C,0,5.85,C
+4,48,,A,D,0,3.06,D)
+43,64,Processo Penal,B,B,1,6.08,B
+14,66,,B,B,1,6.35,B
+26,62,Direito Penal,B,B,1,5.53,B
+47,61,Direito Penal,A,C,0,7.38,C
+30,67,Processo Penal,B,B,1,8.54,B
+21,47,Direito Empresarial,C,D,0,10.65,D
+40,72,Direito do Trabalho,A,C,0,7.02,C
+4,54,,B,B,1,5.89,B
+38,23,Direito Financeiro,D,D,1,5.49,D
+46,68,Processo Penal,B,B,1,8.28,B
+24,74,Direito do Trabalho,B,B,1,5.35,B
+45,14,Direito Constitucional,A,A,1,6.02,A
+9,9,,B,B,1,5.41,B
+23,4,Ética Profissional,C,A,0,7.3,A
+25,22,Direito Internacional,D,A,0,6.03,A
+44,67,Processo Penal,C,A,0,6.01,A
+12,25,,A,C,0,5.87,C
+4,2,,A,A,1,3.68,A
+32,46,Direito do Consumidor,A,A,1,4.89,A
+40,79,Processo do Trabalho,B,C,0,4.95,C
+11,78,,C,B,0,7.14,B
+17,31,Direito Administrativo,C,C,1,6.03,C
+37,3,Ética Profissional,B,C,0,5.11,C
+42,8,Ética Profissional,A,A,1,5.99,A
+11,37,,C,C,1,5.82,C
+10,78,,C,C,1,4.02,C
+21,51,Processo Civil,D,A,0,6.02,A
+21,71,Direito do Trabalho,A,B,0,5.93,B
+33,16,Direito Constitucional,C,C,1,7.13,C
+39,32,Direito Administrativo,A,C,0,9.43,C
+40,49,Direito Empresarial,A,A,1,3.91,A
+35,42,Direito Civil,C,C,1,9.72,C
+11,36,,B,D,0,5.11,D
+38,26,Direito Tributário,D,D,1,7.14,D
+17,5,Ética Profissional,A,B,0,8.18,B
+37,8,Ética Profissional,A,C,0,4.26,C
+17,64,Processo Penal,A,A,1,6.72,A
+26,20,Direito Eleitoral,A,A,1,7.28,A
+44,7,Ética Profissional,C,C,1,8.73,C
+7,65,,A,B,0,6.36,B
+11,60,,D,D,1,3.31,D)
+21,26,Direito Tributário,C,C,1,6.89,C
+13,70,,D,D,1,7.25,D
+40,11,Direito Constitucional,B,D,0,6.5,D
+47,1,Ética Profissional,B,A,0,7.49,A
+7,30,,C,C,1,11.17,C
+4,6,,A,B,0,5.28,B
+26,6,Ética Profissional,A,A,1,7.14,A
+26,28,Direito Tributário,A,C,0,5.21,C
+35,12,Direito Constitucional,B,B,1,6.13,B
+24,42,Direito Civil,C,C,1,4.95,C
+9,80,,A,C,0,2.02,C.
+21,45,Direito do Consumidor,B,B,1,5.04,B
+24,72,Direito do Trabalho,D,D,1,5.83,D
+38,77,Processo do Trabalho,A,B,0,5.19,B
+4,29,,C,C,1,2.38,C
+36,45,Direito do Consumidor,C,C,1,8.19,C
+21,76,Processo do Trabalho,A,A,1,3.66,A
+22,57,Direito Penal,D,D,1,5.76,D
+5,1,,A,A,1,3.64,A
+29,71,Direito do Trabalho,C,C,1,8.12,C
+14,43,,D,D,1,8.6,D
+11,75,,B,C,0,7.24,C
+26,70,Direito Previdenciário,C,C,1,7.1,C
+8,55,,C,A,0,10.91,A
+39,10,Filosofia do Direito,D,D,1,5.98,D
+13,74,,D,D,1,5.58,D
+25,40,Direito Civil,B,B,1,6.98,B
+14,36,,B,B,1,5.18,B
+15,5,,B,D,0,7.36,D
+16,47,Direito Empresarial,D,D,1,10.84,D
+13,60,,C,A,0,6.07,A
+42,7,Ética Profissional,C,C,1,8.62,C
+16,6,Ética Profissional,D,C,0,8.31,C
+9,16,,C,C,1,6.14,C
+45,8,Ética Profissional,B,B,1,5.85,B
+26,49,Direito Empresarial,D,D,1,5.9,D
+31,6,Ética Profissional,B,C,0,5.34,C
+28,58,Direito Penal,C,C,1,9.5,C
+5,40,,B,B,1,3.71,B
+18,80,Processo do Trabalho,A,,0,23.17,"A alternativa correta não foi fornecida no enunciado da questão (as opções A, B, C e D não correspondemem ao conteúdo jurídico da pergunta). No entanto, com base na legislação trabalhista (Art. 651 da CLT), a resposta correta para o caso seria:
+
+**A alternativa que indicasse que a competência é do local da prestação de serviços.**
+
+Como você solicitou apenas a letra e as opções fornecidas não contêm a resposta jurídica correta, não é possível selecionar uma alternativa válida."
+29,78,Processo do Trabalho,C,C,1,5.75,C
+38,11,Direito Constitucional,D,D,1,6.06,D
+35,78,Processo do Trabalho,A,C,0,7.55,C
+34,60,Direito Penal,A,B,0,7.7,B
+34,23,Direito Financeiro,D,D,1,5.29,D
+34,64,Processo Penal,C,A,0,12.21,A
+46,10,Filosofia do Direito,C,C,1,4.24,C
+47,6,Ética Profissional,D,D,1,6.66,D
+14,25,,C,D,0,4.1,D
+44,80,Processo do Trabalho,B,D,0,5.86,D)
+18,47,Direito Empresarial,C,C,1,8.56,C
+15,55,,C,C,1,9.74,C
+34,76,Processo do Trabalho,D,D,1,7.26,D
+29,16,Direito Constitucional,D,C,0,7.1,C
+17,80,Processo do Trabalho,A,D,0,4.09,D)
+32,31,Direito Administrativo,D,C,0,7.05,C
+43,79,Processo do Trabalho,D,D,1,7.17,D
+41,25,Direito Tributário,D,D,1,6.98,D
+37,52,Processo Civil,C,C,1,10.38,C
+34,68,Processo Penal,C,C,1,9.15,C
+25,12,Direito Constitucional,C,C,1,5.17,C
+44,4,Ética Profissional,C,A,0,6.14,A
+16,21,Direito Internacional,A,B,0,7.39,B
+12,57,,C,C,1,6.44,C
+7,79,,D,A,0,10.91,A
+21,20,Direito Eleitoral,C,C,1,7.33,C
+4,12,,A,D,0,3.81,D
+19,27,Direito Tributário,C,D,0,5.16,D
+27,61,Direito Penal,B,C,0,8.9,C
+45,41,Direito Civil,B,B,1,7.38,B
+38,17,Direitos Humanos,C,C,1,5.35,C
+34,39,Direito Civil,B,B,1,9.51,B
+42,2,Ética Profissional,B,C,0,5.97,C
+14,32,,B,B,1,5.45,B
+47,51,Processo Civil,D,B,0,5.65,B
+10,43,,A,A,1,6.05,A
+20,35,Direito Ambiental,C,C,1,6.03,C
+8,51,,C,C,1,9.22,C
+45,5,Ética Profissional,B,D,0,7.04,D
+20,61,Direito Penal,D,D,1,6.15,D
+26,39,Direito Civil,B,C,0,7.15,C
+8,53,,B,B,1,7.31,B
+20,34,Direito Administrativo,C,B,0,4.91,B
+24,60,Direito Penal,A,B,0,9.2,B
+21,5,Ética Profissional,C,C,1,6.28,C
+8,17,,A,A,1,16.92,A
+41,55,Processo Civil,C,A,0,8.38,A
+6,26,,C,D,0,7.73,D
+11,80,,C,,0,29.72,"A alternativa correta não foi fornecida no enunciado da questão (as opções A, B, C e D não correspondemem ao conteúdo jurídico da pergunta), mas seguindo a lógica de uma questão de múltipla escolha sobre o tema, a resposta correta para o direito de Emerson seria o cumprimento do acordo coletivo.
+
+No entanto, como você solicitou apenas a letra e as opções fornecidas são ""muito bom"", ""bom"", ""regular"" e ""ruim"", não há uma alternativa juridicamente correta entre as apresentadas.
+
+Se esta for uma que"
+21,67,Processo Penal,B,C,0,7.46,C
+42,20,Direito Eleitoral,D,D,1,6.98,D
+21,19,Direito Eleitoral,D,D,1,6.62,D
+6,61,,C,B,0,5.31,B
+37,27,Direito Tributário,D,C,0,8.78,C
+38,67,Processo Penal,C,C,1,7.24,C
+20,19,Direito Eleitoral,D,C,0,6.18,C
+39,6,Ética Profissional,D,D,1,7.18,D
+47,49,Direito Empresarial,D,B,0,7.07,B
+30,60,Direito Penal,C,C,1,8.7,C
+27,16,Direito Constitucional,D,A,0,8.2,A
+31,35,Direito Ambiental,A,D,0,7.48,D
+24,30,Direito Administrativo,B,A,0,6.0,A
+40,13,Direito Constitucional,B,B,1,6.0,B
+8,20,,B,B,1,14.87,B
+42,54,Processo Civil,B,B,1,5.12,B
+23,56,Processo Civil,B,A,0,6.02,A
+47,75,Direito do Trabalho,B,D,0,5.79,D
+13,25,,A,B,0,3.75,B
+14,40,,D,D,1,5.9,D
+9,35,,D,D,1,4.52,D
+6,70,,C,C,1,2.33,C
+6,10,,B,D,0,4.89,D
+34,6,Ética Profissional,A,C,0,6.31,C
+7,49,,D,D,1,6.04,D
+18,36,Direito Ambiental,C,C,1,9.29,C
+36,66,Processo Penal,B,C,0,7.04,C
+16,46,Direito do Consumidor,C,D,0,4.34,D)
+29,54,Processo Civil,D,D,1,7.11,D
+36,74,Direito do Trabalho,A,A,1,7.14,A
+43,45,Direito do Consumidor,A,A,1,5.53,A
+43,44,Estatuto da Criança e do Adolescente,D,D,1,5.59,D
+45,15,Direito Constitucional,D,D,1,9.01,D
+9,32,,C,C,1,6.09,C
+10,16,,B,B,1,2.71,B
+11,33,,D,D,1,5.14,D
+25,34,Direito Administrativo,B,B,1,4.92,B
+20,15,Direito Constitucional,C,C,1,7.15,C
+15,53,,C,C,1,11.07,C
+11,14,,D,C,0,4.32,C
+17,75,Direito do Trabalho,B,D,0,5.05,D
+41,65,Processo Penal,C,C,1,7.36,C
+23,45,Direito do Consumidor,C,C,1,9.64,C
+4,22,,B,B,1,2.85,B
+25,20,Direito Eleitoral,A,A,1,3.69,A
+8,46,,C,C,1,14.52,C
+45,71,Direito do Trabalho,A,A,1,4.99,A
+17,24,Direito Financeiro,B,B,1,6.37,B
+12,68,,D,D,1,4.69,D)
+36,11,Direito Constitucional,C,C,1,6.11,C
+18,71,Direito do Trabalho,A,A,1,5.17,A
+12,74,,A,C,0,4.09,C
+5,10,,C,C,1,4.83,C
+29,35,Direito Ambiental,A,B,0,8.0,B
+15,43,,A,A,1,7.17,A
+35,1,Ética Profissional,C,C,1,4.21,C
+45,30,Direito Administrativo,B,B,1,9.38,B
+21,31,Direito Administrativo,D,D,1,5.92,D
+25,50,Direito Empresarial,B,B,1,5.94,B
+43,62,Direito Penal,C,C,1,3.73,C
+37,1,Ética Profissional,D,D,1,6.02,D
+45,7,Ética Profissional,D,D,1,4.66,D)
+36,42,Direito Civil,B,B,1,6.29,B
+16,80,Processo do Trabalho,C,D,0,6.4,D) ruim.
+12,8,,C,C,1,4.22,C
+27,28,Direito Tributário,D,,0,44.28,"A alternativa correta não está presente nas opções fornecidas no texto da pergunta, pois as alternativas A, B, C e D referem-se a um tema completamente diferente (aposentadoria e Tribunal de Contas) do que o enunciado (licitação e critérios de desempate).
+
+No entanto, seguindo a estrutura da questão original do exame mencionado (XXVII Exame de Ordem), a alternativa correta para o tema de licitação seria a que indica a preferência para a empresa brasileira. Como as alternativas fornecidas na sua "
+47,47,Direito Empresarial,C,C,1,8.03,C
+38,9,Filosofia do Direito,A,A,1,5.31,A
+39,47,Direito Empresarial,B,A,0,7.3,A
+34,54,Processo Civil,D,D,1,8.25,D
+13,79,,A,A,1,5.96,A
+11,28,,B,B,1,3.84,B
+39,50,Direito Empresarial,A,A,1,5.88,A
+12,14,,C,C,1,6.0,C
+25,27,Direito Tributário,C,C,1,6.15,C
+46,13,Direito Constitucional,B,B,1,7.22,B
+34,18,Direitos Humanos,C,C,1,7.14,C
+29,79,Processo do Trabalho,B,D,0,7.42,D
+18,29,Direito Tributário,A,A,1,6.93,A
+28,46,Direito do Consumidor,A,A,1,4.93,A
+18,3,Ética Profissional,A,C,0,4.91,C
+19,43,Estatuto da Criança e do Adolescente,C,C,1,5.94,C
+7,19,,C,B,0,9.04,B
+18,63,Processo Penal,C,D,0,5.57,D
+21,55,Processo Civil,B,B,1,7.29,B
+20,65,Processo Penal,D,C,0,5.99,C
+19,56,Processo Civil,D,C,0,7.21,C
+15,42,,A,C,0,5.17,C
+36,53,Processo Civil,C,C,1,8.27,C
+29,17,Direitos Humanos,D,D,1,7.21,D
+9,6,,B,B,1,5.2,B
+39,23,Direito Financeiro,A,C,0,7.29,C
+26,23,Direito Financeiro,C,B,0,6.1,B
+37,18,Direitos Humanos,D,D,1,6.47,D
+6,46,,D,C,0,4.99,C
+11,63,,C,C,1,6.07,C
+20,26,Direito Tributário,D,B,0,5.05,B
+26,74,Direito do Trabalho,B,A,0,5.52,A
+45,28,Direito Tributário,B,B,1,7.08,B
+13,54,,A,B,0,5.01,B
+32,30,Direito Administrativo,A,C,0,8.18,C
+14,52,,C,C,1,6.0,C
+10,13,,D,D,1,3.06,D
+19,3,Ética Profissional,C,C,1,8.6,C
+46,16,Direito Constitucional,D,C,0,6.28,C
+33,56,Processo Civil,B,B,1,7.2,B
+4,45,,B,B,1,3.95,B
+35,26,Direito Tributário,A,D,0,7.49,D
+28,8,Ética Profissional,D,C,0,6.15,C
+39,68,Processo Penal,D,D,1,3.84,D
+37,59,Direito Penal,C,C,1,7.2,C
+10,60,,A,A,1,7.11,A
+16,70,Direito Previdenciário,C,C,1,5.02,C
+27,69,Direito Previdenciário,C,C,1,6.06,C
+31,27,Direito Tributário,A,A,1,6.97,A
+26,75,Direito do Trabalho,B,B,1,5.21,B
+45,56,Processo Civil,D,D,1,4.98,D
+25,54,Processo Civil,C,C,1,9.37,C
+10,54,,D,D,1,4.22,D
+6,2,,D,C,0,3.91,C
+26,44,Estatuto da Criança e do Adolescente,A,A,1,10.58,A
+44,31,Direito Administrativo,C,A,0,6.2,A
+25,63,Processo Penal,A,D,0,6.74,D
+25,80,Processo do Trabalho,A,B,0,4.42,B
+31,5,Ética Profissional,A,A,1,6.01,A
+39,71,Direito do Trabalho,B,D,0,7.99,D
+35,5,Ética Profissional,C,C,1,3.85,C
+24,34,Direito Administrativo,B,B,1,6.11,B
+31,59,Direito Penal,D,C,0,6.51,C
+21,4,Ética Profissional,B,B,1,11.27,B
+5,20,,D,A,0,3.19,A
+15,65,,C,C,1,5.8,C
+46,30,Direito Administrativo,D,C,0,7.98,C
+17,13,Direito Constitucional,C,C,1,7.79,C
+39,36,Direito Ambiental,B,C,0,8.74,C
+12,76,,C,C,1,7.07,C
+19,38,Direito Civil,C,A,0,8.96,A
+41,16,Direito Constitucional,A,A,1,6.54,A
+9,39,,D,D,1,3.73,D
+38,58,Direito Penal,B,C,0,4.1,C
+6,20,,C,C,1,3.22,C
+31,64,Processo Penal,C,A,0,10.56,A
+15,61,,B,B,1,6.0,B
+22,33,Direito Administrativo,A,A,1,7.76,A
+47,23,Direito Financeiro,C,C,1,8.43,C
+13,77,,B,A,0,5.98,A
+7,45,,C,D,0,9.73,D
+23,5,Ética Profissional,A,A,1,5.97,A
+24,69,Direito Previdenciário,A,C,0,6.26,C
+12,53,,A,B,0,4.35,B
+45,58,Direito Penal,C,C,1,6.13,C
+18,4,Ética Profissional,B,A,0,6.26,A
+25,36,Direito Ambiental,B,B,1,9.59,B
+17,33,Direito Administrativo,D,D,1,5.51,D
+39,53,Processo Civil,D,A,0,8.45,A
+40,30,Direito Administrativo,C,C,1,6.06,C
+28,45,Direito do Consumidor,B,B,1,8.4,B
+33,44,Estatuto da Criança e do Adolescente,B,B,1,7.31,B
+4,1,,D,B,0,5.2,B
+44,34,Direito Administrativo,A,C,0,5.93,C
+29,25,Direito Tributário,B,B,1,5.06,B
+7,74,,C,C,1,24.85,C
+27,10,Filosofia do Direito,C,C,1,6.95,C
+32,38,Direito Civil,D,B,0,4.7,B
+19,9,Filosofia do Direito,A,B,0,7.15,B
+39,40,Direito Civil,C,D,0,9.63,D
+37,4,Ética Profissional,D,D,1,7.45,D
+44,48,Direito Empresarial,B,C,0,6.25,C
+13,6,,B,B,1,4.45,B
+36,65,Processo Penal,A,A,1,7.51,A
+29,15,Direito Constitucional,B,B,1,6.2,B
+14,76,,D,D,1,5.28,D
+32,17,Direitos Humanos,B,B,1,6.28,B
+42,63,Processo Penal,B,B,1,5.91,B
+14,30,,B,B,1,6.75,B
+41,40,Direito Civil,A,A,1,6.21,A
+13,35,,D,D,1,3.51,D)
+34,32,Direito Administrativo,B,B,1,6.68,B
+45,12,Direito Constitucional,D,D,1,6.46,D
+29,22,Direito Internacional,B,A,0,8.69,A
+23,10,Filosofia do Direito,A,A,1,5.64,A
+36,1,Ética Profissional,B,D,0,5.18,D
+31,77,Processo do Trabalho,B,B,1,5.49,B
+26,7,Ética Profissional,B,B,1,5.21,B
+14,70,,C,C,1,5.2,C
+46,39,Direito Civil,B,B,1,7.42,B
+30,42,Direito Civil,B,B,1,5.98,B
+8,76,,C,C,1,5.02,C
+27,37,Direito Civil,A,A,1,3.73,A
+31,23,Direito Financeiro,B,B,1,6.2,B
+21,61,Direito Penal,B,B,1,6.01,B
+6,67,,A,D,0,3.92,D
+32,10,Filosofia do Direito,D,D,1,4.89,D
+21,6,Ética Profissional,C,C,1,7.36,C
+44,6,Ética Profissional,B,B,1,7.27,B
+37,12,Direito Constitucional,B,B,1,7.27,B
+32,11,Direito Constitucional,B,B,1,6.01,B
+4,20,,C,A,0,4.98,A
+37,28,Direito Tributário,A,D,0,7.27,D
+25,13,Direito Constitucional,B,A,0,6.31,A
+37,51,Processo Civil,C,C,1,8.92,C
+7,60,,B,B,1,9.87,B
+9,76,,C,C,1,3.75,C
+16,39,Direito Civil,B,C,0,5.69,C
+13,30,,A,A,1,3.81,A
+17,51,Processo Civil,A,B,0,3.53,B
+8,67,,C,C,1,3.95,C
+7,80,,C,C,1,15.33,C
+13,62,,D,C,0,3.93,C
+37,16,Direito Constitucional,B,B,1,6.04,B
+35,18,Direitos Humanos,C,C,1,7.35,C
+8,31,,A,A,1,9.7,A
+31,75,Direito do Trabalho,A,A,1,6.3,A
+30,54,Processo Civil,C,C,1,5.08,C
+34,51,Processo Civil,B,B,1,6.12,B
+5,39,,C,C,1,3.7,C
+44,15,Direito Constitucional,D,D,1,7.31,D
+33,45,Direito do Consumidor,B,B,1,8.34,B
+5,74,,B,B,1,9.46,B
+9,23,,A,A,1,3.95,A
+42,67,Processo Penal,D,D,1,8.28,D
+35,79,Processo do Trabalho,A,D,0,6.37,D
+33,20,Direito Eleitoral,C,C,1,6.5,C
+15,48,,C,A,0,9.43,A
+36,38,Direito Civil,B,C,0,7.13,C
+8,13,,A,B,0,8.31,B
+33,5,Ética Profissional,B,B,1,4.94,B
+42,73,Direito do Trabalho,D,D,1,5.79,D
+7,77,,D,D,1,21.22,D
+15,67,,B,B,1,6.73,B
+31,53,Processo Civil,D,D,1,8.26,D
+16,42,Direito Civil,C,D,0,5.52,D
+12,55,,C,C,1,8.42,C
+4,59,,D,D,1,3.67,D
+18,78,Processo do Trabalho,C,C,1,6.28,C
+10,65,,A,A,1,3.55,A
+26,54,Processo Civil,D,D,1,7.51,D
+6,44,,A,B,0,5.41,B
+28,36,Direito Ambiental,C,B,0,7.79,B
+5,72,,C,A,0,9.46,A
+16,62,Direito Penal,C,D,0,3.85,D
+40,77,Processo do Trabalho,C,C,1,7.63,C
+15,52,,A,B,0,4.13,B
+18,79,Processo do Trabalho,A,A,1,5.01,A
+9,68,,D,C,0,3.58,C
+16,55,Processo Civil,B,A,0,9.15,A
+39,72,Direito do Trabalho,A,B,0,6.96,B
+45,31,Direito Administrativo,D,D,1,7.11,D
+10,12,,B,B,1,6.93,B
+45,65,Processo Penal,B,D,0,6.96,D
+39,12,Direito Constitucional,A,C,0,7.08,C
+21,80,Processo do Trabalho,D,C,0,4.29,C
+21,10,Filosofia do Direito,B,B,1,7.29,B
+20,54,Processo Civil,B,B,1,5.99,B
+9,5,,D,D,1,4.95,D
+20,46,Direito do Consumidor,C,C,1,9.26,C
+7,11,,B,B,1,7.34,B
+22,43,Estatuto da Criança e do Adolescente,D,C,0,5.76,C
+4,10,,B,B,1,3.82,B
+5,75,,C,A,0,4.84,A
+11,8,,B,A,0,3.9,A
+43,11,Direito Constitucional,D,D,1,7.27,D
+14,56,,A,C,0,7.31,C
+37,54,Processo Civil,C,C,1,7.33,C
+16,23,Direito Financeiro,C,B,0,4.05,B
+5,46,,D,D,1,3.68,D
+24,16,Direito Constitucional,B,B,1,9.59,B
+30,39,Direito Civil,A,C,0,6.02,C
+6,15,,A,C,0,5.29,C
+28,38,Direito Civil,A,D,0,8.27,D
+28,73,Direito do Trabalho,B,B,1,4.88,B
+41,54,Processo Civil,B,A,0,7.28,A
+28,54,Processo Civil,B,B,1,9.82,B
+22,13,Direito Constitucional,C,B,0,4.97,B
+32,70,Direito Previdenciário,A,A,1,5.86,A
+32,65,Processo Penal,D,A,0,5.98,A
+21,15,Direito Constitucional,D,A,0,6.0,A
+43,52,Processo Civil,D,D,1,6.09,D
+11,55,,C,D,0,5.27,D
+43,7,Ética Profissional,D,D,1,6.98,D
+40,10,Filosofia do Direito,C,C,1,3.85,C
+35,14,Direito Constitucional,D,D,1,5.96,D
+15,6,,D,A,0,5.94,A
+39,64,Processo Penal,A,C,0,5.12,C
+39,20,Direito Eleitoral,C,C,1,3.79,C
+44,70,Direito Previdenciário,A,A,1,3.74,A
+29,8,Ética Profissional,B,B,1,5.88,B
+42,53,Processo Civil,D,D,1,7.53,D
+29,80,Processo do Trabalho,D,,0,22.95,"A alternativa correta não está presente nas opções fornecidas (A, B, C, D), pois as opções ""muito bom"", ""bom"", ""regular"" e ""ruim"" não correspondemem a uma resposta jurídica para a questão proposta.
+
+No entanto, analisando a questão juridicamente, a resposta correta seria a **III**.
+
+Se você precisa marcar uma alternativa para seguir o exercício, a questão parece estar com as alternativas incorretas para o enunciado."
+46,51,Processo Civil,B,B,1,7.73,B
+39,4,Ética Profissional,A,C,0,4.6,C
+14,79,,A,A,1,6.16,A
+15,77,,B,C,0,4.16,C
+35,27,Direito Tributário,B,A,0,6.17,A
+25,53,Processo Civil,B,B,1,6.09,B
+11,73,,B,B,1,5.14,B
+12,26,,A,A,1,5.48,A
+17,15,Direito Constitucional,C,C,1,8.63,C
+15,80,,C,,0,20.63,"A alternativa correta não pode ser determinada porque o texto da questão está fragmentado, incompleto e sem coerência lógica (presença de palavras soltas e frases interrompidas). No entanto, seguindo a estrutura padrão de exames da OAB, a resposta correta dependeria do enunciado completo.
+
+Como o enunciado fornecido não permite identificar o fato jurídico, não é possível selecionar uma alternativa."
+40,56,Processo Civil,C,C,1,9.98,C
+42,56,Processo Civil,B,B,1,6.13,B
+33,71,Direito do Trabalho,D,D,1,5.26,D
+13,19,,D,B,0,5.89,B
+21,32,Direito Administrativo,C,C,1,5.14,C
+26,71,Direito do Trabalho,A,A,1,8.31,A
+9,78,,D,D,1,6.29,D
+34,21,Direito Internacional,B,B,1,5.04,B
+22,3,Ética Profissional,B,A,0,7.2,A
+15,45,,A,A,1,5.07,A
+29,10,Filosofia do Direito,A,A,1,9.29,A
+29,49,Direito Empresarial,D,D,1,5.19,D
+23,39,Direito Civil,A,A,1,9.65,A
+28,78,Processo do Trabalho,A,A,1,5.53,A
+40,44,Estatuto da Criança e do Adolescente,C,A,0,6.11,A
+16,29,Direito Tributário,B,A,0,7.49,A
+46,37,Direito Civil,A,A,1,5.25,A
+42,26,Direito Tributário,C,C,1,7.42,C
+30,25,Direito Tributário,D,D,1,5.1,D
+38,4,Ética Profissional,A,D,0,5.38,D
+39,7,Ética Profissional,D,B,0,8.41,B
+30,36,Direito Ambiental,D,D,1,7.55,D
+41,66,Processo Penal,A,A,1,5.25,A
+17,19,Direito Eleitoral,C,C,1,7.54,C
+47,78,Processo do Trabalho,A,D,0,7.34,D
+34,8,Ética Profissional,B,C,0,5.22,C
+15,73,,A,D,0,7.5,D
+27,36,Direito Ambiental,C,C,1,5.11,C
+38,3,Ética Profissional,B,C,0,5.82,C
+34,63,Processo Penal,C,B,0,5.5,B
+23,18,Direitos Humanos,D,D,1,7.57,D
+18,38,Direito Civil,D,C,0,7.56,C
+24,2,Ética Profissional,B,B,1,5.96,B
+35,67,Processo Penal,D,B,0,12.04,B
+42,59,Direito Penal,C,D,0,5.61,D)
+28,67,Processo Penal,A,C,0,6.12,C
+44,23,Direito Financeiro,B,A,0,4.86,A
+6,38,,B,D,0,6.13,D
+20,28,Direito Tributário,A,B,0,3.95,B
+19,4,Ética Profissional,C,C,1,6.06,C
+5,42,,D,D,1,5.18,D
+44,32,Direito Administrativo,D,A,0,9.1,A
+25,14,Direito Constitucional,D,D,1,5.89,D
+14,50,,A,A,1,4.89,A
+16,61,Direito Penal,D,A,0,10.22,A
+8,74,,B,A,0,8.16,A
+11,57,,C,C,1,5.17,C
+32,54,Processo Civil,A,A,1,6.05,A
+25,72,Direito do Trabalho,B,B,1,8.14,B
+12,2,,D,C,0,3.82,C
+6,28,,D,D,1,7.48,D
+17,3,Ética Profissional,A,C,0,5.49,C
+22,72,Direito do Trabalho,A,C,0,4.39,C
+46,74,Direito do Trabalho,A,A,1,6.1,A
+21,23,Direito Financeiro,D,D,1,6.65,D
+28,12,Direito Constitucional,B,A,0,8.52,A
+6,58,,A,D,0,7.84,D
+24,58,Direito Penal,C,C,1,7.71,C
+35,44,Estatuto da Criança e do Adolescente,D,D,1,9.85,D
+12,41,,C,A,0,7.47,A
+10,34,,D,D,1,5.17,D
+45,26,Direito Tributário,C,B,0,5.02,B
+4,77,,A,A,1,3.88,A
+11,10,,B,B,1,5.54,B
+25,15,Direito Constitucional,C,A,0,8.57,A
+46,46,Direito do Consumidor,D,D,1,8.7,D
+9,28,,D,B,0,5.08,B
+29,51,Processo Civil,C,C,1,4.01,C
+22,17,Direitos Humanos,A,B,0,7.5,B
+45,61,Direito Penal,A,A,1,6.2,A
+34,69,Direito Previdenciário,C,C,1,8.86,C
+29,64,Processo Penal,C,C,1,9.69,C
+46,2,Ética Profissional,D,D,1,5.96,D
+25,44,Estatuto da Criança e do Adolescente,C,B,0,8.42,B
+39,24,Direito Financeiro,C,A,0,3.01,A
+22,70,Direito Previdenciário,B,C,0,3.97,C
+31,66,Processo Penal,C,B,0,7.54,B
+25,32,Direito Administrativo,D,D,1,5.93,D
+9,54,,A,C,0,4.99,C
+47,39,Direito Civil,A,D,0,7.0,D
+13,63,,B,A,0,4.97,A
+7,55,,C,C,1,2.89,C
+38,18,Direitos Humanos,C,C,1,7.08,C
+24,64,Processo Penal,A,D,0,8.47,D
+33,75,Direito do Trabalho,A,A,1,5.26,A
+4,69,,C,C,1,3.98,C
+23,11,Direito Constitucional,D,D,1,8.41,D
+33,51,Processo Civil,C,C,1,5.93,C
+23,6,Ética Profissional,A,B,0,7.12,B
+33,57,Direito Penal,D,D,1,8.1,D
+21,77,Processo do Trabalho,B,A,0,3.82,A
+17,30,Direito Administrativo,C,C,1,4.89,C
+35,48,Direito Empresarial,D,A,0,8.0,A
+7,21,,B,B,1,4.87,B
+47,37,Direito Civil,D,C,0,6.13,C
+14,4,,D,D,1,7.18,D
+41,67,Processo Penal,C,C,1,4.92,C
+18,61,Direito Penal,A,B,0,5.17,B
+19,23,Direito Financeiro,C,A,0,5.49,A
+31,16,Direito Constitucional,C,C,1,8.48,C
+45,47,Direito Empresarial,B,D,0,7.5,D
+5,38,,A,A,1,8.27,A
+17,40,Direito Civil,D,D,1,6.04,D
+32,13,Direito Constitucional,B,B,1,6.19,B
+29,24,Direito Financeiro,B,B,1,5.43,B
+28,37,Direito Civil,D,C,0,6.44,C
+25,7,Ética Profissional,A,A,1,7.87,A
+8,45,,A,A,1,12.62,A
+8,48,,B,A,0,5.21,A
+12,29,,B,C,0,4.27,C
+8,7,,B,D,0,10.35,D
+4,41,,C,C,1,11.24,C
+5,68,,D,C,0,4.0,C
+32,66,Processo Penal,C,C,1,7.18,C
+39,28,Direito Tributário,C,D,0,5.84,D
+6,16,,B,D,0,3.07,D
+32,26,Direito Tributário,B,D,0,5.54,D
+14,51,,B,B,1,5.58,B
+42,30,Direito Administrativo,B,B,1,7.83,B
+24,63,Processo Penal,D,B,0,8.96,B
+22,7,Ética Profissional,B,B,1,6.12,B
+5,25,,B,B,1,8.8,B
+47,74,Direito do Trabalho,D,C,0,7.62,C
+37,76,Processo do Trabalho,A,B,0,5.74,B
+35,8,Ética Profissional,A,C,0,5.27,C
+26,24,Direito Financeiro,D,B,0,7.19,B
+8,78,,A,A,1,14.32,A
+37,44,Estatuto da Criança e do Adolescente,D,C,0,9.44,C
+26,73,Direito do Trabalho,D,D,1,7.47,D
+5,27,,C,C,1,5.3,C
+30,37,Direito Civil,B,B,1,5.94,B
+27,35,Direito Ambiental,B,A,0,5.92,A
+7,5,,B,B,1,10.46,B
+34,13,Direito Constitucional,B,B,1,8.48,B
+13,67,,B,B,1,8.45,B
+17,77,Processo do Trabalho,D,D,1,5.92,D
+31,8,Ética Profissional,B,C,0,7.19,C
+17,34,Direito Administrativo,B,B,1,7.2,B
+10,63,,B,D,0,7.16,D
+33,40,Direito Civil,A,B,0,8.49,B
+37,13,Direito Constitucional,A,A,1,7.94,A
+15,9,,B,A,0,2.86,A)
+32,52,Processo Civil,C,C,1,10.95,C
+42,33,Direito Administrativo,A,B,0,6.52,B
+27,7,Ética Profissional,B,B,1,7.74,B
+35,72,Direito do Trabalho,B,A,0,8.02,A
+42,18,Direitos Humanos,B,A,0,6.36,A
+11,72,,C,D,0,6.93,D
+35,38,Direito Civil,D,D,1,7.8,D
+17,67,Processo Penal,B,D,0,5.51,D
+29,70,Direito Previdenciário,C,A,0,7.43,A
+29,50,Direito Empresarial,B,C,0,6.58,C
+6,32,,D,D,1,3.81,D
+26,31,Direito Administrativo,C,C,1,5.05,C
+12,19,,D,D,1,6.14,D
+31,11,Direito Constitucional,B,B,1,5.95,B
+46,26,Direito Tributário,D,C,0,7.16,C
+47,15,Direito Constitucional,D,A,0,7.24,A
+22,24,Direito Financeiro,D,C,0,4.98,C
+19,58,Direito Penal,B,B,1,7.09,B
+26,46,Direito do Consumidor,C,C,1,6.16,C
+45,74,Direito do Trabalho,B,B,1,6.03,B
+29,34,Direito Administrativo,A,A,1,5.36,A
+4,50,,D,C,0,3.8,C
+43,19,Direito Eleitoral,D,C,0,4.5,C
+27,9,Filosofia do Direito,D,D,1,6.12,D
+27,62,Direito Penal,D,A,0,7.02,A
+42,39,Direito Civil,C,C,1,7.13,C
+37,65,Processo Penal,B,D,0,9.35,D
+32,78,Processo do Trabalho,B,B,1,4.8,B
+17,52,Processo Civil,B,A,0,6.13,A
+35,15,Direito Constitucional,C,A,0,5.14,A)
+7,43,,B,B,1,8.25,B
+43,78,Processo do Trabalho,A,C,0,9.49,C
+41,43,Estatuto da Criança e do Adolescente,A,A,1,7.14,A
+23,60,Direito Penal,C,C,1,7.36,C
+7,41,,D,C,0,7.1,C
+27,41,Direito Civil,D,D,1,5.07,D
+45,9,Filosofia do Direito,B,B,1,3.73,B
+43,5,Ética Profissional,C,C,1,5.91,C
+13,46,,A,A,1,6.86,A
+17,2,Ética Profissional,C,C,1,2.76,C
+36,17,Direitos Humanos,A,A,1,6.95,A
+19,66,Processo Penal,A,A,1,6.02,A
+29,60,Direito Penal,D,D,1,8.56,D
+17,36,Direito Ambiental,D,D,1,5.97,D
+38,37,Direito Civil,D,D,1,4.91,D
+33,39,Direito Civil,D,D,1,6.04,D
+8,28,,B,B,1,2.9,B
+34,24,Direito Financeiro,B,B,1,3.82,B
+34,66,Processo Penal,B,B,1,9.61,B
+31,30,Direito Administrativo,D,D,1,6.36,D
+24,5,Ética Profissional,C,C,1,12.1,C
+36,20,Direito Eleitoral,B,B,1,5.37,B
+25,1,Ética Profissional,B,C,0,7.2,C
+40,28,Direito Tributário,D,D,1,5.43,D
+17,74,Direito do Trabalho,A,B,0,4.89,B
+16,4,Ética Profissional,C,B,0,3.26,B
+33,60,Direito Penal,D,D,1,7.36,D
+15,66,,A,A,1,10.73,A
+9,77,,B,B,1,4.2,B
+42,69,Direito Previdenciário,A,C,0,5.33,C
+30,80,Processo do Trabalho,C,,0,25.38,"A alternativa correta não está presente nas opções fornecidas (A, B, C, D), pois as opções listadas (""muito bom"", ""bom"", ""regular"", ""ruim"") não correspondemem aos sujeitos jurídicos descritos no enunciado.
+
+No entanto, seguindo a legislação vigente (Art. 899, § 10 da CLT), a resposta correta para a pergunta seria:
+
+**A Instituição ABCD, o Instituto Sonhar e a microempreendedora individual Mariana.**
+
+(Pois a empregadora doméstica não está incluída na dispensa do depósito recursal)."
+38,42,Direito Civil,A,B,0,6.16,B
+10,57,,D,A,0,4.8,A
+38,36,Direito Ambiental,C,C,1,5.92,C
+25,79,Processo do Trabalho,B,B,1,4.95,B
+18,13,Direito Constitucional,D,B,0,8.21,B
+7,23,,C,C,1,19.25,C
+44,60,Direito Penal,C,C,1,5.91,C
+45,52,Processo Civil,C,C,1,5.86,C
+34,75,Direito do Trabalho,B,B,1,4.92,B
+8,18,,D,D,1,6.28,D
+24,65,Processo Penal,C,D,0,7.57,D
+4,76,,B,C,0,4.2,C
+38,29,Direito Tributário,C,C,1,6.04,C
+8,68,,B,B,1,8.34,B
+9,69,,D,A,0,6.46,A
+12,52,,B,B,1,6.07,B
+32,59,Direito Penal,D,A,0,6.08,A
+35,51,Processo Civil,A,A,1,7.19,A
+9,11,,C,C,1,3.89,C
+36,61,Direito Penal,C,C,1,7.12,C
+19,54,Processo Civil,B,C,0,8.34,C
+12,63,,C,D,0,8.32,D
+31,21,Direito Internacional,D,D,1,7.71,D
+33,62,Direito Penal,D,C,0,6.82,C
+45,6,Ética Profissional,A,A,1,5.98,A
+10,5,,A,A,1,6.15,A
+36,43,Estatuto da Criança e do Adolescente,B,C,0,4.75,C
+30,64,Processo Penal,A,A,1,5.5,A
+15,76,,B,B,1,8.84,B
+26,52,Processo Civil,D,D,1,4.31,D
+46,56,Processo Civil,B,B,1,5.42,B
+8,33,,C,C,1,13.83,C
+14,41,,A,B,0,6.12,B
+46,41,Direito Civil,A,A,1,7.25,A
+11,71,,A,A,1,5.32,A
+38,33,Direito Administrativo,A,A,1,8.58,A
+30,49,Direito Empresarial,C,C,1,6.02,C
+41,35,Direito Ambiental,C,C,1,7.21,C
+35,39,Direito Civil,D,D,1,7.81,D
+47,44,Estatuto da Criança e do Adolescente,D,B,0,7.35,B
+26,78,Processo do Trabalho,A,B,0,7.45,B
+18,23,Direito Financeiro,D,D,1,5.24,D
+15,29,,B,A,0,6.21,A
+26,43,Estatuto da Criança e do Adolescente,B,A,0,7.12,A
+27,13,Direito Constitucional,A,A,1,9.46,A
+46,50,Direito Empresarial,C,C,1,4.09,C
+27,74,Direito do Trabalho,A,A,1,5.96,A
+34,15,Direito Constitucional,D,D,1,4.8,D
+14,54,,B,C,0,4.86,C
+42,1,Ética Profissional,D,D,1,8.22,D
+44,62,Direito Penal,D,B,0,5.26,B
+40,24,Direito Financeiro,C,C,1,7.05,C
+19,29,Direito Tributário,B,A,0,5.07,A
+46,11,Direito Constitucional,C,D,0,7.16,D
+46,21,Direito Internacional,D,D,1,7.06,D
+36,63,Processo Penal,C,C,1,5.15,C
+47,35,Direito Ambiental,C,C,1,5.98,C
+19,2,Ética Profissional,B,B,1,5.94,B
+44,16,Direito Constitucional,C,B,0,6.0,B
+6,35,,D,C,0,6.39,C
+23,69,Direito Previdenciário,D,D,1,4.87,D
+11,5,,C,C,1,7.12,C
+40,31,Direito Administrativo,D,D,1,7.09,D
+39,61,Direito Penal,B,D,0,5.22,D
+6,50,,C,D,0,4.13,D)
+14,55,,B,B,1,6.01,B
+43,71,Direito do Trabalho,C,C,1,7.14,C
+22,71,Direito do Trabalho,A,B,0,4.46,B
+43,27,Direito Tributário,A,A,1,4.57,A
+32,18,Direitos Humanos,B,B,1,8.6,B
+47,64,Processo Penal,B,A,0,5.11,A
+40,76,Processo do Trabalho,D,A,0,5.03,A
+14,10,,C,C,1,4.92,C
+32,42,Direito Civil,A,D,0,5.91,D
+35,32,Direito Administrativo,B,B,1,8.77,B
+37,71,Direito do Trabalho,A,A,1,7.18,A
+35,61,Direito Penal,A,A,1,6.92,A
+4,30,,B,B,1,3.51,B
+46,48,Direito Empresarial,B,D,0,4.94,D
+25,52,Processo Civil,B,A,0,6.04,A
+34,9,Filosofia do Direito,D,D,1,7.14,D
+16,32,Direito Administrativo,A,D,0,3.92,D
+32,47,Direito Empresarial,B,B,1,7.38,B
+24,68,Processo Penal,D,D,1,6.16,D
+46,36,Direito Ambiental,A,B,0,7.29,B
+5,24,,A,C,0,2.93,C
+7,24,,A,A,1,9.69,A
+18,44,Estatuto da Criança e do Adolescente,C,C,1,8.04,C
+13,5,,C,C,1,3.78,C
+8,64,,B,B,1,8.54,B
+17,26,Direito Tributário,D,D,1,6.17,D
+23,54,Processo Civil,C,C,1,6.03,C
+47,76,Processo do Trabalho,D,A,0,7.05,A
+5,53,,B,B,1,5.24,B
+38,10,Filosofia do Direito,A,A,1,7.1,A
+15,72,,B,C,0,2.7,C
+47,77,Processo do Trabalho,C,B,0,5.93,B
+20,16,Direito Constitucional,B,B,1,6.12,B
+40,42,Direito Civil,A,A,1,5.93,A
+41,51,Processo Civil,D,D,1,8.38,D
+22,2,Ética Profissional,A,B,0,7.27,B
+13,52,,A,C,0,5.25,C
+33,28,Direito Tributário,A,A,1,6.12,A
+24,44,Estatuto da Criança e do Adolescente,A,A,1,7.25,A
+24,66,Processo Penal,B,B,1,6.42,B
+21,74,Direito do Trabalho,A,A,1,5.09,A
+11,54,,D,B,0,4.68,B
+24,78,Processo do Trabalho,A,C,0,3.76,C
+34,14,Direito Constitucional,A,A,1,5.92,A
+40,59,Direito Penal,D,B,0,6.31,B
+41,63,Processo Penal,A,B,0,3.72,B
+31,2,Ética Profissional,B,D,0,7.18,D
+10,11,,D,D,1,3.8,D
+18,6,Ética Profissional,D,D,1,5.02,D
+13,68,,D,D,1,7.11,D
+38,40,Direito Civil,D,C,0,5.53,C
+18,76,Processo do Trabalho,A,A,1,5.12,A
+22,28,Direito Tributário,C,A,0,7.47,A
+18,8,Ética Profissional,D,C,0,6.12,C
+14,13,,B,B,1,9.18,B
+4,37,,D,D,1,6.22,D
+8,36,,D,D,1,12.5,D
+20,57,Direito Penal,C,C,1,7.64,C
+15,7,,C,C,1,7.65,C
+41,44,Estatuto da Criança e do Adolescente,B,B,1,8.53,B
+13,7,,B,B,1,4.09,B
+39,33,Direito Administrativo,D,B,0,7.59,B
+47,30,Direito Administrativo,C,C,1,10.02,C
+32,5,Ética Profissional,B,D,0,7.48,D
+6,57,,D,D,1,6.13,D
+25,23,Direito Financeiro,C,C,1,5.08,C
+32,62,Direito Penal,B,C,0,8.11,C
+33,14,Direito Constitucional,D,D,1,7.11,D
+44,76,Processo do Trabalho,B,A,0,5.89,A
+36,78,Processo do Trabalho,B,B,1,6.78,B
+21,50,Direito Empresarial,A,C,0,4.81,C
+7,42,,B,B,1,11.58,B
+46,79,Processo do Trabalho,D,D,1,4.8,D
+31,33,Direito Administrativo,D,D,1,4.7,D
+38,68,Processo Penal,C,B,0,7.11,B
+16,8,Ética Profissional,C,C,1,8.09,C
+47,42,Direito Civil,A,A,1,9.23,A
+14,29,,D,B,0,3.07,B
+4,49,,A,A,1,2.76,A)
+39,8,Ética Profissional,C,A,0,5.21,A
+17,55,Processo Civil,C,C,1,6.15,C
+17,65,Processo Penal,B,B,1,8.18,B
+12,60,,A,B,0,8.28,B
+39,69,Direito Previdenciário,B,C,0,4.93,C
+13,64,,D,D,1,4.97,D
+35,24,Direito Financeiro,C,C,1,6.95,C
+30,50,Direito Empresarial,A,A,1,7.06,A
+13,28,,A,A,1,5.88,A
+15,69,,B,A,0,4.77,A
+34,46,Direito do Consumidor,B,B,1,6.05,B
+22,80,Processo do Trabalho,B,,0,25.6,"A (Nota: A questão parece conter um erro de formulação nas alternativas, pois as opções ""muito bom"", ""bom"", ""regular"" e ""ruim"" não correspondemem a recursos jurídicos. No entanto, seguindo a lógica de múltipla escolha e a estrutura da pergunta, a alternativa correta para o recurso cabível seria **Agravo de Instrumento**, mas como não está disponível, a questão está tecnicamente incorreta. Se for uma questão de múltipla escolha onde apenas uma letra deve ser marcada, não há resposta correta nas o"
+12,51,,C,C,1,5.26,C
+19,41,Direito Civil,C,C,1,5.39,C
+27,44,Estatuto da Criança e do Adolescente,D,D,1,8.11,D
+32,53,Processo Civil,C,C,1,8.6,C
+34,50,Direito Empresarial,C,C,1,5.01,C
+34,12,Direito Constitucional,D,D,1,6.4,D
+24,50,Direito Empresarial,B,B,1,6.05,B
+39,56,Processo Civil,D,D,1,6.14,D
+10,51,,D,D,1,6.09,D
+15,21,,B,C,0,11.19,C
+42,72,Direito do Trabalho,C,C,1,5.36,C
+46,15,Direito Constitucional,C,C,1,7.31,C
+25,2,Ética Profissional,D,A,0,3.66,A
+4,32,,B,B,1,3.82,B
+12,64,,C,C,1,5.76,C
+12,27,,A,A,1,4.14,A
+24,9,Filosofia do Direito,B,B,1,7.47,B
+16,41,Direito Civil,B,A,0,11.66,A
+44,51,Processo Civil,D,C,0,7.52,C
+10,58,,B,B,1,5.3,B
+25,45,Direito do Consumidor,A,A,1,10.2,A
+47,46,Direito do Consumidor,D,D,1,6.55,D
+28,47,Direito Empresarial,B,B,1,8.18,B
+21,57,Direito Penal,B,B,1,5.59,B
+25,19,Direito Eleitoral,A,A,1,7.27,A
+20,1,Ética Profissional,B,D,0,7.78,D
+15,12,,A,A,1,7.54,A
+24,45,Direito do Consumidor,A,A,1,9.7,A
+40,71,Direito do Trabalho,B,D,0,5.4,D
+37,6,Ética Profissional,C,C,1,3.81,C
+40,41,Direito Civil,C,C,1,6.22,C
+24,18,Direitos Humanos,C,B,0,7.41,B
+34,73,Direito do Trabalho,A,C,0,6.3,C
+21,12,Direito Constitucional,D,D,1,8.44,D
+6,9,,D,D,1,4.03,D)
+19,44,Estatuto da Criança e do Adolescente,A,A,1,6.18,A
+37,53,Processo Civil,B,A,0,7.1,A
+16,12,Direito Constitucional,A,A,1,5.16,A
+8,43,,C,C,1,19.93,C
+19,74,Direito do Trabalho,D,B,0,5.14,B
+16,17,Direitos Humanos,A,C,0,7.42,C
+21,70,Direito Previdenciário,A,C,0,5.37,C
+7,71,,B,D,0,10.93,D
+25,62,Direito Penal,D,B,0,6.36,B
+23,75,Direito do Trabalho,A,D,0,5.28,D
+9,42,,A,A,1,9.54,A
+28,10,Filosofia do Direito,B,B,1,5.28,B
+27,2,Ética Profissional,C,B,0,5.25,B
+5,77,,D,D,1,4.03,D
+31,71,Direito do Trabalho,A,A,1,5.94,A
+9,27,,A,C,0,5.33,C
+37,33,Direito Administrativo,D,D,1,9.23,D
+38,48,Direito Empresarial,D,A,0,5.91,A
+46,17,Direitos Humanos,B,B,1,8.2,B
+28,80,Processo do Trabalho,B,A,0,5.48,A
+40,9,Filosofia do Direito,B,B,1,5.76,B
+25,61,Direito Penal,A,B,0,7.55,B
+22,42,Direito Civil,B,B,1,5.22,B
+46,65,Processo Penal,D,D,1,7.18,D)
+21,33,Direito Administrativo,C,C,1,5.99,C
+25,11,Direito Constitucional,A,A,1,7.53,A
+14,62,,A,A,1,6.68,A
+10,71,,B,B,1,5.49,B
+33,4,Ética Profissional,D,C,0,4.01,C
+35,20,Direito Eleitoral,B,D,0,8.12,D
+34,40,Direito Civil,B,B,1,6.51,B
+22,30,Direito Administrativo,A,A,1,4.1,A
+38,55,Processo Civil,A,A,1,9.2,A
+4,19,,C,C,1,6.06,C
+47,55,Processo Civil,B,C,0,9.98,C
+22,34,Direito Administrativo,D,C,0,7.79,C
+7,18,,D,D,1,2.97,D
+19,68,Processo Penal,D,B,0,7.6,B
+36,54,Processo Civil,A,A,1,7.51,A
+10,42,,C,C,1,7.43,C
+5,51,,D,D,1,2.83,D
+24,17,Direitos Humanos,C,C,1,7.16,C
+40,68,Processo Penal,B,B,1,6.46,B
+24,31,Direito Administrativo,C,C,1,7.41,C
+27,43,Estatuto da Criança e do Adolescente,B,B,1,7.56,B
+23,24,Direito Financeiro,A,A,1,5.83,A
+28,22,Direito Internacional,D,D,1,6.07,D
+20,74,Direito do Trabalho,B,B,1,6.1,B
+35,7,Ética Profissional,B,B,1,8.45,B
+44,39,Direito Civil,D,C,0,4.13,C
+26,59,Direito Penal,D,D,1,7.62,D
+45,68,Processo Penal,D,D,1,4.32,D)
+11,38,,D,D,1,5.46,D
+27,25,Direito Tributário,A,D,0,6.13,D
+46,60,Direito Penal,A,A,1,5.44,A
+41,46,Direito do Consumidor,A,A,1,6.06,A
+39,38,Direito Civil,C,D,0,9.35,D
+45,49,Direito Empresarial,A,A,1,8.21,A
+22,44,Estatuto da Criança e do Adolescente,D,D,1,6.66,D
+33,15,Direito Constitucional,C,C,1,6.51,C
+24,28,Direito Tributário,D,D,1,5.61,D
+14,35,,D,D,1,5.2,D
+22,51,Processo Civil,D,D,1,7.44,D
+26,48,Direito Empresarial,A,A,1,5.17,A
+23,65,Processo Penal,D,B,0,8.53,B
+40,53,Processo Civil,B,B,1,9.83,B
+32,33,Direito Administrativo,A,A,1,6.51,A
+44,3,Ética Profissional,C,B,0,8.61,B
+34,70,Direito Previdenciário,B,B,1,5.41,B
+44,69,Direito Previdenciário,A,A,1,5.6,A)
+41,69,Direito Previdenciário,D,D,1,4.76,D
+23,72,Direito do Trabalho,D,D,1,5.47,D
+36,75,Direito do Trabalho,A,A,1,5.37,A
+19,6,Ética Profissional,D,D,1,10.34,D
+32,32,Direito Administrativo,C,C,1,6.3,C
+7,38,,B,A,0,16.59,A
+33,52,Processo Civil,A,A,1,6.06,A
+8,75,,B,B,1,9.99,B
+28,52,Processo Civil,A,A,1,6.49,A
+32,24,Direito Financeiro,D,D,1,8.71,D
+15,34,,C,C,1,8.53,C
+35,17,Direitos Humanos,B,B,1,5.68,B
+9,70,,B,B,1,3.69,B
+10,52,,D,D,1,3.67,D
+27,46,Direito do Consumidor,D,D,1,6.42,D
+43,41,Direito Civil,C,C,1,5.45,C
+4,60,,D,D,1,3.82,D
+13,43,,D,B,0,6.38,B
+29,6,Ética Profissional,D,D,1,6.12,D
+8,16,,B,C,0,10.7,C
+37,41,Direito Civil,B,B,1,7.39,B
+27,71,Direito do Trabalho,A,A,1,5.94,A
+12,9,,B,A,0,3.93,A
+39,22,Direito Internacional,B,A,0,5.13,A
+6,66,,A,B,0,3.89,B
+41,6,Ética Profissional,B,B,1,5.17,B
+25,42,Direito Civil,D,D,1,7.14,D
+15,18,,B,B,1,4.25,B
+22,40,Direito Civil,A,A,1,8.47,A
+42,36,Direito Ambiental,A,D,0,7.34,D
+40,52,Processo Civil,D,A,0,12.97,A
+13,72,,A,A,1,3.77,A
+20,18,Direitos Humanos,C,B,0,7.16,B
+30,33,Direito Administrativo,A,A,1,4.98,A
+29,26,Direito Tributário,C,C,1,5.37,C
+46,20,Direito Eleitoral,A,A,1,6.02,A
+26,4,Ética Profissional,C,C,1,7.26,C
+11,26,,B,C,0,4.27,C
+39,76,Processo do Trabalho,A,C,0,5.04,C
+47,38,Direito Civil,A,A,1,7.59,A
+26,1,Ética Profissional,C,C,1,8.8,C
+18,35,Direito Ambiental,D,D,1,8.5,D
+7,66,,D,D,1,9.99,D
+41,34,Direito Administrativo,C,B,0,8.53,B
+41,28,Direito Tributário,C,C,1,5.01,C
+18,52,Processo Civil,A,C,0,7.06,C
+28,79,Processo do Trabalho,C,A,0,5.9,A
+23,15,Direito Constitucional,A,A,1,6.04,A
+46,23,Direito Financeiro,A,A,1,5.46,A
+21,18,Direitos Humanos,C,A,0,6.02,A
+39,13,Direito Constitucional,B,A,0,8.33,A
+15,70,,A,B,0,11.27,B
+34,29,Direito Tributário,C,C,1,7.48,C
+16,40,Direito Civil,A,A,1,10.63,A
+5,70,,A,D,0,5.76,D
+17,68,Processo Penal,C,C,1,5.11,C
+4,67,,A,A,1,3.91,A
+11,4,,B,C,0,7.23,C
+20,22,Direito Internacional,A,A,1,5.99,A
+45,33,Direito Administrativo,A,A,1,7.33,A
+11,48,,A,A,1,4.01,A
+12,5,,C,C,1,5.01,C
+43,58,Direito Penal,D,D,1,6.97,D
+4,56,,C,C,1,2.93,C
+43,51,Processo Civil,C,C,1,6.16,C
+21,44,Estatuto da Criança e do Adolescente,D,D,1,5.97,D
+28,2,Ética Profissional,B,D,0,5.84,D
+12,54,,A,A,1,3.93,A
+7,34,,A,A,1,5.45,A
+7,27,,D,D,1,6.23,D
+34,16,Direito Constitucional,A,A,1,6.09,A
+5,12,,C,C,1,5.56,C
+22,79,Processo do Trabalho,C,C,1,6.06,C
+31,55,Processo Civil,C,C,1,6.44,C
+9,46,,D,D,1,6.1,D
+44,36,Direito Ambiental,B,A,0,5.21,A
+27,31,Direito Administrativo,A,A,1,5.07,A
+26,66,Processo Penal,B,B,1,6.03,B
+33,31,Direito Administrativo,B,B,1,5.27,B
+20,72,Direito do Trabalho,A,A,1,5.0,A
+26,68,Processo Penal,D,D,1,5.39,D
+4,3,,C,C,1,5.01,C
+23,31,Direito Administrativo,A,D,0,6.19,D
+6,77,,A,D,0,4.86,D
+19,30,Direito Administrativo,B,B,1,5.92,B
+33,61,Direito Penal,C,C,1,7.2,C
+16,78,Processo do Trabalho,C,A,0,8.47,A
+32,4,Ética Profissional,B,C,0,11.19,C
+43,21,Direito Internacional,C,C,1,6.16,C
+14,24,,B,B,1,5.74,B
+11,32,,C,C,1,5.71,C
+44,25,Direito Tributário,D,C,0,5.17,C
+39,14,Direito Constitucional,C,C,1,5.96,C
+40,51,Processo Civil,B,B,1,7.61,B
+30,22,Direito Internacional,D,D,1,7.39,D
+11,31,,C,C,1,7.33,C
+8,60,,B,B,1,4.13,B
+42,15,Direito Constitucional,D,D,1,8.94,D
+7,17,,D,D,1,5.67,D
+34,4,Ética Profissional,B,C,0,5.76,C
+7,6,,C,C,1,20.03,C
+30,65,Processo Penal,C,C,1,7.48,C
+44,49,Direito Empresarial,A,B,0,6.15,B
+27,24,Direito Financeiro,C,C,1,5.23,C
+30,1,Ética Profissional,C,D,0,7.4,D
+11,39,,B,C,0,7.11,C
+5,66,,A,A,1,2.71,A
+32,34,Direito Administrativo,D,D,1,5.64,D
+24,3,Ética Profissional,A,D,0,8.29,D
+8,12,,C,D,0,6.98,D
+35,9,Filosofia do Direito,B,B,1,5.42,B
+21,29,Direito Tributário,B,B,1,4.02,B
+41,17,Direitos Humanos,A,A,1,8.97,A
+38,16,Direito Constitucional,A,C,0,7.75,C
+37,63,Processo Penal,D,D,1,5.41,D
+31,45,Direito do Consumidor,B,B,1,6.33,B
+30,6,Ética Profissional,A,C,0,8.88,C
+25,30,Direito Administrativo,B,B,1,6.25,B
+28,9,Filosofia do Direito,A,A,1,5.09,A
+10,25,,B,B,1,3.75,B
+34,43,Estatuto da Criança e do Adolescente,C,C,1,5.41,C
+29,47,Direito Empresarial,C,C,1,5.13,C
+39,63,Processo Penal,A,C,0,6.1,C
+11,1,,B,B,1,6.14,B
+7,48,,A,A,1,5.57,A
+30,4,Ética Profissional,C,A,0,6.49,A
+31,49,Direito Empresarial,A,A,1,8.93,A
+20,53,Processo Civil,D,B,0,5.19,B
+13,16,,D,D,1,5.73,D
+31,32,Direito Administrativo,A,A,1,6.29,A
+33,78,Processo do Trabalho,D,D,1,6.17,D
+38,2,Ética Profissional,D,D,1,6.24,D
+27,3,Ética Profissional,C,C,1,8.71,C
+30,78,Processo do Trabalho,A,A,1,6.25,A
+31,28,Direito Tributário,D,D,1,5.53,D
+13,24,,C,B,0,4.31,B
+21,2,Ética Profissional,D,D,1,5.77,D
+17,69,Direito Previdenciário,B,A,0,4.83,A
+29,57,Direito Penal,B,B,1,7.11,B
+21,73,Direito do Trabalho,C,C,1,3.83,C
+17,61,Direito Penal,B,B,1,3.99,B
+8,11,,D,D,1,11.2,D
+14,11,,B,B,1,5.41,B
+37,72,Direito do Trabalho,A,,0,6.2,A alternativa correta é a **A**.
+26,37,Direito Civil,C,C,1,6.23,C
+27,23,Direito Financeiro,B,B,1,5.32,B
+23,78,Processo do Trabalho,D,D,1,7.36,D
+22,6,Ética Profissional,A,C,0,3.6,C
+24,56,Processo Civil,B,D,0,5.64,D
+13,78,,C,A,0,5.43,A
+32,50,Direito Empresarial,C,C,1,7.21,C
+24,10,Filosofia do Direito,C,C,1,5.31,C
+22,25,Direito Tributário,A,D,0,5.62,D
+42,34,Direito Administrativo,D,D,1,7.43,D
+34,74,Direito do Trabalho,D,D,1,6.05,D
+36,73,Direito do Trabalho,A,A,1,6.2,A
+24,21,Direito Internacional,B,C,0,5.58,C
+42,79,Processo do Trabalho,D,D,1,8.73,D
+22,58,Direito Penal,C,C,1,6.16,C
+23,27,Direito Tributário,C,C,1,7.2,C
+33,12,Direito Constitucional,A,A,1,6.09,A
+34,34,Direito Administrativo,B,B,1,6.03,B
+18,16,Direito Constitucional,B,B,1,6.08,B
+32,75,Direito do Trabalho,A,A,1,6.09,A
+46,33,Direito Administrativo,B,D,0,7.48,D
+31,76,Processo do Trabalho,B,B,1,5.45,B
+36,3,Ética Profissional,D,D,1,7.14,D
+41,56,Processo Civil,A,C,0,6.49,C
+32,61,Direito Penal,D,D,1,6.52,D
+26,26,Direito Tributário,D,D,1,6.26,D
+40,65,Processo Penal,A,A,1,5.39,A
+38,72,Direito do Trabalho,D,D,1,7.26,D
+5,31,,D,D,1,6.24,D
+44,44,Estatuto da Criança e do Adolescente,A,D,0,7.58,D
+33,73,Direito do Trabalho,A,A,1,6.33,A
+16,69,Direito Previdenciário,D,A,0,7.86,A
+33,38,Direito Civil,C,C,1,7.71,C
+16,20,Direito Eleitoral,D,B,0,9.72,B
+22,66,Processo Penal,B,D,0,8.0,D
+38,66,Processo Penal,B,D,0,6.56,D
+5,35,,C,C,1,6.56,C
+33,72,Direito do Trabalho,A,A,1,6.44,A
+36,59,Direito Penal,C,C,1,6.43,C
+19,5,Ética Profissional,C,A,0,6.58,A
+21,22,Direito Internacional,A,A,1,8.93,A
+31,70,Direito Previdenciário,B,C,0,5.55,C
+15,38,,C,C,1,5.6,C
+10,23,,B,B,1,4.14,B
+45,46,Direito do Consumidor,D,D,1,6.35,D
+43,77,Processo do Trabalho,C,C,1,8.88,C
+17,48,Direito Empresarial,A,C,0,5.59,C
+22,45,Direito do Consumidor,A,A,1,7.66,A
+30,45,Direito do Consumidor,D,D,1,9.59,D
+35,34,Direito Administrativo,D,D,1,7.84,D
+29,61,Direito Penal,D,D,1,7.98,D
+20,2,Ética Profissional,D,D,1,7.79,D
+39,62,Direito Penal,B,A,0,5.28,A
+42,47,Direito Empresarial,C,C,1,4.14,C
+31,26,Direito Tributário,B,C,0,6.06,C
+33,34,Direito Administrativo,B,B,1,3.68,B
+13,59,,C,C,1,6.22,C
+41,50,Direito Empresarial,B,B,1,5.2,B
+7,8,,D,D,1,6.2,D
+8,58,,B,B,1,10.75,B
+12,30,,C,C,1,3.72,C
+11,21,,B,B,1,6.21,B
+17,47,Direito Empresarial,D,D,1,8.42,D
+20,21,Direito Internacional,A,A,1,8.77,A
+6,64,,D,C,0,12.04,C
+25,78,Processo do Trabalho,B,A,0,5.84,A
+44,65,Processo Penal,B,C,0,6.16,C
+22,8,Ética Profissional,C,C,1,5.16,C
+5,71,,D,D,1,4.1,D
+27,20,Direito Eleitoral,C,C,1,6.4,C
+5,13,,C,C,1,4.08,C
+42,60,Direito Penal,C,C,1,6.37,C
+44,29,Direito Tributário,C,A,0,6.41,A
+36,47,Direito Empresarial,D,D,1,4.51,D
+24,48,Direito Empresarial,D,D,1,5.64,D
+14,28,,B,B,1,4.02,B
+44,8,Ética Profissional,B,C,0,8.9,C
+18,60,Direito Penal,D,D,1,5.15,D
+34,28,Direito Tributário,D,D,1,6.23,D
+36,29,Direito Tributário,D,D,1,5.16,D
+5,64,,B,B,1,5.17,B
+44,77,Processo do Trabalho,A,D,0,5.22,D
+32,60,Direito Penal,C,D,0,7.42,D
+4,5,,B,B,1,4.07,B
+33,74,Direito do Trabalho,B,B,1,7.39,B
+26,47,Direito Empresarial,A,A,1,3.98,A)
+43,70,Direito Previdenciário,D,D,1,6.07,D
+7,3,,D,D,1,24.91,D
+40,1,Ética Profissional,B,D,0,5.69,D
+47,69,Direito Previdenciário,D,B,0,5.44,B
+47,62,Direito Penal,A,C,0,8.29,C
+24,61,Direito Penal,D,D,1,8.13,D
+25,51,Processo Civil,A,B,0,5.85,B
+10,2,,D,B,0,6.55,B
+38,24,Direito Financeiro,B,B,1,6.43,B
+30,72,Direito do Trabalho,D,C,0,6.06,C
+25,39,Direito Civil,B,A,0,6.34,A
+39,35,Direito Ambiental,C,B,0,5.47,B
+41,68,Processo Penal,C,A,0,5.47,A
+18,77,Processo do Trabalho,A,B,0,4.23,B
+45,4,Ética Profissional,C,C,1,8.8,C
+5,60,,A,A,1,4.31,A
+44,33,Direito Administrativo,A,D,0,10.53,D
+31,51,Processo Civil,B,B,1,6.06,B
+19,71,Direito do Trabalho,D,D,1,5.95,D
+16,44,Estatuto da Criança e do Adolescente,C,A,0,8.74,A
+38,51,Processo Civil,B,B,1,6.44,B
+25,17,Direitos Humanos,C,C,1,5.38,C
+46,5,Ética Profissional,D,D,1,6.42,D
+30,57,Direito Penal,B,C,0,8.29,C
+26,64,Processo Penal,A,A,1,8.97,A
+31,1,Ética Profissional,D,D,1,4.71,D)
+9,22,,C,C,1,6.84,C
+25,73,Direito do Trabalho,A,C,0,6.68,C
+36,13,Direito Constitucional,D,D,1,5.51,D
+25,37,Direito Civil,A,A,1,5.4,A
+16,33,Direito Administrativo,B,C,0,9.15,C
+4,40,,B,B,1,4.23,B
+26,12,Direito Constitucional,A,A,1,7.6,A
+42,19,Direito Eleitoral,B,C,0,5.26,C
+26,80,Processo do Trabalho,B,C,0,4.42,C
+44,30,Direito Administrativo,D,D,1,6.55,D
+13,47,,D,B,0,9.02,B
+32,15,Direito Constitucional,A,D,0,6.86,D
+28,60,Direito Penal,D,C,0,10.0,C
+20,13,Direito Constitucional,C,C,1,6.75,C
+44,56,Processo Civil,C,D,0,6.42,D
+45,43,Estatuto da Criança e do Adolescente,D,D,1,6.75,D
+37,64,Processo Penal,D,D,1,10.38,D
+36,67,Processo Penal,D,D,1,14.14,D
+10,7,,B,B,1,4.05,B
+32,35,Direito Ambiental,C,A,0,7.56,A
+46,53,Processo Civil,C,D,0,6.21,D
+12,22,,D,D,1,5.51,D
+23,9,Filosofia do Direito,D,D,1,4.1,D
+19,64,Processo Penal,A,B,0,5.19,B
+39,67,Processo Penal,C,D,0,7.6,D
+29,66,Processo Penal,C,C,1,6.46,C
+15,75,,B,D,0,3.65,D
+36,30,Direito Administrativo,B,B,1,7.13,B
+41,30,Direito Administrativo,C,C,1,8.29,C
+32,36,Direito Ambiental,C,B,0,7.18,B
+7,36,,B,B,1,7.2,B
+27,64,Processo Penal,B,A,0,7.1,A
+32,28,Direito Tributário,D,B,0,6.07,B
+40,70,Direito Previdenciário,A,C,0,6.02,C
+15,46,,D,C,0,10.92,C
+11,77,,A,D,0,10.34,D
+4,78,,B,B,1,5.54,B
+40,4,Ética Profissional,C,C,1,7.5,C
+7,47,,B,B,1,13.36,B
+23,35,Direito Ambiental,A,A,1,7.58,A
+4,36,,B,B,1,6.22,B
+11,34,,B,B,1,6.56,B
+27,4,Ética Profissional,D,B,0,6.3,B
+6,7,,C,D,0,5.26,D
+45,13,Direito Constitucional,B,A,0,7.36,A
+30,46,Direito do Consumidor,B,B,1,5.22,B
+36,22,Direito Internacional,C,C,1,5.09,C
+43,16,Direito Constitucional,C,C,1,6.29,C
+28,7,Ética Profissional,D,B,0,6.46,B
+24,29,Direito Tributário,D,D,1,6.12,D
+9,7,,D,C,0,3.1,C
+24,27,Direito Tributário,C,C,1,6.53,C
+26,72,Direito do Trabalho,B,D,0,5.66,D
+30,41,Direito Civil,B,C,0,4.95,C
+19,77,Processo do Trabalho,D,B,0,4.86,B
+44,13,Direito Constitucional,D,C,0,7.87,C
+11,17,,D,D,1,4.32,D
+21,39,Direito Civil,D,D,1,6.3,D
+21,58,Direito Penal,C,C,1,6.21,C
+25,57,Direito Penal,C,C,1,6.96,C
+28,1,Ética Profissional,D,A,0,5.95,A
+33,54,Processo Civil,B,C,0,6.29,C
+20,23,Direito Financeiro,C,A,0,7.17,A
+21,37,Direito Civil,C,C,1,5.3,C
+34,17,Direitos Humanos,D,D,1,6.15,D
+11,79,,D,D,1,6.1,D
+29,55,Processo Civil,B,B,1,6.08,B
+15,44,,C,C,1,10.15,C
+9,52,,A,A,1,6.24,A
+18,17,Direitos Humanos,C,C,1,5.16,C
+7,62,,D,D,1,10.23,D
+22,62,Direito Penal,D,D,1,10.64,D
+5,3,,B,B,1,4.0,B
+31,15,Direito Constitucional,C,C,1,5.57,C
+27,8,Ética Profissional,A,A,1,7.71,A
+19,19,Direito Eleitoral,B,B,1,4.83,B
+11,22,,B,B,1,3.84,B
+31,17,Direitos Humanos,A,A,1,11.13,A
+19,10,Filosofia do Direito,B,A,0,7.38,A
+18,30,Direito Administrativo,B,B,1,3.98,B
+22,15,Direito Constitucional,C,B,0,7.38,B
+17,78,Processo do Trabalho,A,A,1,7.35,A
+42,9,Filosofia do Direito,D,D,1,5.2,D
+5,67,,C,C,1,3.08,C
+38,76,Processo do Trabalho,C,B,0,6.47,B
+28,17,Direitos Humanos,A,A,1,7.42,A
+15,22,,D,B,0,4.4,B
+44,41,Direito Civil,A,D,0,6.2,D
+22,68,Processo Penal,B,B,1,3.94,B
+45,23,Direito Financeiro,A,A,1,9.97,A
+20,66,Processo Penal,A,D,0,6.31,D
+28,34,Direito Administrativo,D,C,0,4.44,C
+12,4,,B,B,1,7.27,B
+28,62,Direito Penal,C,D,0,6.28,D
+25,69,Direito Previdenciário,D,D,1,6.14,D
+12,12,,A,A,1,3.0,A
+16,45,Direito do Consumidor,B,B,1,11.09,B
+32,9,Filosofia do Direito,D,D,1,6.2,D
+17,50,Direito Empresarial,D,D,1,5.64,D
+38,43,Estatuto da Criança e do Adolescente,C,C,1,6.47,C
+40,12,Direito Constitucional,D,D,1,5.38,D
+29,1,Ética Profissional,D,B,0,8.03,B
+11,68,,A,B,0,6.63,B
+38,14,Direito Constitucional,C,C,1,7.98,C
+17,54,Processo Civil,A,A,1,7.99,A
+45,60,Direito Penal,C,C,1,5.84,C
+5,79,,A,B,0,6.86,B
+7,26,,D,D,1,18.78,D
+10,40,,C,C,1,4.22,C
+38,80,Processo do Trabalho,D,,0,36.76,"A alternativa correta não foi fornecida no enunciado da questão (as opções A, B, C e D não contêm o texto jurídico correspondente à CLT), mas com base no enunciado e na legislação trabalhista (Art. 793, II e III da CLT), a conduta descrita configura litigância de má-fé.
+
+Como você solicitou apenas a letra e a questão está incompleta no enunciado fornecido, não é possível identificar qual alternativa corresponde ao texto correto da lei. No entanto, em exames da OAB, a resposta correta para este t"
+31,80,Processo do Trabalho,D,C,0,6.94,C
+46,40,Direito Civil,B,B,1,6.76,B
+38,39,Direito Civil,C,C,1,6.52,C
+32,58,Direito Penal,C,D,0,7.93,D
+7,35,,B,C,0,13.58,C
+23,38,Direito Civil,C,C,1,8.62,C
+42,77,Processo do Trabalho,D,B,0,5.55,B
+16,58,Direito Penal,A,C,0,5.71,C
+27,14,Direito Constitucional,B,B,1,10.2,B
+10,15,,C,C,1,3.27,C
+12,21,,C,C,1,4.5,C
+24,19,Direito Eleitoral,D,B,0,7.49,B
+6,24,,A,C,0,7.76,C
+42,66,Processo Penal,A,A,1,4.39,A
+14,59,,A,B,0,4.11,B
+12,49,,B,C,0,5.66,C
+22,74,Direito do Trabalho,C,C,1,4.11,C
+7,28,,C,C,1,6.63,C
+36,6,Ética Profissional,C,C,1,5.81,C
+23,47,Direito Empresarial,C,B,0,7.0,B
+42,65,Processo Penal,B,B,1,5.52,B
+45,45,Direito do Consumidor,B,B,1,7.95,B
+20,39,Direito Civil,B,B,1,8.21,B
+27,53,Processo Civil,A,A,1,6.51,A
+47,9,Filosofia do Direito,C,D,0,6.48,D
+20,68,Processo Penal,B,B,1,4.32,B
+41,24,Direito Financeiro,C,C,1,5.38,C
+24,40,Direito Civil,B,B,1,7.89,B
+24,1,Ética Profissional,D,A,0,6.43,A
+9,36,,A,D,0,6.36,D
+7,70,,B,D,0,11.11,D
+4,31,,D,D,1,5.33,D
+15,40,,D,D,1,5.67,D)
+15,74,,D,A,0,3.47,A)
+9,25,,A,C,0,3.31,C
+16,73,Direito do Trabalho,D,C,0,9.81,C
+15,25,,D,D,1,4.37,D
+44,27,Direito Tributário,A,D,0,5.69,D)
+25,33,Direito Administrativo,A,A,1,6.45,A
+38,52,Processo Civil,C,A,0,7.62,A
+44,45,Direito do Consumidor,B,B,1,6.53,B
+10,33,,D,D,1,2.82,D
+37,25,Direito Tributário,C,C,1,7.76,C
+43,67,Processo Penal,A,A,1,6.42,A
+41,52,Processo Civil,D,D,1,7.81,D
+25,46,Direito do Consumidor,A,C,0,4.44,C
+46,31,Direito Administrativo,A,A,1,9.31,A
+38,5,Ética Profissional,C,C,1,5.92,C
+6,69,,C,A,0,4.24,A
+18,11,Direito Constitucional,C,C,1,5.92,C
+24,53,Processo Civil,C,C,1,12.26,C
+29,2,Ética Profissional,B,D,0,6.88,D
+22,46,Direito do Consumidor,D,D,1,10.79,D
+13,42,,A,C,0,8.2,C
+27,78,Processo do Trabalho,D,D,1,8.4,D
+16,65,Processo Penal,D,C,0,4.27,C
+5,57,,D,D,1,7.62,D
+36,8,Ética Profissional,D,D,1,5.88,D
+20,79,Processo do Trabalho,A,B,0,5.39,B
+37,61,Direito Penal,A,A,1,5.3,A
+13,61,,D,C,0,6.31,C
+15,10,,A,A,1,8.72,A
+39,9,Filosofia do Direito,D,D,1,7.54,D
+42,11,Direito Constitucional,B,B,1,7.53,B
+33,46,Direito do Consumidor,A,C,0,5.23,C
+10,39,,C,C,1,5.57,C
+13,58,,A,A,1,9.73,A
+5,6,,D,D,1,4.56,D)
+33,41,Direito Civil,A,C,0,6.44,C
+25,35,Direito Ambiental,D,D,1,6.56,D
+43,32,Direito Administrativo,A,A,1,6.66,A
+6,72,,D,B,0,4.55,B
+16,59,Direito Penal,C,C,1,11.44,C
+30,30,Direito Administrativo,A,B,0,8.92,B
+23,53,Processo Civil,C,C,1,5.82,C
+22,23,Direito Financeiro,C,C,1,5.79,C
+26,13,Direito Constitucional,C,C,1,7.72,C
+47,3,Ética Profissional,B,D,0,7.96,D
+44,53,Processo Civil,A,B,0,6.73,B
+20,42,Direito Civil,D,D,1,7.04,D
+23,34,Direito Administrativo,D,D,1,6.75,D
+26,22,Direito Internacional,A,A,1,8.14,A
+36,79,Processo do Trabalho,C,C,1,7.86,C
+39,19,Direito Eleitoral,A,A,1,6.69,A
+8,15,,D,D,1,21.88,D
+44,2,Ética Profissional,A,A,1,5.57,A
+31,46,Direito do Consumidor,A,A,1,6.18,A
+14,16,,B,B,1,4.42,B
+42,3,Ética Profissional,D,D,1,7.89,D
+12,3,,B,A,0,6.45,A
+40,62,Direito Penal,A,D,0,8.84,D
+39,77,Processo do Trabalho,A,B,0,5.66,B
+22,54,Processo Civil,B,B,1,8.92,B
+39,37,Direito Civil,D,C,0,8.79,C
+16,14,Direito Constitucional,C,C,1,7.91,C
+30,62,Direito Penal,C,C,1,8.26,C
+22,9,Filosofia do Direito,B,C,0,10.19,C
+44,75,Direito do Trabalho,C,B,0,7.8,B
+13,39,,D,D,1,7.82,D
+40,64,Processo Penal,C,C,1,5.36,C
+13,41,,D,D,1,7.73,D
+19,47,Direito Empresarial,C,C,1,7.68,C
+14,9,,D,D,1,9.62,D
+36,16,Direito Constitucional,A,A,1,7.84,A
+12,73,,D,D,1,5.57,D
+18,9,Filosofia do Direito,A,C,0,10.15,C
+37,34,Direito Administrativo,A,A,1,6.5,A
+35,74,Direito do Trabalho,B,C,0,8.72,C
+34,42,Direito Civil,A,D,0,6.65,D
+40,19,Direito Eleitoral,D,B,0,5.66,B
+12,46,,B,B,1,8.96,B
+12,75,,D,D,1,6.34,D
+26,11,Direito Constitucional,D,B,0,5.38,B
+4,55,,C,C,1,4.2,C
+13,10,,C,C,1,6.37,C
+37,80,Processo do Trabalho,B,C,0,3.17,C
+4,4,,D,D,1,5.36,D
+39,78,Processo do Trabalho,C,A,0,6.35,A
+12,80,,B,D,0,4.47,D)
+21,17,Direitos Humanos,D,D,1,7.76,D
+25,21,Direito Internacional,B,D,0,4.55,D
+19,63,Processo Penal,B,B,1,5.81,B
+17,79,Processo do Trabalho,B,B,1,5.71,B
+35,3,Ética Profissional,B,B,1,5.82,B
+47,12,Direito Constitucional,C,A,0,9.47,A
+44,21,Direito Internacional,A,C,0,4.19,C
+38,57,Direito Penal,A,B,0,10.73,B
+47,63,Processo Penal,C,B,0,5.73,B
+46,3,Ética Profissional,C,C,1,8.12,C
+31,61,Direito Penal,C,C,1,9.85,C
+24,54,Processo Civil,D,D,1,8.18,D
+33,32,Direito Administrativo,A,A,1,6.89,A
+23,52,Processo Civil,B,B,1,6.77,B
+30,8,Ética Profissional,B,D,0,6.76,D
+10,9,,D,D,1,6.05,D
+29,41,Direito Civil,D,A,0,7.64,A
+18,39,Direito Civil,D,D,1,6.73,D
+13,1,,B,B,1,4.43,B
+30,51,Processo Civil,C,C,1,6.76,C
+21,1,Ética Profissional,A,B,0,10.27,B
+34,61,Direito Penal,A,A,1,7.69,A
+34,79,Processo do Trabalho,A,A,1,7.63,A
+30,73,Direito do Trabalho,A,A,1,5.85,A
+18,46,Direito do Consumidor,C,C,1,9.86,C
+22,14,Direito Constitucional,D,C,0,8.69,C
+4,80,,B,,0,27.53,"A alternativa correta não foi fornecida no enunciado da questão (as opções A, B, C e D não contêm o texto jurídico correspondente), mas com base no Direito Administrativo e Processual do Trabalho, a resposta correta para este tipo de questão costuma envolver o prazo de **10 dias** para interposição de recurso administrativo.
+
+No entanto, como você solicitou apenas a letra e a questão está incompleta/corrompida no texto fornecido, não é possível identificar a alternativa correta sem o texto das o"
+14,63,,C,C,1,5.59,C
+10,61,,B,B,1,4.29,B
+37,74,Direito do Trabalho,B,B,1,6.23,B
+43,60,Direito Penal,A,A,1,4.22,A)
+12,48,,B,B,1,3.24,B
+15,2,,C,C,1,7.86,C
+38,34,Direito Administrativo,D,D,1,5.65,D
+32,64,Processo Penal,B,B,1,6.17,B
+13,69,,B,A,0,9.27,A
+22,69,Direito Previdenciário,A,B,0,5.78,B
+33,64,Processo Penal,B,B,1,12.0,B
+6,43,,D,A,0,6.97,A
+19,37,Direito Civil,B,B,1,6.74,B
+9,65,,B,A,0,6.16,A
+17,17,Direitos Humanos,C,C,1,6.55,C
+33,6,Ética Profissional,C,C,1,6.21,C
+9,20,,D,D,1,6.48,D
+6,30,,C,B,0,5.44,B
+19,70,Direito Previdenciário,B,D,0,5.68,D
+22,64,Processo Penal,A,A,1,8.89,A
+15,49,,C,A,0,4.15,A
+27,38,Direito Civil,C,C,1,5.19,C
+47,53,Processo Civil,D,C,0,6.17,C
+30,58,Direito Penal,D,D,1,7.43,D
+13,9,,B,B,1,5.19,B
+15,4,,A,B,0,4.1,B
+43,35,Direito Ambiental,D,D,1,6.51,D
+43,65,Processo Penal,A,D,0,5.57,D
+44,68,Processo Penal,B,B,1,7.77,B
+12,62,,C,B,0,6.48,B
+8,59,,B,B,1,8.9,B
+34,2,Ética Profissional,C,B,0,4.1,B
+31,12,Direito Constitucional,A,A,1,7.77,A
+31,63,Processo Penal,C,C,1,8.5,C
+28,20,Direito Eleitoral,B,B,1,4.15,B
+32,14,Direito Constitucional,D,A,0,8.66,A
+44,9,Filosofia do Direito,D,A,0,6.22,A
+14,78,,B,B,1,5.21,B
+14,67,,C,C,1,6.22,C
+19,65,Processo Penal,D,B,0,5.57,B
+30,76,Processo do Trabalho,C,D,0,4.49,D
+34,27,Direito Tributário,C,C,1,6.42,C
+22,41,Direito Civil,B,B,1,7.96,B
+34,26,Direito Tributário,D,B,0,7.88,B
+39,65,Processo Penal,C,D,0,8.02,D
+39,42,Direito Civil,B,A,0,5.72,A
+47,32,Direito Administrativo,D,D,1,7.98,D
+16,64,Processo Penal,C,A,0,4.3,A
+6,80,,A,,0,18.36,"A alternativa correta não está presente nas opções fornecidas (A, B, C, D), pois as opções listadas (""muito bom"", ""bom"", ""regular"", ""ruim"") não correspondemem a uma resposta jurídica válida para a questão sobre nomeação de advogado na Justiça do Trabalho.
+
+No entanto, seguindo a estrutura da sua solicitação para escolher uma letra:
+
+**A**"
+21,3,Ética Profissional,B,A,0,6.03,A
+34,78,Processo do Trabalho,A,D,0,6.31,D
+44,50,Direito Empresarial,C,A,0,6.41,A
+24,26,Direito Tributário,B,B,1,5.19,B
+22,20,Direito Eleitoral,D,D,1,11.62,D
+36,41,Direito Civil,D,D,1,6.32,D
+6,54,,C,D,0,4.37,D)
+27,1,Ética Profissional,A,B,0,6.55,B
+11,49,,D,B,0,5.64,B
+13,37,,A,A,1,5.16,A
+21,63,Processo Penal,D,D,1,7.66,D
+13,2,,B,A,0,3.99,A
+42,52,Processo Civil,C,B,0,6.78,B
+46,49,Direito Empresarial,C,C,1,7.68,C
+13,51,,B,B,1,6.14,B
+10,30,,A,C,0,5.49,C
+9,49,,B,B,1,5.73,B
+40,37,Direito Civil,B,B,1,6.33,B
+21,68,Processo Penal,A,C,0,5.37,C
+38,49,Direito Empresarial,B,C,0,5.54,C
+40,36,Direito Ambiental,C,C,1,6.12,C
+11,7,,B,B,1,3.98,B
+27,33,Direito Administrativo,A,D,0,6.76,D
+13,23,,A,A,1,5.59,A
+21,46,Direito do Consumidor,B,B,1,7.79,B
+22,61,Direito Penal,B,B,1,7.83,B
+16,18,Direitos Humanos,B,B,1,11.91,B
+33,18,Direitos Humanos,A,A,1,6.5,A
+36,57,Direito Penal,C,A,0,6.28,A
+32,43,Estatuto da Criança e do Adolescente,B,D,0,6.34,D
+29,18,Direitos Humanos,B,B,1,10.1,B
+9,53,,D,D,1,6.72,D
+44,61,Direito Penal,D,D,1,4.47,D)
+30,43,Estatuto da Criança e do Adolescente,A,B,0,6.31,B
+26,3,Ética Profissional,B,C,0,7.49,C
+46,70,Direito Previdenciário,A,A,1,5.21,A
+20,29,Direito Tributário,C,C,1,3.68,C
+45,55,Processo Civil,B,B,1,6.31,B
+47,60,Direito Penal,D,D,1,9.08,D
+5,7,,C,C,1,5.78,C
+37,67,Processo Penal,A,A,1,5.5,A
+20,73,Direito do Trabalho,D,D,1,6.4,D
+31,62,Direito Penal,C,C,1,5.35,C
+41,31,Direito Administrativo,D,D,1,7.43,D
+37,20,Direito Eleitoral,A,A,1,3.09,A
+23,51,Processo Civil,D,D,1,5.33,D
+18,41,Direito Civil,D,D,1,11.26,D
+38,31,Direito Administrativo,A,A,1,6.23,A
+34,36,Direito Ambiental,A,A,1,11.13,A
+44,12,Direito Constitucional,D,D,1,6.41,D
+16,48,Direito Empresarial,D,D,1,6.72,D
+16,38,Direito Civil,A,C,0,10.45,C
+5,50,,A,A,1,4.23,A
+37,40,Direito Civil,C,C,1,6.38,C
+5,29,,C,C,1,4.16,C
+13,44,,C,B,0,8.23,B
+34,80,Processo do Trabalho,D,A,0,5.82,A
+47,68,Processo Penal,D,B,0,4.39,B
+14,31,,B,B,1,4.36,B
+9,17,,D,D,1,5.47,D
+8,35,,A,A,1,14.31,A
+22,32,Direito Administrativo,D,D,1,5.68,D
+12,78,,D,D,1,6.13,D
+22,26,Direito Tributário,D,D,1,4.1,D
+25,66,Processo Penal,B,B,1,9.08,B
+28,55,Processo Civil,D,D,1,7.73,D
+15,60,,B,C,0,7.45,C
+10,80,,B,,0,45.49,"A alternativa correta não foi fornecida no enunciado da questão (as opções A, B, C e D não correspondemem a uma base legal ou doutrinária clara para o tema). No entanto, seguindo a regra de aplicação do processo do trabalho para entes públicos:
+
+**A)** (Considerando que a alternativa correta deveria indicar a revelia ou a aplicação de sanções, mas como as opções fornecidas são ""muito bom"", ""bom"", ""regular"" e ""ruim"", a questão parece estar com as alternativas incorretas ou incompletas para o padr"
+35,11,Direito Constitucional,B,B,1,8.2,B
+26,55,Processo Civil,A,A,1,5.87,A
+40,80,Processo do Trabalho,A,A,1,4.35,A
+10,3,,B,B,1,6.39,B
+37,31,Direito Administrativo,D,C,0,8.61,C
+6,23,,A,B,0,6.39,B
+37,68,Processo Penal,C,B,0,4.1,B
+18,26,Direito Tributário,D,D,1,10.65,D
+5,37,,A,D,0,6.64,D
+29,20,Direito Eleitoral,B,B,1,6.51,B
+8,4,,B,B,1,14.78,B
+9,55,,C,C,1,4.4,C
+41,41,Direito Civil,D,D,1,4.36,D
+7,46,,B,B,1,15.73,B
+43,6,Ética Profissional,B,B,1,6.69,B
+25,28,Direito Tributário,C,,0,38.94,"A alternativa correta não está presente nas opções fornecidas, pois as alternativas A, B, C e D referem-se a um enunciado sobre ""estágio probatório"" e não sobre o caso de ""Raimundo"" e a ""Lei de Improbidade Administrativa"".
+
+No entanto, seguindo a lógica da questão sobre o caso de Raimundo (que trata de prescrição na Lei 8.429/92 com as alterações da Lei 14.230/2021), a resposta correta para o prazo prescricional seria de **8 anos**.
+
+Como as alternativas fornecidas não correspondemem ao enunciad"
+42,28,Direito Tributário,A,A,1,6.81,A
+15,37,,C,A,0,7.49,A
+36,15,Direito Constitucional,C,C,1,6.29,C
+19,16,Direito Constitucional,A,C,0,6.23,C
+5,34,,C,C,1,8.67,C
+35,62,Direito Penal,A,A,1,8.62,A
+23,44,Estatuto da Criança e do Adolescente,D,D,1,9.77,D
+47,17,Direitos Humanos,A,C,0,6.21,C
+47,27,Direito Tributário,D,C,0,7.38,C
+10,14,,D,D,1,3.87,D
+33,27,Direito Tributário,A,A,1,7.44,A
+18,12,Direito Constitucional,C,C,1,5.24,C
+32,29,Direito Tributário,C,C,1,5.09,C
+25,8,Ética Profissional,C,C,1,6.34,C
+9,79,,B,A,0,4.18,A
+9,38,,B,B,1,5.98,B
+43,14,Direito Constitucional,A,A,1,7.3,A
+5,62,,A,A,1,5.32,A
+23,58,Direito Penal,B,B,1,6.26,B
+4,68,,D,D,1,4.04,D
+37,58,Direito Penal,A,A,1,4.25,A
+45,22,Direito Internacional,C,C,1,5.23,C
+15,71,,A,A,1,2.92,A
+47,22,Direito Internacional,C,C,1,5.04,C
+45,16,Direito Constitucional,A,A,1,6.09,A
+10,48,,A,A,1,3.81,A
+38,47,Direito Empresarial,A,A,1,5.55,A
+22,75,Direito do Trabalho,D,D,1,5.06,D
+37,26,Direito Tributário,B,B,1,6.15,B
+34,7,Ética Profissional,C,B,0,6.14,B
+40,67,Processo Penal,A,A,1,5.01,A
+29,52,Processo Civil,B,B,1,6.44,B
+29,65,Processo Penal,D,B,0,7.62,B
+13,21,,C,B,0,6.32,B
+40,69,Direito Previdenciário,C,B,0,6.24,B
+31,58,Direito Penal,A,C,0,9.9,C
+45,17,Direitos Humanos,B,C,0,6.65,C
+6,78,,B,B,1,4.02,B
+18,20,Direito Eleitoral,A,A,1,5.2,A
+42,37,Direito Civil,D,D,1,8.34,D
+17,70,Direito Previdenciário,B,B,1,5.3,B
+15,51,,C,C,1,7.61,C
+12,33,,B,B,1,3.07,B
+5,9,,C,C,1,4.06,C
+14,53,,B,B,1,4.03,B
+35,31,Direito Administrativo,A,A,1,8.91,A
+36,23,Direito Financeiro,C,C,1,9.03,C
+17,9,Filosofia do Direito,C,A,0,5.57,A
+21,24,Direito Financeiro,D,D,1,6.64,D
+28,51,Processo Civil,C,C,1,6.43,C
+30,44,Estatuto da Criança e do Adolescente,D,D,1,9.07,D
+40,17,Direitos Humanos,A,A,1,6.53,A
+32,3,Ética Profissional,D,C,0,8.84,C
+40,21,Direito Internacional,D,D,1,5.64,D
+4,51,,C,A,0,5.42,A
+23,42,Direito Civil,B,A,0,5.34,A
+37,66,Processo Penal,C,C,1,7.76,C
+39,2,Ética Profissional,D,C,0,5.59,C
+4,43,,A,B,0,6.79,B
+22,56,Processo Civil,C,C,1,7.57,C
+9,73,,A,C,0,4.55,C
+23,50,Direito Empresarial,B,B,1,6.24,B
+17,29,Direito Tributário,A,A,1,6.49,A
+33,48,Direito Empresarial,C,C,1,9.46,C
+43,22,Direito Internacional,C,C,1,9.51,C
+30,29,Direito Tributário,C,C,1,7.94,C
+35,54,Processo Civil,C,A,0,8.17,A
+43,73,Direito do Trabalho,A,A,1,6.47,A
+20,76,Processo do Trabalho,D,D,1,5.92,D
+26,15,Direito Constitucional,C,C,1,6.51,C
+47,10,Filosofia do Direito,D,C,0,7.33,C
+39,27,Direito Tributário,C,C,1,6.5,C
+20,70,Direito Previdenciário,D,D,1,6.22,D
+13,32,,A,A,1,4.75,A
+23,62,Direito Penal,B,B,1,5.39,B
+30,52,Processo Civil,D,D,1,7.59,D
+26,19,Direito Eleitoral,C,C,1,8.19,C
+7,51,,D,D,1,7.53,D
+11,52,,A,A,1,7.48,A
+8,40,,B,B,1,10.96,B
+21,64,Processo Penal,D,B,0,5.81,B
+12,70,,C,C,1,7.5,C
+6,12,,B,A,0,5.13,A
+5,61,,B,B,1,6.27,B
+26,56,Processo Civil,B,B,1,8.47,B
+45,34,Direito Administrativo,D,D,1,7.39,D
+21,25,Direito Tributário,D,C,0,5.7,C
+38,64,Processo Penal,C,B,0,5.11,B
+45,48,Direito Empresarial,C,A,0,5.52,A
+43,10,Filosofia do Direito,D,D,1,5.96,D
+23,71,Direito do Trabalho,B,B,1,6.58,B
+29,43,Estatuto da Criança e do Adolescente,B,B,1,7.63,B
+33,63,Processo Penal,A,A,1,8.88,A
+18,34,Direito Administrativo,A,A,1,4.1,A
+22,48,Direito Empresarial,B,B,1,5.71,B
+47,57,Direito Penal,C,C,1,6.38,C
+37,46,Direito do Consumidor,A,A,1,7.45,A
+18,65,Processo Penal,C,C,1,6.1,C
+42,68,Processo Penal,C,A,0,5.14,A
+41,42,Direito Civil,D,D,1,6.36,D
+13,53,,D,D,1,5.32,D
+43,43,Estatuto da Criança e do Adolescente,B,B,1,7.37,B
+45,29,Direito Tributário,D,D,1,6.1,D
+46,24,Direito Financeiro,C,C,1,5.06,C
+23,59,Direito Penal,B,D,0,5.65,D)
+44,55,Processo Civil,D,B,0,6.59,B
+20,64,Processo Penal,A,B,0,5.62,B
+28,24,Direito Financeiro,A,C,0,6.33,C
+29,5,Ética Profissional,A,B,0,7.79,B
+18,31,Direito Administrativo,B,B,1,6.23,B
+28,63,Processo Penal,B,B,1,7.57,B
+42,71,Direito do Trabalho,C,B,0,6.27,B
+33,26,Direito Tributário,A,B,0,6.54,B
+9,37,,C,C,1,6.34,C
+9,30,,B,B,1,3.68,B
+15,14,,A,B,0,10.37,B
+21,79,Processo do Trabalho,C,A,0,5.38,A
+14,7,,D,C,0,11.46,C
+24,71,Direito do Trabalho,C,C,1,6.58,C
+5,80,,D,,0,8.19,Não há alternativas válidas ou conteúdo jurídico nas opções fornecidas para responder à questão sobre competência material da Justiça do Trabalho.
+21,59,Direito Penal,A,A,1,6.9,A
+44,18,Direitos Humanos,D,A,0,7.63,A
+12,28,,D,D,1,5.06,D
+13,45,,D,D,1,7.9,D
+46,35,Direito Ambiental,C,C,1,7.64,C
+19,73,Direito do Trabalho,B,A,0,6.34,A
+39,70,Direito Previdenciário,C,B,0,5.43,B
+28,50,Direito Empresarial,C,C,1,5.22,C
+41,80,Processo do Trabalho,A,D,0,4.21,D)
+42,41,Direito Civil,D,C,0,6.32,C
+8,71,,C,D,0,8.68,D
+25,6,Ética Profissional,D,B,0,7.25,B
+38,41,Direito Civil,B,A,0,6.27,A
+14,3,,A,D,0,7.93,D
+29,39,Direito Civil,C,B,0,7.88,B
+16,34,Direito Administrativo,C,B,0,4.22,B
+37,55,Processo Civil,D,D,1,9.74,D
+33,50,Direito Empresarial,D,D,1,5.21,D
+47,59,Direito Penal,B,D,0,8.44,D
+12,18,,A,B,0,4.13,B
+7,59,,D,D,1,7.85,D
+23,49,Direito Empresarial,C,C,1,5.21,C
+41,19,Direito Eleitoral,C,C,1,5.07,C
+27,57,Direito Penal,B,B,1,7.33,B
+28,39,Direito Civil,B,B,1,8.74,B
+14,77,,A,A,1,5.5,A
+29,45,Direito do Consumidor,C,B,0,7.44,B
+14,60,,C,A,0,6.58,A
+15,19,,D,A,0,9.12,A
+27,26,Direito Tributário,A,B,0,6.26,B
+5,41,,C,C,1,4.05,C
+21,7,Ética Profissional,C,A,0,7.35,A
+18,1,Ética Profissional,A,A,1,6.22,A
+24,24,Direito Financeiro,C,C,1,5.13,C
+27,42,Direito Civil,A,A,1,5.35,A
+31,60,Direito Penal,C,D,0,6.09,D
+46,9,Filosofia do Direito,B,B,1,8.38,B
+18,18,Direitos Humanos,C,A,0,6.21,A
+7,54,,A,A,1,15.45,A
+5,22,,B,C,0,3.14,C
+10,27,,D,B,0,5.21,B
+7,69,,A,C,0,10.29,C
+24,25,Direito Tributário,D,D,1,6.32,D
+40,40,Direito Civil,B,B,1,7.65,B
+33,8,Ética Profissional,C,D,0,3.29,D)
+21,28,Direito Tributário,C,C,1,5.73,C
+31,47,Direito Empresarial,C,C,1,5.23,C
+38,12,Direito Constitucional,C,C,1,5.2,C
+46,22,Direito Internacional,C,C,1,5.43,C
+43,50,Direito Empresarial,A,A,1,7.55,A
+47,2,Ética Profissional,B,B,1,6.3,B
+20,20,Direito Eleitoral,B,B,1,10.01,B
+39,1,Ética Profissional,A,A,1,3.97,A
+11,29,,D,D,1,5.37,D
+41,12,Direito Constitucional,C,C,1,5.21,C
+36,5,Ética Profissional,B,B,1,5.27,B
+21,78,Processo do Trabalho,B,B,1,5.3,B
+21,21,Direito Internacional,C,C,1,7.82,C
+14,64,,B,A,0,6.49,A
+11,43,,C,C,1,11.76,C
+11,51,,C,C,1,7.79,C
+31,57,Direito Penal,B,B,1,7.5,B
+40,45,Direito do Consumidor,D,D,1,6.2,D
+14,37,,D,D,1,3.91,D
+38,13,Direito Constitucional,A,A,1,6.18,A
+4,24,,A,A,1,3.52,A
+45,1,Ética Profissional,A,A,1,6.33,A
+15,20,,A,D,0,4.45,D
+4,7,,B,B,1,3.21,B
+17,14,Direito Constitucional,A,A,1,5.46,A
+21,40,Direito Civil,A,A,1,8.97,A
+22,49,Direito Empresarial,B,B,1,7.53,B
+24,12,Direito Constitucional,B,B,1,6.24,B
+4,28,,A,A,1,3.92,A
+11,23,,C,C,1,5.41,C
+15,58,,C,C,1,5.58,C
+43,8,Ética Profissional,C,C,1,7.36,C
