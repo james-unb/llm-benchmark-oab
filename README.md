@@ -65,10 +65,26 @@ FROM questoes_llm;
 O script `avaliar_oab.py` aplica as questões a um modelo e grava um CSV com a resposta, o acerto e o tempo de cada questão. Ele declara as próprias dependências no cabeçalho, então roda com `uv` sem instalar o projeto. Para modelos locais é preciso ter o [Ollama](https://ollama.com) aberto e o modelo baixado (`ollama pull <modelo>`); para a nuvem, a variável `OPENROUTER_API_KEY`.
 
 ```powershell
-uv run avaliar_oab.py --modelo gemma4:e2b-it-q4_K_M --limite 20   # teste rápido
-uv run avaliar_oab.py --modelo gemma4:e2b-it-q4_K_M               # prova inteira
-uv run avaliar_oab.py --modelo gemma4:e2b-it-q4_K_M --prova 47    # só o exame XLVII
+uv run avaliar_oab.py --modelo gemma4:e2b-it-q4_K_M --limite 20              # teste rápido
+uv run avaliar_oab.py --modelo gemma4:e2b-it-q4_K_M                          # prova inteira
+uv run avaliar_oab.py --modelo gemma4:e2b-it-q4_K_M --prova 46 47            # só os exames XLVI e XLVII
+uv run avaliar_oab.py --modelo gemma4:e2b-it-q4_K_M --gabarito preliminar    # inclui questões só com preliminar
 uv run avaliar_oab.py --modelo google/gemma-4-26b-a4b-it --onde openrouter
 ```
 
-O script usa as questões com `questao_extraida=true` e alternativas A–D, com o gabarito definitivo quando existe e o preliminar quando a banca o manteve (3.487 questões, sem 2010.2 e 2010.3, que tinham alternativa E). Temperatura 0 e ordem embaralhada com semente 42, então `--limite N` dá a mesma amostra para todo mundo. Se parar no meio, rode o mesmo comando: ele continua de onde parou. Os CSVs de resultado vão para `resultados/`.
+**Quais questões entram.** Questões com `questao_extraida=true` e alternativas A a D; 2010.2 e 2010.3 ficam de fora porque tinham alternativa E, e questões anuladas também. O gabarito depende de `--gabarito`:
+
+- `definitivo` (padrão): só questões com gabarito definitivo publicado (1.819 questões na base atual).
+- `preliminar`: usa o preliminar onde não há definitivo (3.487 questões, das quais 1.668 com preliminar). A base não registra se a banca manteve o preliminar, então cada linha do resultado traz `fonte_gabarito` (`definitivo` ou `preliminar`) e o resumo mostra quantas usaram o preliminar.
+
+**Dividir a prova.** Com `--prova`, cada pessoa roda só os exames combinados; cada divisão vai para um arquivo próprio. Exame pedido que não existe na base dá erro com a lista dos disponíveis.
+
+**Onde fica o resultado.** Em `resultados/resultados_<modelo>[_prova...][_gabarito-preliminar].csv` (ou no caminho de `--saida`), com a resposta completa do modelo em `texto_bruto`, sem corte. Ao lado fica um `.json` com a configuração da rodada: modelo, onde rodou, temperatura, máximo de tokens, regra do gabarito, exames, limite, de onde vieram os dados e o sha256 da base, do prompt e do script.
+
+**Retomar.** Se parar no meio, rode o mesmo comando: ele continua de onde parou. Se o modelo, o serviço, a temperatura, o máximo de tokens, a regra do gabarito, a base (sha256) ou o prompt mudaram, o script recusa a retomada e pede outro `--saida`, para não misturar respostas de configurações diferentes. Para fixar uma versão da base, passe `--dados` com o caminho de um arquivo local ou a URL de um commit.
+
+**Resumo.** Considera só as questões da seleção atual. Com `--limite` menor que a seleção, avisa que a rodada é parcial e que a acurácia vale só para as respondidas. Temperatura 0 e ordem embaralhada com semente 42, então `--limite N` dá a mesma amostra para todo mundo.
+
+**Testes.** `python3 -m unittest discover -s tests` (não chama modelo nenhum).
+
+**Histórico.** `resultados/historico/gemma4_12b-nvfp4_2026-10-28.csv` é a rodada do gemma4:12b-nvfp4 feita com a versão anterior do script: gabarito preliminar onde faltava o definitivo, `texto_bruto` cortado em 500 caracteres e a base com os problemas de gabarito e de extração apontados na revisão do PR #2. Fica como registro; não é a pontuação validada.
