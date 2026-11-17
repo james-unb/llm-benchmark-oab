@@ -4,13 +4,13 @@ Projeto do time de dados para coletar provas objetivas tipo 1, estruturar uma li
 
 ## Escopo e fonte
 
-O acervo contém **46 exames**: 2010.2, 2010.3 e os exames IV a XLVII. A coleta inclui somente o caderno tipo 1 da 1ª fase, os gabaritos preliminares e definitivos publicados e comunicados oficiais de anulação ou retificação. Não inclui os cadernos tipo 2–4 nem as provas da 2ª fase.
+O acervo bruto contém **46 exames**: 2010.2, 2010.3 e os exames IV a XLVII. Os PDFs dos exames XXXIX, XLIV e XLVII permanecem em `provas_oab/`, mas essas três edições são temporariamente excluídas das bases CSV, SQL e SQLite durante a revisão dos resultados de benchmark. O VI Exame continua incluído, com o gabarito nacional separado do material da reaplicação de Duque de Caxias. A coleta considera somente o caderno tipo 1 da 1ª fase, gabaritos e comunicados oficiais; não inclui cadernos tipo 2–4 nem provas da 2ª fase.
 
 Os PDFs estão em `provas_oab/`, organizados por `numero_exame_ano_Ttrimestre` (por exemplo, `16_2015_T1`). Os identificadores oficiais antigos são mantidos: `2010.2_2010_T3` e `2010.3_2011_T1`. Os trimestres são os trimestres civis da aplicação. Os arquivos preservam o identificador da pasta no nome.
 
 A fonte é a [página oficial de Editais e Provas da OAB/FGV](https://examedeordem.oab.org.br/EditaisProvas?NumeroExame=0). O downloader trata links PDF antigos publicados em HTTP e acessa-os por HTTPS.
 
-O parser também atende aos formatos históricos: 2010.2 e 2010.3 têm 100 questões; os outros exames deste acervo têm 80. O questionário de percepção anexado ao caderno 2010.2 não é uma questão. Nos gabaritos dos exames XII a XIV, o parser lê a tabela que relaciona os tipos de caderno e extrai as respostas do tipo 1. A matéria permanece vazia antes do XVI porque a distribuição histórica ainda não foi validada.
+O parser também atende aos formatos históricos: 2010.2 e 2010.3 têm 100 questões; os outros exames deste acervo têm 80. Questionários de percepção anexados após o caderno não são questões. As questões 80 dos exames XV e XVI são reconstruídas a partir da leitura visual dos PDFs oficiais porque a ordem interna do texto nesses arquivos intercala colunas. Nos gabaritos dos exames XII a XIV, o parser lê a tabela que relaciona os tipos de caderno e extrai as respostas do tipo 1. A matéria permanece vazia antes do XVI porque a distribuição histórica ainda não foi validada.
 
 O [plano de extração retificado](plano_extracao_feito.pdf) registra a estrutura e as decisões aplicadas.
 
@@ -49,7 +49,7 @@ Cada linha representa uma questão e inclui número e data do exame, tipo da pro
 
 ## Uso pelo time de LLM e estado do acervo
 
-Na versão atual, a tabela principal tem **3.720 questões** em **46 exames**; a view `questoes_llm` contém **1.819 questões**. Dez registros têm `questao_extraida=false` e ficam fora da view. A matéria não foi preenchida nos exames anteriores ao XVI porque falta validar a classificação histórica por faixa.
+Na versão atual, a tabela principal tem **3.480 questões** em **43 exames**; a view `questoes_llm` contém **1.583 questões**. Dez registros têm `questao_extraida=false` e ficam fora da view. A base mantém 2010.2 e 2010.3 (100 questões cada) e o VI Exame (80 questões). XXXIX, XLIV e XLVII não aparecem nas bases geradas, mas seus PDFs originais continuam no acervo. A matéria não foi preenchida nos exames anteriores ao XVI porque falta validar a classificação histórica por faixa.
 
 Consulta inicial:
 
