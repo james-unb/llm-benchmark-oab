@@ -11,10 +11,6 @@ from pathlib import Path
 
 import pymupdf
 
-# Mantém esses PDFs no acervo bruto, mas fora das bases entregues enquanto
-# a equipe investiga os resultados anômalos nas avaliações.
-EXAMES_EXCLUIDOS_DA_BASE = frozenset({"39", "44", "47"})
-
 # Nos cadernos XV e XVI, o texto da questão 80 é armazenado em fragmentos
 # intercalados entre colunas no PDF. Reconstrução conferida visualmente nos
 # cadernos oficiais tipo 1 para evitar gravar trechos das questões vizinhas.
@@ -435,8 +431,6 @@ def extrair_provas(pasta_provas: Path) -> list[dict[str, object]]:
         if not provas:
             continue
         numero_exame = _numero_exame(pasta.name)
-        if numero_exame in EXAMES_EXCLUIDOS_DA_BASE:
-            continue
         data_exame = _data_exame(numero_exame, provas)
         chaves: dict[str, dict[int, str]] = defaultdict(dict)
         caminhos_chave: dict[str, str | None] = {"preliminar": None, "definitivo": None, "oficial": None}
