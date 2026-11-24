@@ -11,6 +11,60 @@ from pathlib import Path
 
 import pymupdf
 
+# Nos cadernos XV e XVI, o texto da questão 80 é armazenado em fragmentos
+# intercalados entre colunas no PDF. Reconstrução conferida visualmente nos
+# cadernos oficiais tipo 1 para evitar gravar trechos das questões vizinhas.
+CORRECOES_QUESTOES = {
+    ("15", 80): {
+        "enunciado": (
+            "Jorge, que presta serviços a uma companhia aérea na China, é autor "
+            "de um processo em face da Viação Brasil S/A, sua ex-empregadora. "
+            "Na data da audiência, Jorge estará, comprovadamente, trabalhando "
+            "na China. Considerando que Jorge tem interesse no desfecho rápido "
+            "de seu processo, deverá"
+        ),
+        "alternativa_a": "requerer o adiamento para data próxima.",
+        "alternativa_b": (
+            "dar procuração com poderes específicos ao seu advogado para que "
+            "este o represente."
+        ),
+        "alternativa_c": (
+            "fazer-se representar por outro empregado da mesma profissão ou "
+            "pelo seu sindicato."
+        ),
+        "alternativa_d": "deixar arquivar a demanda e ajuizar uma nova.",
+    },
+    ("16", 80): {
+        "enunciado": (
+            "No momento em que a sociedade empresária estava fazendo o "
+            "recolhimento do preparo relativo ao recurso de revista que iria "
+            "interpor em face de um acórdão, houve um lapso do departamento "
+            "financeiro e o depósito recursal foi feito com uma diferença a "
+            "menor, de R$ 5,00, o que somente foi verificado após o término do "
+            "prazo. Diante da situação retratada e de acordo com o entendimento "
+            "consolidado do TST, assinale a afirmativa correta."
+        ),
+        "alternativa_a": (
+            "A diferença é ínfima e deve ser desprezada, não prejudicando a "
+            "apreciação imediata do recurso."
+        ),
+        "alternativa_b": (
+            "Apesar de pequena, a diferença existe, cabendo, então, ao Ministro "
+            "Relator, no TST, intimar a parte à complementação do preparo, sob "
+            "pena de deserção."
+        ),
+        "alternativa_c": (
+            "O recurso não será conhecido por deserção, mesmo que a diferença "
+            "seja de pequeno valor."
+        ),
+        "alternativa_d": (
+            "Não havendo nenhuma disciplina a respeito, caberá a cada "
+            "magistrado, valendo-se do seu poder diretivo do processo, "
+            "determinar o que deve ser feito."
+        ),
+    },
+}
+
 # Distribuição indicada no plano do projeto para cadernos de 80 questões.
 # Provas antigas de 100 questões não recebem matéria por posição: a ordem
 # histórica precisa de um mapa próprio validado antes de preencher esse campo.
@@ -50,8 +104,42 @@ def _texto_pdf(caminho: Path) -> str:
         textos: list[str] = []
         motor = None
         numpy = None
-        for pagina in paginas:
+        for indice_pagina, pagina in enumerate(paginas):
             texto = pagina.get_text(sort=False)
+            blocos = pagina.get_text("blocks")
+            # Em alguns cadernos antigos, as questões 77–80 são impressas em
+            # duas colunas. A ordem interna mistura as colunas e contamina a
+            # questão 80; quando o cabeçalho dela está à direita, leia coluna
+            # esquerda inteira antes da direita.
+            cabecalho_q80_direita = any(
+                bloco[0] >= pagina.rect.width / 2
+                and re.search(r"quest.{0,3}o\s*80", _normalizar(bloco[4]))
+                for bloco in blocos
+            )
+            if cabecalho_q80_direita:
+                esquerda = sorted(
+                    (b for b in blocos if b[0] < pagina.rect.width / 2),
+                    key=lambda b: (b[1], b[0]),
+                )
+                direita = sorted(
+                    (b for b in blocos if b[0] >= pagina.rect.width / 2),
+                    key=lambda b: (b[1], b[0]),
+                )
+                texto = "\n".join(b[4] for b in [*esquerda, *direita])
+            # Alguns PDFs têm mapa de caracteres quebrado e ocultam o título
+            # do questionário, mas preservam perguntas como "tempo gasto" ou
+            # "layout da prova". A pesquisa vem depois do último item do exame.
+            texto_normalizado = _normalizar(re.sub(r"\s+", " ", texto))
+            indice_pesquisa = re.search(
+                r"question.{0,5}rio\s+de\s+percep|"
+                r"qual foi o tempo gasto|tempo gasto para concluir|"
+                r"layout.{0,100}(?:desta|dessa|da) prova",
+                texto_normalizado,
+            )
+            if indice_pesquisa and indice_pagina > 0:
+                # O questionário aparece em página separada nesses cadernos;
+                # descarte-a inteira para não misturar suas alternativas.
+                break
             nao_latin = sum(
                 1 for caractere in texto
                 if (unicodedata.category(caractere).startswith("L")
@@ -80,6 +168,12 @@ def _texto_pdf(caminho: Path) -> str:
 
 def _numero_exame(nome_pasta: str) -> str:
     chave = re.sub(r"[_-]+", " ", _normalizar(nome_pasta))
+    # Pastas padronizadas pelo número ordinal; os próprios PDFs identificam
+    # estas duas edições como Exame 2010.2 e Exame 2010.3.
+    if re.match(r"^2\s+2010\b", chave):
+        return "2010.2"
+    if re.match(r"^3\s+2011\b", chave):
+        return "2010.3"
     antigo = re.search(r"2010\s*\.?\s*(2|3)", chave)
     if antigo:
         return f"2010.{antigo.group(1)}"
@@ -155,15 +249,35 @@ def _tipo_no_documento(texto: str, nome: str) -> int:
 
 
 def _isolar_tipo_1(texto: str) -> str:
-    # Gabaritos recentes contêm quatro tabelas, uma por tipo de prova.
+    # Os PDFs usam dois cabeçalhos: "EXAME ... PROVA 1" (XXXIX) e
+    # "PROVA TIPO 1" (XLIV/XLVII), com o nome do exame em outra linha.
+    cabecalho_prova = re.compile(
+        r"(?im)^\s*(?:[^\n]*\bexame\b[^\n]*?\bprova\s+(?:tipo\s+)?"
+        r"(?P<numero_exame>[1-4])\b[^\n]*|prova\s+tipo\s+"
+        r"(?P<numero_tipo>[1-4])\b[^\n]*)\s*$"
+    )
+    cabecalhos = list(cabecalho_prova.finditer(texto))
+    tipo_1 = next(
+        (m for m in cabecalhos if (m.group("numero_exame") or m.group("numero_tipo")) == "1"),
+        None,
+    )
+    if tipo_1:
+        inicio = texto.find("\n", tipo_1.end())
+        inicio = inicio + 1 if inicio >= 0 else tipo_1.end()
+        proximo = next(
+            (m for m in cabecalhos if m.start() > tipo_1.start() and
+             (m.group("numero_exame") or m.group("numero_tipo")) in {"2", "3", "4"}),
+            None,
+        )
+        return texto[inicio:proximo.start() if proximo else len(texto)]
+
+    # Formato anterior: "XVI EXAME UNIFICADO - TIPO 1 - BRANCO".
     marcador = re.search(r"(?im)^\s*[^\n]*\bexame\b[^\n]*\btipo\s+1\b[^\n]*", texto)
     if marcador:
         inicio = texto.find("\n", marcador.end())
         depois = texto[inicio + 1:] if inicio >= 0 else ""
         proximo = re.search(r"(?im)^\s*[^\n]*\bexame\b[^\n]*\btipo\s+[234]\b[^\n]*", depois)
-        if proximo:
-            return depois[:proximo.start()]
-        return depois
+        return depois[:proximo.start()] if proximo else depois
     return texto
 
 
@@ -232,6 +346,13 @@ def _normalizar_resposta(valor: str) -> str:
 
 
 def _questoes(texto: str, limite_questao: int = 80) -> list[dict[str, object]]:
+    # O questionário de percepção fica depois das questões finais. PDFs antigos
+    # e o OCR podem quebrar o título entre linhas; usar a última ocorrência
+    # próxima do fim evita que as respostas da pesquisa virem alternativas.
+    mencoes_questionario = list(re.finditer(r"(?i)question.{0,3}rio", texto))
+    if mencoes_questionario and mencoes_questionario[-1].start() >= len(texto) * 0.70:
+        texto = texto[:mencoes_questionario[-1].start()]
+
     # Os cadernos de 2010 têm 100 itens e os mais recentes, 80. A sequência é
     # descoberta no próprio PDF, sem limitar o parser a uma quantidade fixa.
     marcadores: list[tuple[int, int]] = []
@@ -316,6 +437,16 @@ def extrair_provas(pasta_provas: Path) -> list[dict[str, object]]:
         comunicado_manteve_gabarito: Path | None = None
         for arquivo in arquivos:
             nome_normalizado = _normalizar(arquivo.name)
+            # A reaplicação de Duque de Caxias teve prova e gabarito próprios;
+            # não deve substituir as respostas da aplicação nacional.
+            if any(marcador in nome_normalizado for marcador in (
+                "reaplicacao",
+                "examinandos de salvador",
+                "examinandos de boa vista",
+                "examinandos de duque de caxias",
+                "duque de caxias/rj",
+            )):
+                continue
             if "comunicado" in nome_normalizado:
                 texto_comunicado = " ".join(_normalizar(_texto_pdf(arquivo)).split())
                 if "mantido integralmente o gabarito publicado" in texto_comunicado:
@@ -338,6 +469,13 @@ def extrair_provas(pasta_provas: Path) -> list[dict[str, object]]:
         if not questoes:
             print(f"AVISO: nenhuma questão extraída de {prova}")
             continue
+        for questao in questoes:
+            correcao = CORRECOES_QUESTOES.get(
+                (numero_exame, int(questao["numero_questao"]))
+            )
+            if correcao:
+                questao.update(correcao)
+                questao["questao_extraida"] = True
         # Um gabarito oficial único de páginas antigas funciona como resposta
         # definitiva somente quando a fonte o identifica como oficial e não há
         # documento preliminar nem definitivo separado.
@@ -352,6 +490,7 @@ def extrair_provas(pasta_provas: Path) -> list[dict[str, object]]:
             final = dict(prelim)
             caminhos_chave["definitivo"] = comunicado_manteve_gabarito.as_posix()
         anuladas_por_comunicado: set[int] = set()
+        fontes_anulacao_por_questao: dict[int, Path] = {}
         for comunicado in arquivos:
             nome_comunicado = _normalizar(comunicado.name)
             if "comunicado" not in nome_comunicado:
@@ -373,11 +512,11 @@ def extrair_provas(pasta_provas: Path) -> list[dict[str, object]]:
                     trecho,
                     re.I,
                 ):
-                    anuladas_por_comunicado.update(
-                        int(numero)
-                        for numero in re.findall(r"\d{1,3}", match.group("numeros"))
-                        if 1 <= int(numero) <= limite_questao
-                    )
+                    for numero in re.findall(r"\d{1,3}", match.group("numeros")):
+                        numero_questao = int(numero)
+                        if 1 <= numero_questao <= limite_questao:
+                            anuladas_por_comunicado.add(numero_questao)
+                            fontes_anulacao_por_questao[numero_questao] = comunicado
 
         total = max(
             len(questoes),
@@ -406,6 +545,9 @@ def extrair_provas(pasta_provas: Path) -> list[dict[str, object]]:
             fonte_relativa = _fonte_relativa(prova)
             fonte_preliminar = _fonte_relativa(Path(caminhos_chave["preliminar"])) if caminhos_chave["preliminar"] else None
             fonte_definitivo = _fonte_relativa(Path(caminhos_chave["definitivo"])) if caminhos_chave["definitivo"] else None
+            fonte_anulacao = fontes_anulacao_por_questao.get(n)
+            if fonte_anulacao:
+                fonte_definitivo = _fonte_relativa(fonte_anulacao)
             registros.append({
                 "numero_exame": numero_exame,
                 "data_exame": data_exame,
