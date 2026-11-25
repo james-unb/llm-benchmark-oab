@@ -1,0 +1,31 @@
+name: Testes automatizados
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  testes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Baixar código
+        uses: actions/checkout@v6
+
+      - name: Configurar Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.14'
+
+      - name: Verificar arquivo de testes
+        run: test -f tests/test_avaliar_oab.py
+
+      - name: Executar testes unitários
+        run: python -m unittest discover -s tests -v
