@@ -41,7 +41,7 @@ CAMPOS = ["numero_exame", "numero_questao", "materia", "gabarito", "fonte_gabari
           "acertou", "segundos", "texto_bruto"]
 # Parâmetros que, se mudarem, tornam as respostas antigas incomparáveis com as novas.
 CONFIG_QUE_TRAVA = ["modelo", "onde", "temperatura", "max_tokens", "gabarito", "sha256_dados", "sha256_prompt",
-                    "semente"]
+                    "sha256_script", "semente"]
 
 
 def sha256(dados):
@@ -93,7 +93,8 @@ def perguntar(onde, modelo, texto, temperatura, max_tokens):
     else:
         url, cabecalho = URL_OPENROUTER, {"Authorization": "Bearer " + os.environ["OPENROUTER_API_KEY"]}
         corpo = {"model": modelo, "messages": [{"role": "user", "content": texto}],
-                 "temperature": temperatura, "max_tokens": max_tokens}
+                 "temperature": temperatura, "max_tokens": max_tokens,
+                 "reasoning": {"effort": "none"}}  # raciocínio desligado, como no Ollama (think: False)
     pedido = urllib.request.Request(url, json.dumps(corpo).encode(),
                                     {"Content-Type": "application/json", **cabecalho})
     with urllib.request.urlopen(pedido, timeout=600) as r:

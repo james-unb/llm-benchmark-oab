@@ -109,6 +109,17 @@ class Retomada(unittest.TestCase):
                 rodar(args + ["--temperatura", "0.7"])
         self.assertIn("temperatura", str(e.exception.code))
 
+    def test_recusa_script_diferente(self):
+        with tempfile.TemporaryDirectory() as t:
+            saida = Path(t) / "r.csv"
+            config = {k: "mesmo_valor" for k in A.CONFIG_QUE_TRAVA}
+            config["sha256_script"] = "versao_1"
+            A.conferir_retomada(saida, config)
+            config["sha256_script"] = "versao_2"
+            with self.assertRaises(SystemExit) as e:
+                A.conferir_retomada(saida, config)
+        self.assertIn("sha256_script", str(e.exception.code))
+
     def test_recusa_base_diferente(self):
         with tempfile.TemporaryDirectory() as t:
             p = base(t)

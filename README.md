@@ -4,13 +4,13 @@ Projeto do time de dados para coletar provas objetivas tipo 1, estruturar uma li
 
 ## Escopo e fonte
 
-O acervo contém **46 exames**: 2010.2, 2010.3 e os exames IV a XLVII. A coleta inclui somente o caderno tipo 1 da 1ª fase, os gabaritos preliminares e definitivos publicados e comunicados oficiais de anulação ou retificação. Não inclui os cadernos tipo 2–4 nem as provas da 2ª fase.
+O acervo contém **46 exames**: 2010.2, 2010.3 e os exames IV a XLVII. A base inclui os exames XXXIX, XLIV e XLVII com as respostas extraídas das seções oficiais Tipo 1. O VI Exame também está incluído, com o gabarito nacional separado do material da reaplicação de Duque de Caxias. A coleta considera somente o caderno tipo 1 da 1ª fase, gabaritos e comunicados oficiais; não inclui cadernos tipo 2–4 nem provas da 2ª fase.
 
 Os PDFs estão em `provas_oab/`, organizados por `numero_exame_ano_Ttrimestre` (por exemplo, `16_2015_T1`). Os identificadores oficiais antigos são mantidos: `2010.2_2010_T3` e `2010.3_2011_T1`. Os trimestres são os trimestres civis da aplicação. Os arquivos preservam o identificador da pasta no nome.
 
 A fonte é a [página oficial de Editais e Provas da OAB/FGV](https://examedeordem.oab.org.br/EditaisProvas?NumeroExame=0). O downloader trata links PDF antigos publicados em HTTP e acessa-os por HTTPS.
 
-O parser também atende aos formatos históricos: 2010.2 e 2010.3 têm 100 questões; os outros exames deste acervo têm 80. O questionário de percepção anexado ao caderno 2010.2 não é uma questão. Nos gabaritos dos exames XII a XIV, o parser lê a tabela que relaciona os tipos de caderno e extrai as respostas do tipo 1. A matéria permanece vazia antes do XVI porque a distribuição histórica ainda não foi validada.
+O parser também atende aos formatos históricos: 2010.2 e 2010.3 têm 100 questões; os outros exames deste acervo têm 80. Questionários de percepção anexados após o caderno não são questões. As questões 80 dos exames XV e XVI são reconstruídas a partir da leitura visual dos PDFs oficiais porque a ordem interna do texto nesses arquivos intercala colunas. Nos gabaritos dos exames XII a XIV, o parser lê a tabela que relaciona os tipos de caderno e extrai as respostas do tipo 1. A matéria permanece vazia antes do XVI porque a distribuição histórica ainda não foi validada.
 
 O [plano de extração retificado](plano_extracao_feito.pdf) registra a estrutura e as decisões aplicadas.
 
@@ -49,7 +49,7 @@ Cada linha representa uma questão e inclui número e data do exame, tipo da pro
 
 ## Uso pelo time de LLM e estado do acervo
 
-Na versão atual, a tabela principal tem **3.720 questões** em **46 exames**; a view `questoes_llm` contém **1.819 questões**. Dez registros têm `questao_extraida=false` e ficam fora da view. A matéria não foi preenchida nos exames anteriores ao XVI porque falta validar a classificação histórica por faixa.
+Na versão atual, a tabela principal tem **3.720 questões** em **46 exames**; a view `questoes_llm` contém **1.819 questões**. Dez registros têm `questao_extraida=false` e ficam fora da view. A base mantém 2010.2 e 2010.3 (100 questões cada) e o VI Exame (80 questões), além das demais provas tipo 1 do acervo. A matéria não foi preenchida nos exames anteriores ao XVI porque falta validar a classificação histórica por faixa.
 
 Consulta inicial:
 
@@ -75,13 +75,13 @@ uv run avaliar_oab.py --modelo google/gemma-4-26b-a4b-it --onde openrouter
 **Quais questões entram.** Questões com `questao_extraida=true` e alternativas A a D; 2010.2 e 2010.3 ficam de fora porque tinham alternativa E, e questões anuladas também. O gabarito depende de `--gabarito`:
 
 - `definitivo` (padrão): só questões com gabarito definitivo publicado (1.819 questões na base atual).
-- `preliminar`: usa o preliminar onde não há definitivo (3.487 questões, das quais 1.668 com preliminar). A base não registra se a banca manteve o preliminar, então cada linha do resultado traz `fonte_gabarito` (`definitivo` ou `preliminar`) e o resumo mostra quantas usaram o preliminar.
+- `preliminar`: usa o preliminar onde não há definitivo (3.485 questões, das quais 1.666 com preliminar). A base não registra se a banca manteve o preliminar, então cada linha do resultado traz `fonte_gabarito` (`definitivo` ou `preliminar`) e o resumo mostra quantas usaram o preliminar.
 
 **Dividir a prova.** Com `--prova`, cada pessoa roda só os exames combinados; cada divisão vai para um arquivo próprio. Exame pedido que não existe na base dá erro com a lista dos disponíveis.
 
 **Onde fica o resultado.** Em `resultados/resultados_<modelo>[_prova...][_gabarito-preliminar].csv` (ou no caminho de `--saida`), com a resposta completa do modelo em `texto_bruto`, sem corte. Ao lado fica um `.json` com a configuração da rodada: modelo, onde rodou, temperatura, máximo de tokens, regra do gabarito, exames, limite, de onde vieram os dados e o sha256 da base, do prompt e do script.
 
-**Retomar.** Se parar no meio, rode o mesmo comando: ele continua de onde parou. Se o modelo, o serviço, a temperatura, o máximo de tokens, a regra do gabarito, a base (sha256) ou o prompt mudaram, o script recusa a retomada e pede outro `--saida`, para não misturar respostas de configurações diferentes. Para fixar uma versão da base, passe `--dados` com o caminho de um arquivo local ou a URL de um commit.
+**Retomar.** Se parar no meio, rode o mesmo comando: ele continua de onde parou. Se o modelo, o serviço, a temperatura, o máximo de tokens, a regra do gabarito, a base (sha256), o prompt ou a versão do script (sha256) mudaram, o script recusa a retomada e pede outro `--saida`, para não misturar respostas de configurações diferentes. Para fixar uma versão da base, passe `--dados` com o caminho de um arquivo local ou a URL de um commit.
 
 **Resumo.** Considera só as questões da seleção atual. Com `--limite` menor que a seleção, avisa que a rodada é parcial e que a acurácia vale só para as respondidas. Temperatura 0 e ordem embaralhada com semente 42, então `--limite N` dá a mesma amostra para todo mundo.
 
