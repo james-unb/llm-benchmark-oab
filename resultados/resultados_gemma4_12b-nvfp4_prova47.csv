@@ -1,0 +1,86 @@
+numero_exame,numero_questao,materia,gabarito,fonte_gabarito,resposta_modelo,acertou,segundos,texto_bruto
+47,64,Processo Penal,D,definitivo,A,0,11.88,A
+47,32,Direito Administrativo,C,definitivo,D,0,5.15,D
+47,20,Direito Eleitoral,B,definitivo,B,1,5.7,B
+47,2,Ética Profissional,B,definitivo,B,1,4.81,B
+47,40,Direito Civil,A,definitivo,A,1,4.36,A
+47,22,Direito Internacional,C,definitivo,C,1,3.88,C
+47,4,Ética Profissional,C,definitivo,C,1,5.06,C
+47,26,Direito Tributário,B,definitivo,B,1,5.17,B
+47,79,Processo do Trabalho,C,definitivo,D,0,6.99,D
+47,38,Direito Civil,A,definitivo,A,1,5.66,A
+47,52,Processo Civil,B,definitivo,A,0,21.09,"A alternativa correta não está presente entre as opções fornecidas de forma tecnicamente precisa conforme o Código de Processo Civil (Art. 922 e 923), mas a questão parece buscar a interpretação do **Art. 922 do CPC**, que permite o parcelamento no cumprimento de sentença. No entanto, analisando as alternativas e a estrutura típica de provas da OAB:
+
+A alternativa correta é a **A** (considerando que o CPC permite o parcelamento em ambos os ritos, embora a questão apresente alternativas limitadas).
+
+*Nota: Tecnicamente, o parcelamento (Art. 922) aplica-se ao cumprimento de sentença, e o Art. 924 permite a extinção da execução se o pagamento for integral. A alternativa A é a que mais se aproxima da possibilidade jurídica.*
+
+Resposta: **A**"
+47,58,Direito Penal,B,definitivo,D,0,5.47,D
+47,62,Direito Penal,C,definitivo,C,1,6.4,C
+47,36,Direito Ambiental,D,definitivo,D,1,7.24,D
+47,41,Direito Civil,D,definitivo,D,1,6.49,D
+47,30,Direito Administrativo,C,definitivo,C,1,10.48,C
+47,70,Direito Previdenciário,D,definitivo,D,1,7.27,D
+47,80,Processo do Trabalho,A,definitivo,A,1,10.67,A
+47,67,Processo Penal,B,definitivo,B,1,7.03,B
+47,71,Direito do Trabalho,A,definitivo,A,1,13.15,A
+47,16,Direito Constitucional,A,definitivo,A,1,8.78,A
+47,3,Ética Profissional,D,definitivo,D,1,10.81,D
+47,27,Direito Tributário,A,definitivo,C,0,11.61,C
+47,59,Direito Penal,D,definitivo,D,1,11.69,D
+47,74,Direito do Trabalho,A,definitivo,C,0,9.53,C
+47,5,Ética Profissional,C,definitivo,A,0,9.23,A
+47,42,Direito Civil,A,definitivo,A,1,12.11,A
+47,68,Processo Penal,B,definitivo,B,1,4.75,B
+47,44,Estatuto da Criança e do Adolescente,B,definitivo,B,1,8.93,B
+47,33,Direito Administrativo,C,definitivo,C,1,11.84,C
+47,54,Processo Civil,D,definitivo,D,1,11.17,D
+47,1,Ética Profissional,A,definitivo,A,1,9.55,A
+47,78,Processo do Trabalho,D,definitivo,D,1,9.05,D
+47,61,Direito Penal,A,definitivo,C,0,10.14,C
+47,15,Direito Constitucional,C,definitivo,A,0,12.89,A
+47,23,Direito Financeiro,A,definitivo,C,0,12.68,C
+47,73,Direito do Trabalho,B,definitivo,B,1,10.05,B
+47,19,Direito Eleitoral,C,definitivo,C,1,10.03,C
+47,51,Processo Civil,B,definitivo,B,1,5.87,B
+47,17,Direitos Humanos,D,definitivo,C,0,8.39,C
+47,37,Direito Civil,C,definitivo,C,1,10.7,C
+47,49,Direito Empresarial,A,definitivo,B,0,11.45,B
+47,66,Processo Penal,C,definitivo,C,1,4.81,C
+47,29,Direito Tributário,D,definitivo,D,1,12.73,D
+47,53,Processo Civil,C,definitivo,C,1,11.18,C
+47,48,Direito Empresarial,C,definitivo,B,0,11.42,B
+47,76,Processo do Trabalho,A,definitivo,A,1,10.32,A
+47,34,Direito Administrativo,D,definitivo,D,1,10.35,D
+47,28,Direito Tributário,B,definitivo,D,0,10.91,D
+47,9,Filosofia do Direito,D,definitivo,D,1,7.8,D
+47,69,Direito Previdenciário,B,definitivo,B,1,7.29,B
+47,63,Processo Penal,B,definitivo,B,1,8.22,B
+47,72,Direito do Trabalho,D,definitivo,D,1,15.96,D
+47,75,Direito do Trabalho,D,definitivo,D,1,8.57,D
+47,12,Direito Constitucional,A,definitivo,A,1,11.87,A
+47,57,Direito Penal,B,definitivo,C,0,8.61,C
+47,8,Ética Profissional,B,definitivo,B,1,9.58,B
+47,7,Ética Profissional,B,definitivo,B,1,11.82,B
+47,13,Direito Constitucional,D,definitivo,B,0,9.47,B
+47,55,Processo Civil,B,definitivo,C,0,18.96,C
+47,45,Direito do Consumidor,A,definitivo,A,1,11.36,A
+47,6,Ética Profissional,D,definitivo,D,1,9.82,D
+47,43,Estatuto da Criança e do Adolescente,D,definitivo,C,0,16.18,C
+47,25,Direito Tributário,B,definitivo,B,1,6.34,B
+47,11,Direito Constitucional,C,definitivo,C,1,16.51,C
+47,35,Direito Ambiental,C,definitivo,C,1,12.04,C
+47,18,Direitos Humanos,A,definitivo,A,1,17.24,A
+47,56,Processo Civil,D,definitivo,D,1,15.04,D
+47,14,Direito Constitucional,C,definitivo,C,1,12.06,C
+47,10,Filosofia do Direito,C,definitivo,C,1,16.19,C
+47,21,Direito Internacional,A,definitivo,A,1,10.6,A
+47,31,Direito Administrativo,B,definitivo,B,1,10.06,B
+47,60,Direito Penal,A,definitivo,D,0,11.84,D
+47,65,Processo Penal,D,definitivo,D,1,7.02,D)
+47,46,Direito do Consumidor,D,definitivo,D,1,7.91,D
+47,24,Direito Financeiro,C,definitivo,C,1,6.36,C
+47,50,Direito Empresarial,D,definitivo,D,1,9.09,D
+47,39,Direito Civil,D,definitivo,D,1,13.43,D
+47,77,Processo do Trabalho,B,definitivo,B,1,12.99,B
