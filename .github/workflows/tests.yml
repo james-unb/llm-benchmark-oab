@@ -42,6 +42,7 @@ jobs:
           import subprocess
           import sys
           from pathlib import Path
+          from validar_resultados import gerar_resumo
 
           alterados = subprocess.check_output([
               "git", "diff", "--name-only", "-z",
@@ -64,17 +65,17 @@ jobs:
               if not csv.exists() and not config.exists():
                   continue
 
-              if not csv.exists() or not config.exists():
-                  sys.exit(f"Par CSV/JSON incompleto: {csv}")
-
               validar.append(str(csv))
 
           if validar:
               subprocess.run([
                   sys.executable,
                   "validar_resultados.py",
+                  "--resumo", os.environ["GITHUB_STEP_SUMMARY"],
                   *validar
               ], check=True)
           else:
               print("Nenhum resultado novo ou modificado.")
+              with Path(os.environ["GITHUB_STEP_SUMMARY"]).open("a", encoding="utf-8") as f:
+                  f.write(gerar_resumo([]))
           PY

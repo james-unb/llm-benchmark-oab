@@ -6,6 +6,7 @@ Não baixa URLs nem executa modelos. Use a revisão correspondente à rodada.
 import argparse
 import csv
 import hashlib
+import html
 import json
 import math
 import re
@@ -161,7 +162,61 @@ def validar(caminho, base, permitir_parcial=False):
     n = len(vistos)
     return {"respondidas": n, "esperadas": len(esperadas), "acertos": acertos,
             "acuracia": acertos / n, "sem_letra": invalidas,
-            "tempo_medio": sum(tempos) / n, "parcial": bool(ausentes)}
+            "tempo_medio": sum(tempos) / n, "parcial": bool(ausentes),
+            "modelo": c["modelo"], "provas": c["prova"], "gabarito": c["gabarito"]}
+
+
+def texto_md(valor):
+    """Evita que campos externos alterem a estrutura do relatório Markdown."""
+    texto = " ".join(str(valor).split())
+    texto = texto[:300] + ("…" if len(texto) > 300 else "")
+    return "".join(
+        f"&#{ord(c)};" if c in "|`*_[]!~#\\" else html.escape(c, quote=True)
+        for c in texto
+    )
+
+
+def gerar_resumo(registros):
+    """Retorna um relatório por arquivo, sem agregar rodadas distintas."""
+    linhas = ["## Validação dos resultados", ""]
+    if not registros:
+        return "\n".join(linhas + ["Nenhum resultado novo ou modificado.", ""])
+    falhas = sum("erro" in item for item in registros)
+    parciais = sum("erro" not in item and item["resultado"]["parcial"]
+                   for item in registros)
+    completos = len(registros) - falhas - parciais
+    linhas.extend([
+        f"Arquivos: {len(registros)} | OK: {completos} | "
+        f"Parciais: {parciais} | Erros: {falhas}", "",
+        "| Arquivo | Modelo | Provas | Gabarito | Questões | Acertos | Acurácia | Sem letra | Tempo médio (s) | Status |",
+        "|---|---|---|---|---:|---:|---:|---:|---:|---|",
+    ])
+    for item in registros:
+        nome = texto_md(item["arquivo"])
+        if "erro" in item:
+            linhas.append(f"| {nome} | — | — | — | — | — | — | — | — | ERRO |")
+            continue
+        r = item["resultado"]
+        provas = ", ".join(r["provas"]) if r["provas"] is not None else "Todas"
+        status = "PARCIAL" if r["parcial"] else "OK"
+        linhas.append(
+            f"| {nome} | {texto_md(r['modelo'])} | {texto_md(provas)} | "
+            f"{texto_md(r['gabarito'])} | {r['respondidas']}/{r['esperadas']} | "
+            f"{r['acertos']} | {r['acuracia']:.1%} | {r['sem_letra']} | "
+            f"{r['tempo_medio']:.2f} | {status} |"
+        )
+    if falhas:
+        linhas.extend(["", "### Inconsistências", ""])
+        for item in registros:
+            if "erro" not in item:
+                continue
+            erros = item["erro"].splitlines()
+            linhas.append(f"- **{texto_md(item['arquivo'])}**")
+            for erro in erros[:5]:
+                linhas.append(f"  - {texto_md(erro)}")
+            if len(erros) > 5:
+                linhas.append(f"  - Mais {len(erros) - 5} linhas de erro nos logs.")
+    return "\n".join(linhas) + "\n"
 
 
 def main(argv=None):
@@ -170,18 +225,29 @@ def main(argv=None):
     p.add_argument("--base", type=Path, default=RAIZ / "dados/questoes_oab.csv")
     p.add_argument("--permitir-parcial", action="store_true",
                    help="Aceita uma rodada interrompida, identificada como parcial no resumo.")
-    a = p.parse_args(argv)
+    p.add_argument("--resumo", type=Path, help="Caminho do relatório Markdown.")
+    a = p.parse_intermixed_args(argv)
     falhou = False
+    registros = []
     for caminho in a.csv:
         try:
             r = validar(caminho, a.base, a.permitir_parcial)
+            registros.append({"arquivo": str(caminho), "resultado": r})
             status = "PARCIAL" if r["parcial"] else "OK"
             print(f"{status}: {caminho} | {r['respondidas']}/{r['esperadas']} questões | "
                   f"{r['acertos']} acertos | {r['acuracia']:.1%} | "
                   f"{r['sem_letra']} sem letra | {r['tempo_medio']:.2f} s/questão")
         except (OSError, ValueError, KeyError, TypeError, csv.Error) as e:
             falhou = True
+            registros.append({"arquivo": str(caminho), "erro": str(e)})
             print(f"ERRO: {caminho}\n{e}", file=sys.stderr)
+    if a.resumo is not None:
+        try:
+            with a.resumo.open("a", encoding="utf-8", newline="\n") as f:
+                f.write(gerar_resumo(registros))
+        except OSError as e:
+            falhou = True
+            print(f"ERRO ao gravar resumo: {e}", file=sys.stderr)
     return int(falhou)
 
 

@@ -1,5 +1,7 @@
 """Testes do validador com base e resultados sintéticos, sem chamar LLM."""
+import contextlib
 import csv
+import io
 import json
 import tempfile
 import unittest
@@ -127,6 +129,71 @@ class ValidarResultados(unittest.TestCase):
         self.config.unlink()
         with self.assertRaises(FileNotFoundError):
             self.validar()
+
+
+    def rodar_com_resumo(self, *args):
+        resumo = Path(self.tmp.name) / "resumo.md"
+        with contextlib.redirect_stdout(io.StringIO()), contextlib.redirect_stderr(io.StringIO()):
+            codigo = V.main([str(self.resultado), "--base", str(self.base),
+                             "--resumo", str(resumo), *args])
+        return codigo, resumo.read_text(encoding="utf-8")
+
+    def test_resumo_valido(self):
+        codigo, resumo = self.rodar_com_resumo()
+        self.assertEqual(codigo, 0)
+        self.assertIn("OK: 1 | Parciais: 0 | Erros: 0", resumo)
+        self.assertIn("simulado | 47 | definitivo | 2/2 | 1 | 50.0% | 0 | 2.00 | OK", resumo)
+
+    def test_resumo_invalido(self):
+        self.linhas[1]["acertou"] = 1
+        self.gravar()
+        codigo, resumo = self.rodar_com_resumo()
+        self.assertEqual(codigo, 1)
+        self.assertIn("Erros: 1", resumo)
+        self.assertIn("coluna acertou inconsistente", resumo)
+        self.assertIn("| ERRO |", resumo)
+        self.assertNotIn("50.0%", resumo)
+
+    def test_resumo_parcial(self):
+        self.linhas.pop()
+        self.gravar()
+        codigo, resumo = self.rodar_com_resumo("--permitir-parcial")
+        self.assertEqual(codigo, 0)
+        self.assertIn("Parciais: 1", resumo)
+        self.assertIn("1/2 | 1 | 100.0%", resumo)
+        self.assertIn("| PARCIAL |", resumo)
+
+    def test_resumo_misto_preserva_falha(self):
+        outro = self.resultado.with_name("invalido.csv")
+        outro.write_bytes(self.resultado.read_bytes())
+        # O segundo resultado não tem JSON correspondente.
+        codigo, resumo = self.rodar_com_resumo(str(outro))
+        self.assertEqual(codigo, 1)
+        self.assertIn("OK: 1 | Parciais: 0 | Erros: 1", resumo)
+        self.assertIn("invalido.csv", resumo)
+        self.assertIn("| ERRO |", resumo)
+
+    def test_resumo_escapa_markdown(self):
+        self.c["modelo"] = "modelo|<b>\n[link]"
+        self.gravar()
+        codigo, resumo = self.rodar_com_resumo()
+        self.assertEqual(codigo, 0)
+        self.assertIn("modelo&#124;&lt;b&gt; &#91;link&#93;", resumo)
+        self.assertNotIn("modelo|<b>", resumo)
+
+    def test_resumo_sem_resultados(self):
+        self.assertIn("Nenhum resultado novo ou modificado.", V.gerar_resumo([]))
+
+    def test_hash_quebras_de_linha_nos_dois_sentidos(self):
+        caminho = Path(self.tmp.name) / "linhas.txt"
+        lf = b"a\nb\n"
+        crlf = b"a\r\nb\r\n"
+        for conteudo, esperado in ((lf, crlf), (crlf, lf), (lf, lf), (crlf, crlf)):
+            with self.subTest(conteudo=conteudo, esperado=esperado):
+                caminho.write_bytes(conteudo)
+                self.assertEqual(V.ler_versao(caminho, V.sha256(esperado)), esperado)
+        with self.assertRaisesRegex(ValueError, "Hash incompatível"):
+            V.ler_versao(caminho, V.sha256(b"outro"))
 
 
 if __name__ == "__main__":
