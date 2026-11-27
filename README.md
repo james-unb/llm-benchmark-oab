@@ -146,3 +146,21 @@ uv run validar_resultados.py resultados/resultados_gemma4_12b-nvfp4_prova47.csv 
 ```
 
 O relatório não consolida rodadas de modelos ou configurações diferentes. A opção `--resumo` acrescenta o relatório ao arquivo informado; use um novo caminho para cada execução, se desejar.
+
+### Cobertura e sobreposições dos resultados
+
+O Summary do GitHub Actions também apresenta um relatório operacional do acervo de resultados, com questões únicas respondidas, questões pendentes, exames concluídos, parciais e pendentes, e acurácia observada quando não há sobreposições.
+
+As rodadas são separadas por modelo, serviço, temperatura, limite de tokens, regra de gabarito, semente e hashes registrados da base, do prompt e do avaliador. Seleções de provas e limites de questões diferentes podem contribuir para a mesma configuração. A cobertura usa todas as questões elegíveis daquela configuração como denominador, e não apenas as provas selecionadas em um arquivo.
+
+Questões presentes em mais de um arquivo da mesma configuração são contabilizadas uma única vez na cobertura. O relatório identifica os arquivos envolvidos e omite a acurácia agregada quando há sobreposição, sem bloquear automaticamente o PR. Essa sinalização não prova que uma repetição experimental seja indevida. Configurações com hashes distintos são mantidas separadas, inclusive quando a diferença se deve às quebras de linha.
+
+Somente resultados compatíveis com a base e o avaliador locais são consolidados. Arquivos incompatíveis ou inconsistentes são listados como alertas e os históricos são ignorados. A validação obrigatória de resultados modificados permanece inalterada. O relatório também considera rodadas parciais válidas na cobertura, sem relaxar a validação obrigatória para novos resultados.
+
+Para consultar a cobertura localmente (opcional):
+
+```bash
+uv run cobertura_resultados.py
+```
+
+Para gravar o relatório, use `--resumo cobertura.md`. O comando não executa modelos nem modifica os resultados.

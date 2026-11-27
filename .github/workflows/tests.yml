@@ -79,3 +79,6 @@ jobs:
               with Path(os.environ["GITHUB_STEP_SUMMARY"]).open("a", encoding="utf-8") as f:
                   f.write(gerar_resumo([]))
           PY
+
+      - name: Cobertura e sobreposições dos resultados
+        run: python cobertura_resultados.py --resumo "$GITHUB_STEP_SUMMARY"
