@@ -32,6 +32,11 @@ jobs:
       - name: Executar testes unitários
         run: python -m unittest discover -s tests -v
 
+      - name: Integridade e qualidade da base OAB
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before || '' }}
+        run: python validar_base.py --comparar-ref "$BASE_SHA" --resumo "$GITHUB_STEP_SUMMARY"
+
       - name: Validar resultados modificados
         if: github.event_name != 'workflow_dispatch'
         env:
