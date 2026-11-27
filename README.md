@@ -134,3 +134,15 @@ uv run python -m unittest discover -s tests -v
 ```
 
 Os testes também são executados automaticamente pelo GitHub Actions, sem necessidade de intervenção manual dos pesquisadores.
+
+### Relatório de validação
+
+O resumo da execução (Summary) do GitHub Actions apresenta uma linha por arquivo de resultados modificado, com modelo, provas, regra de gabarito, cobertura da seleção, acertos, acurácia, respostas sem letra válida, tempo médio e situação da validação. Em caso de erro, as inconsistências são apresentadas no resumo e nos logs; o check continua reprovado.
+
+Opcionalmente, o pesquisador pode gerar o mesmo relatório em Markdown localmente:
+
+```bash
+uv run validar_resultados.py resultados/resultados_gemma4_12b-nvfp4_prova47.csv --resumo resumo.md
+```
+
+O relatório não consolida rodadas de modelos ou configurações diferentes. A opção `--resumo` acrescenta o relatório ao arquivo informado; use um novo caminho para cada execução, se desejar.
