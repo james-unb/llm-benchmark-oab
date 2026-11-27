@@ -24,14 +24,24 @@ def sha256(bruto):
 
 def ler_versao(caminho, esperado):
     bruto = caminho.read_bytes()
+
     if sha256(bruto) == esperado:
         return bruto
-    # Um checkout Windows pode converter LF em CRLF. Aceita a conversão
-    # somente se os bytes restaurados tiverem exatamente o hash registrado.
+
+    # Compatibilidade entre Windows e Linux.
     normalizado = bruto.replace(b"\r\n", b"\n")
-    if sha256(normalizado) == esperado:
-        return normalizado
-    raise ValueError(f"Hash incompatível: {caminho}. Use a revisão da rodada.")
+
+    for candidato in (
+        normalizado,
+        normalizado.replace(b"\n", b"\r\n")
+    ):
+        if sha256(candidato) == esperado:
+            return candidato
+
+    raise ValueError(
+        f"Hash incompatível: {caminho}. "
+        "Use a revisão da rodada."
+    )
 
 
 def inteiro_positivo(v):
