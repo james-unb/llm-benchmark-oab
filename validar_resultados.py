@@ -1,7 +1,7 @@
-"""Valida resultados do avaliador OAB contra a base e o script locais.
+"""Valida resultados OAB contra a base local ou versionada e o script local.
 
 Exemplo: python validar_resultados.py resultados/resultados_modelo_prova47.csv
-Não baixa URLs nem executa modelos. Use a revisão correspondente à rodada.
+Não baixa URLs nem executa modelos. Busca a base no histórico Git local.
 """
 import argparse
 import csv
@@ -10,7 +10,9 @@ import html
 import json
 import math
 import re
+import subprocess
 import sys
+from functools import lru_cache
 from pathlib import Path
 
 import avaliar_oab as A
@@ -23,9 +25,8 @@ def sha256(bruto):
     return hashlib.sha256(bruto).hexdigest()
 
 
-def ler_versao(caminho, esperado):
-    bruto = caminho.read_bytes()
-
+def bytes_compativeis(bruto, esperado):
+    """Devolve somente bytes com o SHA-256 exato, aceitando LF/CRLF."""
     if sha256(bruto) == esperado:
         return bruto
 
@@ -39,10 +40,60 @@ def ler_versao(caminho, esperado):
         if sha256(candidato) == esperado:
             return candidato
 
+    return None
+
+
+def ler_versao(caminho, esperado):
+    bruto = bytes_compativeis(caminho.read_bytes(), esperado)
+    if bruto is not None:
+        return bruto
     raise ValueError(
         f"Hash incompatível: {caminho}. "
         "Use a revisão da rodada."
     )
+
+
+CAMINHO_BASE = "dados/questoes_oab.csv"
+
+
+def git_local(raiz, *args):
+    return subprocess.run(["git", "-C", str(raiz), *args],
+                          capture_output=True, check=False)
+
+
+@lru_cache(maxsize=4)
+def buscar_base_historica(raiz, head, esperado):
+    """Busca somente blobs da base em commits alcançáveis pelo HEAD local."""
+    historico = git_local(raiz, "log", "--full-history", "--format=%H", head,
+                          "--", CAMINHO_BASE)
+    if historico.returncode:
+        raise ValueError("Não foi possível consultar o histórico Git da base.")
+    for commit in historico.stdout.decode("ascii").splitlines():
+        blob = git_local(raiz, "show", f"{commit}:{CAMINHO_BASE}")
+        if blob.returncode:
+            continue
+        bruto = bytes_compativeis(blob.stdout, esperado)
+        if bruto is not None:
+            return bruto, f"Git: {commit}"
+    raise ValueError(f"Hash da base não encontrado no histórico Git local: {esperado}. "
+                     "Atualize a revisão e o histórico Git ou forneça a base exata com --base.")
+
+
+def resolver_base(caminho, esperado):
+    """Prefere a base informada; recorre ao Git apenas para o CSV padrão."""
+    caminho = Path(caminho)
+    try:
+        return ler_versao(caminho, esperado), "Local"
+    except (ValueError, FileNotFoundError):
+        if caminho.resolve() != (RAIZ / CAMINHO_BASE).resolve():
+            raise
+    try:
+        head = git_local(RAIZ, "rev-parse", "--verify", "HEAD")
+        if head.returncode:
+            raise ValueError("Histórico Git local indisponível para verificar a base.")
+        return buscar_base_historica(RAIZ, head.stdout.decode("ascii").strip(), esperado)
+    except OSError as erro:
+        raise ValueError("Git indisponível para localizar a versão da base.") from erro
 
 
 def inteiro_positivo(v):
@@ -96,7 +147,7 @@ def validar(caminho, base, permitir_parcial=False):
     ler_versao(Path(A.__file__), c["sha256_script"])
     if sha256(A.PROMPT.encode()) != c["sha256_prompt"]:
         raise ValueError("Hash do prompt incompatível.")
-    bruto = ler_versao(base, c["sha256_dados"])
+    bruto, origem_base = resolver_base(base, c["sha256_dados"])
     selecionadas = A.carregar_questoes(bruto, c["gabarito"])
     if c["prova"] is not None:
         disponiveis = {q["numero_exame"] for q in selecionadas}
@@ -163,7 +214,8 @@ def validar(caminho, base, permitir_parcial=False):
     return {"respondidas": n, "esperadas": len(esperadas), "acertos": acertos,
             "acuracia": acertos / n, "sem_letra": invalidas,
             "tempo_medio": sum(tempos) / n, "parcial": bool(ausentes),
-            "modelo": c["modelo"], "provas": c["prova"], "gabarito": c["gabarito"]}
+            "modelo": c["modelo"], "provas": c["prova"], "gabarito": c["gabarito"],
+            "origem_base": origem_base}
 
 
 def texto_md(valor):
@@ -205,6 +257,13 @@ def gerar_resumo(registros):
             f"{r['acertos']} | {r['acuracia']:.1%} | {r['sem_letra']} | "
             f"{r['tempo_medio']:.2f} | {status} |"
         )
+    antigas = [item for item in registros if "erro" not in item
+               and item["resultado"].get("origem_base", "Local") != "Local"]
+    if antigas:
+        linhas.extend(["", "### Bases recuperadas do histórico Git", ""])
+        for item in antigas:
+            linhas.append(f"- {texto_md(item['arquivo'])}: "
+                          f"{texto_md(item['resultado']['origem_base'])}")
     if falhas:
         linhas.extend(["", "### Inconsistências", ""])
         for item in registros:
@@ -236,7 +295,8 @@ def main(argv=None):
             status = "PARCIAL" if r["parcial"] else "OK"
             print(f"{status}: {caminho} | {r['respondidas']}/{r['esperadas']} questões | "
                   f"{r['acertos']} acertos | {r['acuracia']:.1%} | "
-                  f"{r['sem_letra']} sem letra | {r['tempo_medio']:.2f} s/questão")
+                  f"{r['sem_letra']} sem letra | {r['tempo_medio']:.2f} s/questão | "
+                  f"Base: {r['origem_base']}")
         except (OSError, ValueError, KeyError, TypeError, csv.Error) as e:
             falhou = True
             registros.append({"arquivo": str(caminho), "erro": str(e)})

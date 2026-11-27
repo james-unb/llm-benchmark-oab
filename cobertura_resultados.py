@@ -42,13 +42,14 @@ def consolidar(pasta, base):
             with caminho.open(encoding='utf-8-sig', newline='') as f:
                 linhas = list(csv.DictReader(f, strict=True))
             if id_grupo not in grupos:
-                bruto = V.ler_versao(base, config['sha256_dados'])
+                bruto, origem_base = V.resolver_base(base, config['sha256_dados'])
                 questoes = A.carregar_questoes(bruto, config['gabarito'])
                 elegiveis = {V.chave(q) for q in questoes}
                 if len(elegiveis) != len(questoes):
                     raise ValueError('Questões duplicadas na base elegível.')
                 grupos[id_grupo] = {'config': config, 'elegiveis': elegiveis,
-                                    'ocorrencias': defaultdict(dict), 'arquivos': []}
+                                    'ocorrencias': defaultdict(dict), 'arquivos': [],
+                                    'origem_base': origem_base}
             grupo = grupos[id_grupo]
             grupo['arquivos'].append(nome)
             for linha in linhas:
@@ -96,6 +97,7 @@ def gerar_relatorio(grupos, excluidos):
             f"### {md(c['modelo'])} — {md(c['onde'])} / {md(c['gabarito'])}", '',
             f"Temperatura: {md(c['temperatura'])} | Tokens: {md(c['max_tokens'])} | Semente: {md(c['semente'])}",
             f"Base SHA-256: `{c['sha256_dados']}`  ",
+            f"Origem da base: {md(grupo['origem_base'])}  ",
             f"Prompt SHA-256: `{c['sha256_prompt']}`  ",
             f"Avaliador SHA-256: `{c['sha256_script']}`", '',
             f"**Cobertura: {n}/{total} ({n/total:.1%})** | Exames concluídos: {i['concluidos']}/{len(i['por_exame'])} | Arquivos: {len(grupo['arquivos'])}",
@@ -120,7 +122,7 @@ def gerar_relatorio(grupos, excluidos):
         linhas.append('')
     if excluidos:
         linhas.extend(['### Arquivos não consolidados', '',
-                       'Verifique a configuração, a versão local da base e do avaliador ou as inconsistências informadas.', '',
+                       'Verifique a configuração, a disponibilidade da base no Git, a versão local do avaliador ou as inconsistências informadas.', '',
                        '| Arquivo | Motivo |', '|---|---|'])
         for arquivo, erro in excluidos:
             linhas.append(f'| {md(arquivo)} | {md(erro)} |')
