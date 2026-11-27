@@ -88,3 +88,49 @@ uv run avaliar_oab.py --modelo google/gemma-4-26b-a4b-it --onde openrouter
 **Testes.** `python3 -m unittest discover -s tests` (não chama modelo nenhum).
 
 **Histórico.** `resultados/historico/gemma4_12b-nvfp4_2026-10-28.csv` é a rodada do gemma4:12b-nvfp4 feita com a versão anterior do script: gabarito preliminar onde faltava o definitivo, `texto_bruto` cortado em 500 caracteres e a base com os problemas de gabarito e de extração apontados na revisão do PR #2. Fica como registro; não é a pontuação validada.
+
+
+## Validação dos resultados
+
+O script `validar_resultados.py` verifica a consistência e a rastreabilidade dos resultados das avaliações, sem executar modelos ou consumir créditos de APIs.
+
+### Validação automática
+
+O GitHub Actions executa automaticamente a validação dos arquivos de resultados adicionados ou modificados em um Pull Request.
+
+Caso sejam identificadas inconsistências, o check será reprovado, impedindo o merge pelo fluxo normal até que os problemas sejam corrigidos.
+
+As principais verificações realizadas são:
+
+- Estrutura e correspondência dos arquivos CSV e JSON;
+- Duplicidade e elegibilidade das questões;
+- Consistência dos gabaritos e suas respectivas fontes;
+- Exclusão de questões anuladas;
+- Consistência das respostas e dos acertos;
+- Cobertura das questões selecionadas;
+- Hashes da base, do prompt e do avaliador;
+- Validade dos tempos de resposta e cálculo da acurácia.
+
+Os resultados armazenados em `resultados/historico/` não são submetidos à validação automática.
+
+### Validação local (opcional)
+
+O pesquisador pode verificar seus resultados antes de abrir um Pull Request, executando na raiz do repositório:
+
+```bash
+uv run validar_resultados.py resultados/resultados_gemma4_12b-nvfp4_prova47.csv
+```
+
+Para validar múltiplos arquivos, basta informar seus caminhos no mesmo comando.
+
+A validação exige as versões correspondentes da base e do avaliador utilizados na rodada.
+
+### Testes unitários
+
+Os testes do avaliador e do validador podem ser executados localmente:
+
+```bash
+uv run python -m unittest discover -s tests -v
+```
+
+Os testes também são executados automaticamente pelo GitHub Actions, sem necessidade de intervenção manual dos pesquisadores.

@@ -18,6 +18,8 @@ jobs:
     steps:
       - name: Baixar código
         uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
 
       - name: Configurar Python
         uses: actions/setup-python@v6
@@ -29,3 +31,50 @@ jobs:
 
       - name: Executar testes unitários
         run: python -m unittest discover -s tests -v
+
+      - name: Validar resultados modificados
+        if: github.event_name != 'workflow_dispatch'
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
+        run: |
+          python - <<'PY'
+          import os
+          import subprocess
+          import sys
+          from pathlib import Path
+
+          alterados = subprocess.check_output([
+              "git", "diff", "--name-only", "-z",
+              "--no-renames", os.environ["BASE_SHA"],
+              "HEAD", "--", "resultados/"
+          ]).decode().split("\0")
+
+          arquivos = sorted({
+              Path(p).with_suffix(".csv")
+              for p in alterados
+              if p.endswith((".csv", ".json"))
+              and not p.startswith("resultados/historico/")
+          })
+
+          validar = []
+
+          for csv in arquivos:
+              config = csv.with_suffix(".json")
+
+              if not csv.exists() and not config.exists():
+                  continue
+
+              if not csv.exists() or not config.exists():
+                  sys.exit(f"Par CSV/JSON incompleto: {csv}")
+
+              validar.append(str(csv))
+
+          if validar:
+              subprocess.run([
+                  sys.executable,
+                  "validar_resultados.py",
+                  *validar
+              ], check=True)
+          else:
+              print("Nenhum resultado novo ou modificado.")
+          PY
