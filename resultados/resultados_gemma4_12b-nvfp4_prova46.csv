@@ -1,0 +1,81 @@
+numero_exame,numero_questao,materia,gabarito,fonte_gabarito,resposta_modelo,acertou,segundos,texto_bruto
+46,54,Processo Civil,C,definitivo,D,0,26.87,D
+46,46,Direito do Consumidor,D,definitivo,D,1,21.29,D
+46,64,Processo Penal,B,definitivo,B,1,13.74,B
+46,1,Ética Profissional,C,definitivo,C,1,17.23,C
+46,49,Direito Empresarial,C,definitivo,C,1,14.07,C
+46,41,Direito Civil,A,definitivo,A,1,10.33,A
+46,14,Direito Constitucional,D,definitivo,D,1,9.91,D
+46,59,Direito Penal,A,definitivo,A,1,9.36,A
+46,60,Direito Penal,A,definitivo,A,1,7.87,A
+46,12,Direito Constitucional,B,definitivo,B,1,9.22,B
+46,8,Ética Profissional,D,definitivo,D,1,9.73,D
+46,13,Direito Constitucional,B,definitivo,B,1,11.21,B
+46,33,Direito Administrativo,B,definitivo,D,0,9.78,D
+46,5,Ética Profissional,D,definitivo,D,1,9.53,D
+46,16,Direito Constitucional,D,definitivo,C,0,9.3,C
+46,70,Direito Previdenciário,A,definitivo,A,1,8.06,A
+46,26,Direito Tributário,D,definitivo,C,0,12.48,C
+46,21,Direito Internacional,D,definitivo,D,1,16.25,D
+46,6,Ética Profissional,A,definitivo,B,0,16.51,B
+46,52,Processo Civil,C,definitivo,B,0,13.61,B
+46,28,Direito Tributário,C,definitivo,D,0,20.07,D
+46,65,Processo Penal,D,definitivo,D,1,14.5,D)
+46,55,Processo Civil,A,definitivo,C,0,11.64,C
+46,17,Direitos Humanos,B,definitivo,B,1,22.51,B
+46,45,Direito do Consumidor,B,definitivo,C,0,10.79,C
+46,61,Direito Penal,B,definitivo,B,1,14.14,B
+46,29,Direito Tributário,D,definitivo,A,0,15.27,A
+46,20,Direito Eleitoral,A,definitivo,A,1,13.2,A
+46,50,Direito Empresarial,C,definitivo,C,1,7.64,C
+46,48,Direito Empresarial,B,definitivo,D,0,11.26,D
+46,27,Direito Tributário,B,definitivo,B,1,16.7,B
+46,18,Direitos Humanos,D,definitivo,A,0,20.18,A
+46,37,Direito Civil,A,definitivo,A,1,10.75,A
+46,44,Estatuto da Criança e do Adolescente,C,definitivo,C,1,14.59,C
+46,9,Filosofia do Direito,B,definitivo,B,1,16.91,B
+46,56,Processo Civil,B,definitivo,B,1,9.36,B
+46,53,Processo Civil,C,definitivo,D,0,13.1,D
+46,25,Direito Tributário,B,definitivo,A,0,13.01,A
+46,19,Direito Eleitoral,A,definitivo,B,0,12.43,B
+46,7,Ética Profissional,C,definitivo,C,1,14.58,C
+46,3,Ética Profissional,C,definitivo,C,1,15.06,C
+46,79,Processo do Trabalho,D,definitivo,D,1,10.78,D
+46,40,Direito Civil,B,definitivo,A,0,12.1,A
+46,34,Direito Administrativo,A,definitivo,D,0,12.04,D
+46,11,Direito Constitucional,C,definitivo,D,0,11.66,D
+46,32,Direito Administrativo,B,definitivo,B,1,10.3,B
+46,62,Direito Penal,C,definitivo,C,1,8.92,C
+46,38,Direito Civil,D,definitivo,D,1,6.87,D
+46,23,Direito Financeiro,A,definitivo,A,1,6.61,A
+46,36,Direito Ambiental,A,definitivo,B,0,10.14,B
+46,2,Ética Profissional,D,definitivo,D,1,7.39,D
+46,39,Direito Civil,B,definitivo,B,1,8.88,B
+46,35,Direito Ambiental,C,definitivo,C,1,11.59,C
+46,63,Processo Penal,D,definitivo,D,1,13.67,D
+46,72,Direito do Trabalho,D,definitivo,D,1,12.15,D
+46,74,Direito do Trabalho,A,definitivo,A,1,14.2,A
+46,77,Processo do Trabalho,D,definitivo,C,0,15.92,C
+46,58,Direito Penal,D,definitivo,D,1,15.24,D
+46,22,Direito Internacional,C,definitivo,C,1,10.53,C
+46,31,Direito Administrativo,A,definitivo,A,1,14.41,A
+46,67,Processo Penal,A,definitivo,D,0,4.24,D)
+46,24,Direito Financeiro,C,definitivo,C,1,11.31,C
+46,66,Processo Penal,B,definitivo,B,1,11.43,B
+46,68,Processo Penal,B,definitivo,B,1,18.81,B
+46,51,Processo Civil,B,definitivo,B,1,18.13,B
+46,47,Direito Empresarial,A,definitivo,C,0,16.57,C
+46,57,Direito Penal,B,definitivo,D,0,11.08,D)
+46,75,Direito do Trabalho,C,definitivo,C,1,13.57,C
+46,30,Direito Administrativo,D,definitivo,C,0,19.12,C
+46,15,Direito Constitucional,C,definitivo,C,1,15.95,C
+46,80,Processo do Trabalho,B,definitivo,C,0,12.54,C
+46,42,Direito Civil,B,definitivo,B,1,16.25,B
+46,76,Processo do Trabalho,C,definitivo,D,0,15.04,D
+46,43,Estatuto da Criança e do Adolescente,D,definitivo,D,1,16.26,D
+46,69,Direito Previdenciário,B,definitivo,B,1,8.56,B
+46,10,Filosofia do Direito,C,definitivo,C,1,7.46,C
+46,4,Ética Profissional,A,definitivo,A,1,14.27,A
+46,73,Direito do Trabalho,A,definitivo,A,1,8.42,A
+46,71,Direito do Trabalho,D,definitivo,A,0,17.13,A
+46,78,Processo do Trabalho,A,definitivo,B,0,12.49,B

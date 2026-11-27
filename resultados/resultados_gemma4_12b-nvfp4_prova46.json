@@ -1,0 +1,16 @@
+{
+ "modelo": "gemma4:12b-nvfp4",
+ "onde": "ollama",
+ "temperatura": 0.0,
+ "max_tokens": 1024,
+ "gabarito": "definitivo",
+ "prova": [
+  "46"
+ ],
+ "limite": null,
+ "dados": "https://raw.githubusercontent.com/james-unb/llm-benchmark-oab/main/dados/questoes_oab.csv",
+ "sha256_dados": "6d9eb61f4a3ee724d78a52922c70cbbbcc7cd3da141b14a6bf7681363719da2a",
+ "sha256_prompt": "6678b554d8c27d6b042a1e29fea47e60ada6043d1b81fdde2bbef9318c72b1d2",
+ "semente": 42,
+ "sha256_script": "97433ce012f60a1fd59e69f14c10e6803d4c015e59a0d1f708872890fb7b9fb1"
+}
