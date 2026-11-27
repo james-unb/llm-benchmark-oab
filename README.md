@@ -174,3 +174,22 @@ O GitHub Actions já baixa o histórico completo (`fetch-depth: 0`). Localmente,
 O suporte é restrito a versões anteriores da **base**: os hashes do avaliador e do prompt ainda precisam corresponder às versões locais. Se a base não puder ser localizada, a validação de um novo resultado falha e o relatório de cobertura indica a incompatibilidade.
 
 Para acompanhar o progresso sem executar comandos, consulte [Testes automatizados no GitHub Actions](https://github.com/james-unb/llm-benchmark-oab/actions/workflows/tests.yml), abra a execução mais recente da branch `main` e veja a seção de cobertura no Summary.
+
+### Integridade e qualidade da base OAB
+
+O check `testes` também executa `validar_base.py` e publica o relatório no Summary. O script usa somente a biblioteca padrão do Python e não executa modelos nem altera os arquivos de dados.
+
+Erros estruturais (chaves duplicadas ou inválidas, gabaritos/flags inválidos, campos textuais ausentes em questões elegíveis, exportações ausentes ou divergentes) reprovam o check. Os 17 campos exportados são comparados por chave de questão entre CSV, SQL e SQLite; IDs internos não são usados na comparação. Campos vazios do CSV equivalem a NULL no banco e quebras de linha são normalizadas. O SQLite é aberto apenas para leitura e submetido a `quick_check`. O dump SQL é interpretado como dados no formato atual de exportação, sem executar instruções; uma mudança intencional de esquema ou formato deve atualizar o validador e seus testes.
+
+Alertas não bloqueantes incluem questões não extraídas, ausência de matéria, marcadores da questão seguinte, possíveis cabeçalhos/questionários, alternativas idênticas ou D com mais de três vezes o comprimento da maior entre A, B e C. Também são sinalizadas questões extraídas imediatamente anteriores a uma questão não extraída, como indício de possível erro de segmentação. Esses critérios são heurísticos: não comprovam truncamento nem correspondência semântica e não substituem a conferência com os PDFs originais. O relatório distingue os dois modos de elegibilidade usados pelo avaliador.
+
+Nos PRs, a comparação usa o commit-base informado pelo GitHub; em pushes à `main`, usa o commit anterior ao push. A versão anterior é lida do histórico Git local, sem restaurar arquivos. O relatório mostra as variações dos indicadores e exemplos de alertas introduzidos e removidos. Em execução manual, ou quando a referência anterior está indisponível, é exibida apenas a situação atual (com aviso quando a comparação solicitada não pode ser feita).
+
+Para executar localmente:
+
+```bash
+python validar_base.py
+python validar_base.py --comparar-ref main --resumo qualidade_base.md
+```
+
+Use `--pasta` para auditar outra pasta com os três arquivos `questoes_oab.csv`, `questoes_oab.sql` e `questoes_oab.sqlite`. O argumento `--resumo` acrescenta o relatório ao arquivo indicado.
