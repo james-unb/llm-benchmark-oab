@@ -155,7 +155,7 @@ As rodadas são separadas por modelo, serviço, temperatura, limite de tokens, r
 
 Questões presentes em mais de um arquivo da mesma configuração são contabilizadas uma única vez na cobertura. O relatório identifica os arquivos envolvidos e omite a acurácia agregada quando há sobreposição, sem bloquear automaticamente o PR. Essa sinalização não prova que uma repetição experimental seja indevida. Configurações com hashes distintos são mantidas separadas, inclusive quando a diferença se deve às quebras de linha.
 
-Somente resultados compatíveis com a base e o avaliador locais são consolidados. Arquivos incompatíveis ou inconsistentes são listados como alertas e os históricos são ignorados. A validação obrigatória de resultados modificados permanece inalterada. O relatório também considera rodadas parciais válidas na cobertura, sem relaxar a validação obrigatória para novos resultados.
+Resultados com a base local ou uma versão anterior recuperada do histórico Git e com o avaliador local compatível são consolidados. Cada versão da base permanece em um grupo separado. Arquivos incompatíveis ou inconsistentes são listados como alertas e os históricos são ignorados. A validação obrigatória de resultados modificados permanece inalterada. O relatório também considera rodadas parciais válidas na cobertura, sem relaxar a validação obrigatória para novos resultados.
 
 Para consultar a cobertura localmente (opcional):
 
@@ -164,3 +164,13 @@ uv run cobertura_resultados.py
 ```
 
 Para gravar o relatório, use `--resumo cobertura.md`. O comando não executa modelos nem modifica os resultados.
+
+### Validação de versões anteriores da base
+
+Se a base padrão (`dados/questoes_oab.csv`) não corresponder ao SHA-256 registrado no JSON, o validador busca a versão exata no histórico Git local, entre os commits alcançáveis pelo HEAD. A cobertura utiliza a mesma versão recuperada e informa sua origem. A comparação continua exigindo o hash registrado (incluindo a compatibilidade LF/CRLF); não são usados gabaritos da versão atual para corrigir rodadas antigas.
+
+O GitHub Actions já baixa o histórico completo (`fetch-depth: 0`). Localmente, se necessário, atualize a revisão do repositório e seu histórico; em clones rasos, pode ser necessário `git fetch --unshallow`. Uma base externa informada por `--base` precisa corresponder diretamente ao hash registrado. O validador não baixa URLs nem executa código de commits anteriores.
+
+O suporte é restrito a versões anteriores da **base**: os hashes do avaliador e do prompt ainda precisam corresponder às versões locais. Se a base não puder ser localizada, a validação de um novo resultado falha e o relatório de cobertura indica a incompatibilidade.
+
+Para acompanhar o progresso sem executar comandos, consulte [Testes automatizados no GitHub Actions](https://github.com/james-unb/llm-benchmark-oab/actions/workflows/tests.yml), abra a execução mais recente da branch `main` e veja a seção de cobertura no Summary.
