@@ -31,7 +31,7 @@ uv run extensao baixar --exame-inicial 2010.2
 uv run extensao extrair
 ```
 
-Os caminhos são relativos à raiz do repositório: PDFs em `provas_oab/` e resultados em `dados/`. O OCR local é acionado quando a codificação do texto do PDF está corrompida; o RapidOCR pode baixar os modelos necessários na primeira execução.
+Os caminhos são relativos à raiz do repositório: PDFs em `provas_oab/` e resultados em `dados/`. O OCR local é acionado quando a codificação do texto do PDF está corrompida; o RapidOCR pode baixar os modelos necessários na primeira execução. Nos cadernos XV e XVI, a leitura por OCR percorre as duas colunas na ordem correta, pois a extração textual desses PDFs fragmenta palavras e mistura trechos. O parser também reconhece cabeçalhos retificados (por exemplo, `Questão 22*`) e números sem espaço (`Questão29`), além de remover cabeçalhos repetidos do caderno que poderiam cair no fim das alternativas.
 
 ## Dados entregues
 
@@ -41,7 +41,7 @@ Os artefatos gerados estão versionados em `dados/`:
 - `questoes_oab.sql`: schema, registros e view, compatíveis com SQLite;
 - `questoes_oab.csv`: CSV UTF-8 com BOM.
 
-Cada linha representa uma questão e inclui número e data do exame, tipo da prova (sempre 1), número da questão, matéria, enunciado, alternativas A–D, respostas preliminar e definitiva, `questao_extraida`, `gabarito_definitivo` e caminhos relativos dos PDFs fonte. Alternativa E não é armazenada. Valores sem fonte ou conteúdo permanecem vazios no CSV e `NULL` no SQLite/SQL.
+Cada linha representa uma questão e inclui número e data do exame, tipo da prova (sempre 1), número da questão, matéria, enunciado, alternativas A–D, respostas preliminar e definitiva, `questao_extraida`, `gabarito_definitivo` e caminhos relativos dos PDFs fonte. Alternativa E não é armazenada. Valores sem fonte ou conteúdo permanecem vazios no CSV e `NULL` no SQLite/SQL. `materia` fica vazia nos exames anteriores ao XVI porque a distribuição histórica não foi validada para receber a classificação automática usada nos cadernos posteriores; não é ausência do enunciado ou da questão.
 
 `resposta_definitiva` contém a resposta final ou `ANULADA`. `gabarito_definitivo` é `true` quando uma fonte oficial confirma a resposta definitiva e `false` quando não há gabarito definitivo separado confirmado. Em edições em que todos os recursos foram indeferidos, a banca manteve o preliminar e não publicou um arquivo definitivo separado: nesses casos, a resposta preliminar continua preenchida, enquanto `resposta_definitiva` e `fonte_gabarito_definitivo` ficam vazias e `gabarito_definitivo` fica `false`. Esse vazio é esperado e não indica falha de coleta de um arquivo existente. Quando comunicado oficial confirma que o preliminar foi mantido integralmente, ele também é registrado como resposta definitiva.
 

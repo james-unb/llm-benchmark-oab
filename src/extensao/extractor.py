@@ -96,6 +96,21 @@ def _normalizar(texto: str) -> str:
     return "".join(c for c in texto if not unicodedata.combining(c))
 
 
+def _ocr_caderno_em_colunas(pagina: pymupdf.Page, motor: object, numpy: object) -> str:
+    """Lê as duas colunas na ordem correta nos cadernos XV e XVI."""
+    meio = pagina.rect.width / 2
+    partes: list[str] = []
+    for x0, x1 in ((0, meio), (meio, pagina.rect.width)):
+        recorte = pymupdf.Rect(x0, 35, x1, pagina.rect.height - 35)
+        pixmap = pagina.get_pixmap(matrix=pymupdf.Matrix(1.5, 1.5), clip=recorte, alpha=False)
+        imagem = numpy.frombuffer(pixmap.samples, dtype=numpy.uint8).reshape(
+            pixmap.height, pixmap.width, pixmap.n
+        )
+        resultado = motor(imagem)
+        partes.extend(resultado.txts or [])
+    return "\n".join(partes)
+
+
 @lru_cache(maxsize=1024)
 def _texto_pdf(caminho: Path) -> str:
     """Extrai texto e usa OCR quando a fonte do PDF contém mapa de caracteres corrompido."""
@@ -106,6 +121,27 @@ def _texto_pdf(caminho: Path) -> str:
         numpy = None
         for indice_pagina, pagina in enumerate(paginas):
             texto = pagina.get_text(sort=False)
+            # Nos cadernos XV e XVI, a extração textual fragmenta palavras e
+            # intercala trechos das duas colunas. O OCR por coluna recompõe a
+            # ordem de leitura e evita unir partes de questões diferentes.
+            caderno_duas_colunas = bool(
+                re.match(r"(?:15_2014|16_2015)_", caminho.parent.name)
+                and "gabarito" not in _normalizar(caminho.name)
+                and _eh_prova_tipo_1(caminho.name)
+            )
+            tem_questao_no_texto = bool(
+                re.search(r"(?i)quest.{0,3}o\s*\d", texto)
+            )
+            if caderno_duas_colunas and tem_questao_no_texto:
+                try:
+                    if motor is None:
+                        import numpy as np
+                        from rapidocr import RapidOCR
+                        numpy = np
+                        motor = RapidOCR()
+                    texto = _ocr_caderno_em_colunas(pagina, motor, numpy)
+                except ImportError:
+                    pass
             blocos = pagina.get_text("blocks")
             # Em alguns cadernos antigos, as questões 77–80 são impressas em
             # duas colunas. A ordem interna mistura as colunas e contamina a
@@ -116,7 +152,7 @@ def _texto_pdf(caminho: Path) -> str:
                 and re.search(r"quest.{0,3}o\s*80", _normalizar(bloco[4]))
                 for bloco in blocos
             )
-            if cabecalho_q80_direita:
+            if cabecalho_q80_direita and not caderno_duas_colunas:
                 esquerda = sorted(
                     (b for b in blocos if b[0] < pagina.rect.width / 2),
                     key=lambda b: (b[1], b[0]),
@@ -146,20 +182,23 @@ def _texto_pdf(caminho: Path) -> str:
                     and not unicodedata.name(caractere, "").startswith("LATIN"))
                 or (ord(caractere) < 32 and caractere not in "\n\r\t")
             )
-            corrompido = bool(texto) and nao_latin / len(texto) > 0.025
-            if corrompido:
+            caractere_controle = any(
+                ord(caractere) < 32 and caractere not in "\n\r\t"
+                for caractere in texto
+            )
+            corrompido = bool(texto) and (
+                nao_latin / len(texto) > 0.025 or caractere_controle
+            )
+            if corrompido and not (caderno_duas_colunas and not tem_questao_no_texto):
                 try:
                     if motor is None:
                         import numpy as np
                         from rapidocr import RapidOCR
                         numpy = np
                         motor = RapidOCR()
-                    pixmap = pagina.get_pixmap(dpi=200, alpha=False)
-                    imagem = numpy.frombuffer(pixmap.samples, dtype=numpy.uint8).reshape(
-                        pixmap.height, pixmap.width, pixmap.n
-                    )
-                    resultado = motor(imagem)
-                    texto = "\n".join(resultado.txts or [])
+                    texto_ocr = _ocr_caderno_em_colunas(pagina, motor, numpy)
+                    if texto_ocr.strip():
+                        texto = texto_ocr
                 except ImportError:
                     pass
             textos.append(texto)
@@ -355,9 +394,15 @@ def _questoes(texto: str, limite_questao: int = 80) -> list[dict[str, object]]:
 
     # Os cadernos de 2010 têm 100 itens e os mais recentes, 80. A sequência é
     # descoberta no próprio PDF, sem limitar o parser a uma quantidade fixa.
-    marcadores: list[tuple[int, int]] = []
+    # Guarda início e fim do cabeçalho. O bloco de cada questão deve terminar
+    # no começo do próximo marcador, não depois dele, senão "Questão N+1"
+    # acaba anexado à última alternativa da questão atual.
+    marcadores: list[tuple[int, int, int]] = []
     ultimo = 0
-    for m in re.finditer(r"(?im)^\s*(?:quest[ãa]o\s+)?(\d{1,3})(?:\s+A\d{4,6})?\s*$", texto):
+    for m in re.finditer(
+        r"(?im)^\s*(?:quest[ãa]o\s*)?(\d{1,3})\s*\*?(?:\s+A\d{4,6})?\s*$",
+        texto,
+    ):
         n = int(m.group(1))
         # Ignora o número da página que aparece isolado antes da questão 1.
         if ultimo == 0 and n != 1:
@@ -365,11 +410,11 @@ def _questoes(texto: str, limite_questao: int = 80) -> list[dict[str, object]]:
         # Alguns PDFs omitem o texto de até três questões (por exemplo, uma
         # página digitalizada); aceitar um pequeno salto preserva as seguintes.
         if ultimo < n <= limite_questao and (ultimo == 0 or n <= ultimo + 3):
-            marcadores.append((n, m.end()))
+            marcadores.append((n, m.start(), m.end()))
             ultimo = n
     saida: list[dict[str, object]] = []
     anterior = 0
-    for idx, (numero, inicio) in enumerate(marcadores):
+    for idx, (numero, _, inicio) in enumerate(marcadores):
         for ausente in range(anterior + 1, numero):
             saida.append({
                 "numero_questao": ausente, "enunciado": None,
@@ -378,8 +423,24 @@ def _questoes(texto: str, limite_questao: int = 80) -> list[dict[str, object]]:
             })
         fim = marcadores[idx + 1][1] if idx + 1 < len(marcadores) else len(texto)
         bloco = texto[inicio:fim].strip()
-        # O marcador seguinte está incluído no início do próximo bloco; remove
-        # o número e cabeçalhos de página antes de separar o enunciado.
+        # Cabeçalhos repetidos de página podem cair no fim da alternativa D
+        # quando o PDF não os separa como bloco. Remova somente o padrão
+        # identificador do caderno, preservando menções normais a exames.
+        bloco = re.sub(
+            r"(?im)(?:\b(?:[ivxlcdm]{1,8}|\d{1,2}\s*[ºo]?)\s+)?"
+            r"exame\s+d[eo]\s+ordem\s+unificado(?:\s+20\d{2}\.\d)?"
+            r"(?:\s*[–—-]\s*tipo\s*0?1\s*[–—-]\s*branc[oa])?"
+            r"(?:\s+prova\s+aplicada\s+em\s+\d{2}/\d{2}/\d{4})?"
+            r"(?:\s+p[áa]gina\s+\d{1,3})?",
+            " ",
+            bloco,
+        )
+        bloco = re.sub(
+            r"(?is)\*?\s*quest[ãa]o\s+retificada\s+para\s+respeitar\b.*$",
+            " ",
+            bloco,
+        )
+        # Remove números de página e cabeçalhos antes de separar o enunciado.
         bloco = re.sub(r"(?m)^\s*\d{1,3}\s*$", "", bloco)
         bloco = re.sub(r"(?im)^\s*\d{1,2}\s*o?\s+exame[^\n]*$", "", bloco)
         bloco = re.sub(r"(?im)^\s*tipo\s+branca[^\n]*$", "", bloco)
@@ -409,6 +470,7 @@ def _limpar(texto: str | None) -> str | None:
     # Mantém o caractere de substituição visível e sinaliza a linha para QA;
     # não inventa acentos quando a fonte não fornece o mapeamento Unicode.
     texto = texto.replace("\ufffd", "�")
+    texto = re.sub(r"[\x00-\x08\x0b\x0c\x0e-\x1f\ue000-\uf8ff]", "", texto)
     texto = re.sub(r"[ \t]+", " ", texto)
     texto = re.sub(r" *\n *", " ", texto)
     return texto.strip()
